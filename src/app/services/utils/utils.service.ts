@@ -13,9 +13,7 @@ export class UtilsService {
     { title: 'Favoris', url: '/favorites', icon: 'heart-outline' },
   ];
 
-  private baseWikipediaUrl = 'https://fr.wikipedia.org/api/rest_v1/page/summary/'
-
-  constructor(private http:HttpClient) { }
+  constructor() { }
 
   getAllRoutes(){
     return this.allRoutes
@@ -25,11 +23,7 @@ export class UtilsService {
     return this.allRoutes.filter((r) => r.url.includes(url)).map((r) => r.title).reduce(t => t)
   }
 
-  getExtractFromWikipedia(summitName: string): string{
-    let extract:string =''
-    this.http.get(`${this.baseWikipediaUrl}=${summitName}`).subscribe((res:any) => extract = res.extract)
-    return extract;
-  }
+  
   
 
 }

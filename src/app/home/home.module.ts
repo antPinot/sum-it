@@ -6,6 +6,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+import { SummitModalComponent } from '../summit-modal/summit-modal.component';
 
 
 @NgModule({
@@ -14,8 +15,8 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    LeafletModule
+    LeafletModule,
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, SummitModalComponent]
 })
 export class HomePageModule {}
