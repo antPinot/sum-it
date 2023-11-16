@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-menu-button slot="start"></ion-menu-button>
+    <ion-title>
+      {{title}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">summits</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card (click)="showDetail(summit)" *ngFor="let summit of summitList">
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <strong>Nom</strong>
+          </ion-col>
+          <ion-col>
+            <strong>Altitude</strong>
+          </ion-col>
+          <ion-col>
+            <strong>Massif</strong>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <strong>{{summit.name}}</strong>
+          </ion-col>
+          <ion-col>
+            <strong>{{summit.altitude}}m</strong>
+          </ion-col>
+          <ion-col>
+            <strong>{{summit.massif}}</strong>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

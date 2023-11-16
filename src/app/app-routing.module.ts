@@ -11,6 +11,11 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'summitlist',
+    loadChildren: () => import('./summits/summits.module').then( m => m.SummitsPageModule)
+  },
+  
 ];
 
 @NgModule({

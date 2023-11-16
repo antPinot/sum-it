@@ -63,8 +63,7 @@ export class HomePage implements OnInit {
         container.style.height = '30px';
         container.src = "../../assets/icon/locate.png"
 
-        container.onclick = () => Geolocation.getCurrentPosition().then((position) => {
-          console.log('coucou')
+        container.onclick = () => Geolocation.getCurrentPosition({enableHighAccuracy: true}).then((position) => {
           this.pin.setLatLng([position.coords.latitude, position.coords.longitude]).addTo(this.map)
         });
         return container;
