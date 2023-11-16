@@ -20,6 +20,6 @@ export class UtilsService {
   getTitleFromUrl(url: string): string{
     return this.allRoutes.filter((r) => r.url.includes(url)).map((r) => r.title).reduce(t => t)
   }
-
+  
 
 }
