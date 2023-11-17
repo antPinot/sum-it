@@ -5,7 +5,7 @@
       Détails du {{summit.name}}
     </ion-title>
     <ion-buttons slot="end">
-      <ion-button (click)="isFavorite = !isFavorite">
+      <ion-button (click)="addFavorite()">
         <ion-icon [name]="favoriteIcon()" size="large"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -30,27 +30,28 @@
     <ion-card-content>
       <ion-grid>
         <ion-row>
-          <ion-col>
-            <a *ngIf="summit.linksUrl" [href]="summit.linksUrl[0]"><ion-thumbnail><ion-img src="../../assets/icon/Visorando.jpg"></ion-img> </ion-thumbnail></a>
+          <ion-col *ngFor="let link of summit.linksUrl">
+            <ion-button (click) = "openInAppBrowser(link)"><ion-thumbnail><ion-img src="../../assets/icon/Visorando.jpg"></ion-img> </ion-thumbnail></ion-button>
+            <!-- <a *ngIf="summit.linksUrl" [href]="summit.linksUrl[0]"><ion-thumbnail><ion-img src="../../assets/icon/Visorando.jpg"></ion-img> </ion-thumbnail></a>
           </ion-col>
           <ion-col>
             <a *ngIf="summit.linksUrl" [href]="summit.linksUrl[1]"><ion-thumbnail><ion-img src="../../assets/icon/altituderando.jpg"></ion-img></ion-thumbnail></a>
           </ion-col>
           <ion-col>
-            <a *ngIf="summit.linksUrl" [href]="summit.linksUrl[2]"><ion-thumbnail><ion-img src="../../assets/icon/camp2camp.png"></ion-img></ion-thumbnail></a>
+            <a *ngIf="summit.linksUrl" [href]="summit.linksUrl[2]"><ion-thumbnail><ion-img src="../../assets/icon/camp2camp.png"></ion-img></ion-thumbnail></a> -->
           </ion-col>
         </ion-row>
       </ion-grid>
     </ion-card-content>
   </ion-card>
-  <ion-card style="height: 25%;">
-    <ion-card-content>
-      <swiper-container>
-        <swiper-slide *ngFor="let photo of summit.photoGallery"><ion-img src="{{photo}}" style="max-height: max-content; max-width: max-content;"></ion-img></swiper-slide>
+  <ion-card>
+    <ion-card-content style="height: 25%;">
+      <swiper-container slides-per-view="2">
+        <swiper-slide *ngFor="let photo of summit.photoGallery"><img [src]="photo"></swiper-slide>
       </swiper-container>
     </ion-card-content>
   </ion-card>
   <ion-buttons>
-    <ion-button><ion-icon name="camera-outline"></ion-icon>Ajouter une photo</ion-button>
+    <ion-button (click)="takePicture()"><ion-icon name="camera-outline"></ion-icon>Ajouter une photo</ion-button>
   </ion-buttons>
 </ion-content>

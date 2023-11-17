@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'summitlist',
     loadChildren: () => import('./summits/summits.module').then( m => m.SummitsPageModule)
   },
+  {
+    path: 'favorites',
+    loadChildren: () => import('./favorites/favorites.module').then( m => m.FavoritesPageModule)
+  },
   
 ];
 

@@ -8,7 +8,7 @@ import { SummitService } from '../services/summit/summit.service';
 import { ModalController } from '@ionic/angular';
 import { SummitModalComponent } from '../summit-modal/summit-modal.component';
 import { Summit } from '../models/ISummit';
-import Geocoder from 'leaflet-control-geocoder';
+import "leaflet-control-geocoder/dist/Control.Geocoder.js";
 
 @Component({
   selector: 'app-home',
@@ -29,18 +29,23 @@ export class HomePage implements OnInit {
 
   protected autocompleteList = this.utilsService.listAdressesForAutocomplete$
 
+  protected openStreetMap:L.TileLayer = tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' })
+
+  protected openTopoMap:L.TileLayer = tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' })
+
   options = {
     layers: [
-      tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' })
+      this.openTopoMap
     ],
     zoom: 13,
-    center: latLng(43.6112422, 3.8767337)
+    // center: latLng(43.6112422, 3.8767337)
+    center: latLng(44.08130, 7.40599)
   };
 
   layersControl = {
     baseLayers: {
-      'Open Street Map': tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' }),
-      'Open Topo Map': tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' })
+      'Open Street Map' : this.openStreetMap,
+      'Open Topo Map' : this.openTopoMap
     },
     overlays: {
     }
@@ -83,16 +88,28 @@ export class HomePage implements OnInit {
       }
     })
 
-    let searchBar = L.Control.extend({
+    /** Ion Search bar substituée par la barre de recherche geocoder (cf ci-dessous) */
+    // let searchBar = L.Control.extend({
 
-      onAdd: (map: Map) => {
-        let container = L.DomUtil.create('ion-searchbar', 'leaflet-bar searchBar');
-        container.placeholder = "Entrez un lieu"
-        return container;
-      },
-    })
+    //   onAdd: (map: Map) => {
+    //     let container = L.DomUtil.create('ion-searchbar', 'leaflet-bar searchBar');
+    //     container.placeholder = "Entrez un lieu"
+    //     return container;
+    //   },
+    // })
 
-    this.map.addControl(new locateButton()).addControl(new searchBar())
+    let geoCoderOptions = {
+      collapsed: false,
+      geocoder: (L.Control as any).Geocoder.nominatim({
+            geocodingQueryParams: {
+              countrycodes: 'fr'
+            }
+        })
+    };
+    
+    (L.Control as any).geocoder(geoCoderOptions).addTo(map);
+
+    this.map.addControl(new locateButton())
 
     this.summitService.getCoordinates().forEach((coordinate) => {
       let summitMarker: Marker
@@ -131,10 +148,6 @@ export class HomePage implements OnInit {
 
   autocomplete(userQuery: string){
     this.utilsService.findByUserQueryWithPhotonAPI(userQuery).subscribe()
-  }
-
-  testGeocoder(){
-    (L.Control as any).geocoder()
   }
 
 }

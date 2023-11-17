@@ -3,6 +3,9 @@ import { ActivatedRoute } from '@angular/router';
 import { Summit } from '../models/ISummit';
 import { SummitService } from '../services/summit/summit.service';
 import { register } from 'swiper/element/bundle';
+import { Camera, CameraResultType, Photo } from '@capacitor/camera';
+import { Haptics, ImpactStyle } from '@capacitor/haptics';
+import { Browser } from '@capacitor/browser';
 
 @Component({
   selector: 'app-summit-detail',
@@ -11,11 +14,12 @@ import { register } from 'swiper/element/bundle';
 })
 export class SummitDetailPage implements OnInit {
 
-
   @Input()
   protected summit!: Summit
 
   protected isFavorite : boolean = false
+
+  protected takenPicture!: Photo
 
   constructor(private activatedRoute:ActivatedRoute, private summitService: SummitService) { }
 
@@ -33,5 +37,24 @@ export class SummitDetailPage implements OnInit {
     this.isFavorite ? name = 'heart' : name ='heart-outline'
     return name
   }
+
+  async takePicture(){
+    this.takenPicture = await Camera.getPhoto({
+      quality:95,
+      allowEditing: true,
+      resultType: CameraResultType.Base64,
+      saveToGallery: true
+    })
+  }
+
+  async addFavorite() {
+    this.isFavorite = !this.isFavorite
+    await Haptics.impact({ style: ImpactStyle.Medium });
+  }
+
+  async openInAppBrowser(urlToOpen: string){
+    await Browser.open({ url: urlToOpen });
+  }
+  
 
 }
