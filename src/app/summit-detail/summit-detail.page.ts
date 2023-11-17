@@ -6,6 +6,7 @@ import { register } from 'swiper/element/bundle';
 import { Camera, CameraResultType, Photo } from '@capacitor/camera';
 import { Haptics, ImpactStyle } from '@capacitor/haptics';
 import { Browser } from '@capacitor/browser';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-summit-detail',
@@ -23,7 +24,7 @@ export class SummitDetailPage implements OnInit {
 
   protected summitWikiPage!: string
 
-  constructor(private activatedRoute:ActivatedRoute, private summitService: SummitService) { }
+  constructor(private activatedRoute:ActivatedRoute, private summitService: SummitService, private toastCtrl:ToastController) { }
 
   ngOnInit() {
     this.summit = this.summitService.getSummitById(this.activatedRoute.snapshot.paramMap.get('id') as string)
@@ -54,6 +55,13 @@ export class SummitDetailPage implements OnInit {
   async addFavorite() {
     this.summit.isFavorite ? this.summit.isFavorite = !this.summit.isFavorite : this.summit.isFavorite = true
     await Haptics.impact({ style: ImpactStyle.Medium });
+    const toast = await this.toastCtrl.create({
+      message: this.summit.isFavorite ? 'Ce sommet a été ajouté à vos favoris' : 'Ce sommet a été retiré de vos favoris',
+      duration: 2000,
+      position : 'bottom'
+    })
+
+    await toast.present();
   }
 
   async openInAppBrowser(urlToOpen: string){

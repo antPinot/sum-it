@@ -3,6 +3,7 @@ import { UtilsService } from '../services/utils/utils.service';
 import { Router } from '@angular/router';
 import { SummitService } from '../services/summit/summit.service';
 import { Summit } from '../models/ISummit';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-summits',
@@ -17,7 +18,7 @@ export class SummitsPage implements OnInit {
 
   protected isFavorite!: boolean
 
-  constructor(private utilsService: UtilsService, private router:Router, private summitService: SummitService) { }
+  constructor(private utilsService: UtilsService, private router:Router, private summitService: SummitService, private toastCtrl: ToastController) { }
 
   ngOnInit() {
     this.title = this.utilsService.getTitleFromUrl(this.router.url)
@@ -29,8 +30,15 @@ export class SummitsPage implements OnInit {
     this.router.navigateByUrl(`summitlist/summit-detail/${summit.id}`)
   }
 
-  addToFavorites(summit: Summit){
+  async addToFavorites(summit: Summit){
     this.summitService.addToFavorites(summit)
+    const toast = await this.toastCtrl.create({
+      message: summit.isFavorite ? 'Ce sommet a été ajouté à vos favoris' : 'Ce sommet a été retiré de vos favoris',
+      duration: 2000,
+      position : 'bottom'
+    })
+
+    await toast.present();
   }
 
   favoriteIcon(summit: Summit) : string{
@@ -38,7 +46,5 @@ export class SummitsPage implements OnInit {
     summit.isFavorite ? name = 'heart' : name ='heart-outline'
     return name
   }
-
-  
 
 }

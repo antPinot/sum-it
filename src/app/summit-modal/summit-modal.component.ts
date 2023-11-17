@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Summit } from '../models/ISummit';
 import { ModalController } from '@ionic/angular';
 import { SummitService } from '../services/summit/summit.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-summit-modal',
@@ -10,9 +11,10 @@ import { SummitService } from '../services/summit/summit.service';
 })
 export class SummitModalComponent  implements OnInit {
 
+
   protected summit!: Summit
 
-  constructor(private modalCtrl: ModalController, private summitService: SummitService) { }
+  constructor(private modalCtrl: ModalController, private summitService: SummitService, private router:Router) { }
 
   ngOnInit() {
     this.summitService.getExtractFromWikipedia(this.summit.name).subscribe(() => {
@@ -27,6 +29,10 @@ export class SummitModalComponent  implements OnInit {
 
   confirm() {
     return this.modalCtrl.dismiss(null, 'confirm');
+  }
+
+  displayDetails(summit: Summit) {
+    this.router.navigateByUrl(`/summitlist/summit-detail/${summit.id}`).finally(() => this.cancel())
   }
 
 }

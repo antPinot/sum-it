@@ -83,6 +83,7 @@ export class HomePage implements OnInit {
 
         container.onclick = () => Geolocation.getCurrentPosition({enableHighAccuracy: true}).then((position) => {
           this.pin.setLatLng([position.coords.latitude, position.coords.longitude]).addTo(this.map)
+          this.map.panTo([position.coords.latitude, position.coords.longitude]);
         });
         return container;
       }
