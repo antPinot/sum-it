@@ -36,6 +36,12 @@ Les autres sommets possèdent des données incomplètes (seulement celles récup
 
 Il subsite également un problème non résolu : Lors de l'ajout d'un sommet en favori via la liste des sommets, le clic ouvre également les informations détaillées du sommet
 
+# API Externes
+- Wikipedia
+- Nominatim (via geocoder)
+- OpenStreetMap
+- OpenTopoMap
+
 # Librairies/Dépendances
 - Leaflet (via ngx-leaflet)
 - Leaflet Geocoder
@@ -45,3 +51,4 @@ Il subsite également un problème non résolu : Lors de l'ajout d'un sommet en 
 - Affichage des sommets en fonction de la distance à la localisation ou au lieu recherché (et non affichage de tous les sommets dès le démarrage de l'application)
 - Autocomplétion basée sur une API OSRM avec searchbar à façon (et non utilisation de geocoder)
 - Résoudre le problème d'ajout des favoris / affichage des informations détaillées de manière simultanée depuis la liste des sommets
+- Changement de l'icône de l'application
