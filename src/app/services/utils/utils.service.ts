@@ -4,33 +4,56 @@ import { Feature, FeatureCollection, GeoJsonProperties, Geometry, Point } from '
 import { BehaviorSubject, Observable, tap } from 'rxjs';
 import { Adresse } from 'src/app/models/IAdresse';
 
+/**
+ * Service fournissant des méthodes utiles
+ * (Ex: Récupération des routes)
+ */
 @Injectable({
   providedIn: 'root'
 })
 export class UtilsService {
 
+  /** Routes de navigation de l'application */
   private allRoutes = [
     { title: 'Accueil', url: '/home', icon: 'home-outline' },
     { title: 'Liste des sommets', url: '/summitlist', icon: 'triangle-outline' },
     { title: 'Favoris', url: '/favorites', icon: 'heart-outline' },
   ];
 
+  /** URL de base de requêtage de l'API Photon pour l'autocomplétion (NON IMPLEMENTE) */
   private photonBaseUrl = 'https://photon.komoot.io/api/'
 
+  /** Observable de la liste des adresses pour l'autocomplétion (NON IMPLEMENTE) */
   public listAdressesForAutocomplete$ = new BehaviorSubject<string[]>([]);
 
+  /** Coordonées de l'adresse saisie par l'utilisateur (NON IMPLEMENTE) */
   public coordinates$ = new BehaviorSubject<Point>({ type: 'Point', coordinates: [] })
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  getAllRoutes(){
+  /**
+   * Récupère toutes les routes de l'application
+   * @returns Tableau de routes
+   */
+  getAllRoutes() {
     return this.allRoutes
   }
 
-  getTitleFromUrl(url: string): string{
+  /***
+   * Récupère le titre d'une page en fonction d'un url
+   * @param url route active
+   * @returns Titre associé
+   */
+  getTitleFromUrl(url: string): string {
     return this.allRoutes.filter((r) => r.url.includes(url)).map((r) => r.title).reduce(t => t)
   }
 
+  /**
+   * Méthode pour l'autocomplétion (NON IMPLEMENTE)
+   * 
+   * @param userQuery 
+   * @returns 
+   */
   findByUserQueryWithPhotonAPI(userQuery: string): Observable<FeatureCollection<Geometry, GeoJsonProperties>> {
     return this.http.get<FeatureCollection>(`${this.photonBaseUrl}?q=${userQuery}`).pipe(
       tap((photonResultsGEOJSON: FeatureCollection) => {
@@ -54,12 +77,18 @@ export class UtilsService {
           }
         })
 
-        let adressesFormatted : string [] = []
+        let adressesFormatted: string[] = []
         adressesResults.forEach((a) => adressesFormatted.push(this.displayAdresse(a)))
         this.listAdressesForAutocomplete$.next(adressesFormatted)
       }))
   }
 
+  /**
+   * Méthode pour l'autocomplétion (NON IMPLEMENTE)
+   * 
+   * @param adresse 
+   * @returns 
+   */
   displayAdresse(adresse: Adresse): string {
     if (adresse !== null) {
       let complementNum: boolean;
@@ -68,7 +97,7 @@ export class UtilsService {
     }
     return '';
   }
-  
-  
+
+
 
 }

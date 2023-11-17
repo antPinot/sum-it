@@ -1,5 +1,8 @@
 import { LatLng } from "leaflet"
 
+/**
+ * Modèle représentant un sommet
+ */
 export interface Summit{
     id: string,
     name: string,

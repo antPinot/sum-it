@@ -8,12 +8,6 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">summits</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <ion-card (click)="showDetail(summit)" *ngFor="let summit of summitList">
     <ion-card-content>
       <ion-grid>
@@ -39,16 +33,15 @@
           <ion-col>
             <strong>{{summit.massif}}</strong>
           </ion-col>
-            <ion-col>
-              <ion-buttons style="z-index: 999;">
-                <ion-button (click)="addToFavorites(summit)">
-                  <ion-icon [name]="favoriteIcon(summit)" size="large"></ion-icon>
-                </ion-button>
-              </ion-buttons>
-            </ion-col>
+          <ion-col>
+            <ion-buttons>
+              <ion-button (click)="addToFavorites(summit)">
+                <ion-icon [name]="favoriteIcon(summit)" size="large"></ion-icon>
+              </ion-button>
+            </ion-buttons>
+          </ion-col>
         </ion-row>
       </ion-grid>
     </ion-card-content>
   </ion-card>
-
 </ion-content>

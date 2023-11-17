@@ -14,6 +14,7 @@
     </ion-toolbar>
   </ion-header>
 
+  <!-- Searchbar avec autocomplétion (NON IMPLEMENTE) -->
   <!-- <ion-searchbar debounce="500" (ionInput)="getItems($event)" style="z-index: 900;">
     <ion-list *ngIf="isItemAvailable">
       <ion-item>
@@ -24,21 +25,8 @@
     </ion-list>
   </ion-searchbar> -->
 
-  <!-- <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div> -->
-  <div style="height: 100%; width: 100%;"
-      leaflet
-      [leafletOptions]="options"
-      [leafletLayersControl]="layersControl"
-      (leafletMapReady)="onMapReady($event)"
-  >
-  <!-- <ion-searchbar style="z-index: 999;" placeholder="Entrez un lieu"></ion-searchbar> -->
-  
-     
+  <div style="height: 100%; width: 100%;" leaflet [leafletOptions]="options" [leafletLayersControl]="layersControl"
+    (leafletMapReady)="onMapReady($event)">
   </div>
-  <!-- <ion-button id="refreshButton"> Locate </ion-button> -->
+
 </ion-content>
-
-

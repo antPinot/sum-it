@@ -1,5 +1,5 @@
 /**
- * Modèle représentant une adresse
+ * Modèle représentant une adresse (NON IMPLEMENTE)
  * 
  */
 export interface Adresse {

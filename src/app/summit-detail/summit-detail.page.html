@@ -28,18 +28,20 @@
       <ion-item lines="none">{{summit.wikiDescription}}</ion-item>
       <ion-item lines="none">
         <ion-buttons slot="end">
-          <ion-button (click)="openInAppBrowser(summitWikiPage)" fill="outline" color="primary">Voir les informations détaillées<ion-icon name="arrow-forward-circle-outline"></ion-icon></ion-button>
+          <ion-button (click)="openInAppBrowser(summitWikiPage)" fill="outline" color="primary">Voir les informations
+            détaillées<ion-icon name="arrow-forward-circle-outline"></ion-icon></ion-button>
         </ion-buttons>
       </ion-item>
-  </ion-card-content>
-    
+    </ion-card-content>
+
   </ion-card>
   <ion-card>
     <ion-card-content>
       <ion-grid>
         <ion-row>
           <ion-col *ngFor="let link of summit.linksUrl; let i = index">
-            <ion-button (click) = "openInAppBrowser(link)" fill="clear"><ion-thumbnail><ion-img [src]="thumbnailsSrc[i]"></ion-img> </ion-thumbnail></ion-button>
+            <ion-button (click)="openInAppBrowser(link)" fill="clear"><ion-thumbnail><ion-img
+                  [src]="thumbnailsSrc[i]"></ion-img> </ion-thumbnail></ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -52,10 +54,11 @@
       </swiper-container>
       <ion-item lines="none">
         <ion-buttons slot="end">
-          <ion-button (click)="takePicture()" fill="outline" color="primary"><ion-icon name="camera-outline"></ion-icon>Ajouter une photo</ion-button>
+          <ion-button (click)="takePicture()" fill="outline" color="primary"><ion-icon
+              name="camera-outline"></ion-icon>Ajouter une photo</ion-button>
         </ion-buttons>
       </ion-item>
     </ion-card-content>
   </ion-card>
-  
+
 </ion-content>

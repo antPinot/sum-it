@@ -10,6 +10,11 @@ import { SummitModalComponent } from '../summit-modal/summit-modal.component';
 import { Summit } from '../models/ISummit';
 import "leaflet-control-geocoder/dist/Control.Geocoder.js";
 
+/**
+ * Composant de la page d'accueil qui contient notamment
+ * les fonctionnalités de géolocalisation et de recherche de lieu
+ * 
+ */
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -17,40 +22,44 @@ import "leaflet-control-geocoder/dist/Control.Geocoder.js";
 })
 export class HomePage implements OnInit {
 
+  /**Titre de la page */
   protected title!: string
 
+  /**Carte leaflet */
   protected map!: Map;
 
+  /**Marqueurs de sommets */
   protected summitMarkers: Marker[] = []
 
-  protected summitToDisplay!: Summit
+  /** */
+  // protected summitToDisplay!: Summit
 
-  protected isItemAvailable = false;
+  /**Couche Open Street Map */
+  protected openStreetMap: L.TileLayer = tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' })
 
-  protected autocompleteList = this.utilsService.listAdressesForAutocomplete$
+  /**Couche Open Topo Map */
+  protected openTopoMap: L.TileLayer = tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' })
 
-  protected openStreetMap:L.TileLayer = tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' })
-
-  protected openTopoMap:L.TileLayer = tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' })
-
+  /** Options par défaut de la carte leaflet*/
   options = {
     layers: [
       this.openTopoMap
     ],
     zoom: 13,
-    // center: latLng(43.6112422, 3.8767337)
     center: latLng(44.08130, 7.40599)
   };
 
+  /**Fond de cartes sélectionnables */
   layersControl = {
     baseLayers: {
-      'Open Street Map' : this.openStreetMap,
-      'Open Topo Map' : this.openTopoMap
+      'Open Street Map': this.openStreetMap,
+      'Open Topo Map': this.openTopoMap
     },
     overlays: {
     }
   }
 
+  /** Marqueur pour la géolocalisation*/
   pin = marker([0, 0], {
     icon: icon({
       ...Icon.Default.prototype.options,
@@ -60,28 +69,40 @@ export class HomePage implements OnInit {
     })
   })
 
-  constructor(private utilsService: UtilsService, private router: Router, private summitService: SummitService, private modalCtrl:ModalController) { }
+  constructor(private utilsService: UtilsService, private router: Router, private summitService: SummitService, private modalCtrl: ModalController) { }
 
+  /**
+   * Initialisation avec récupération du titre de la page
+   */
   ngOnInit(): void {
     this.title = this.utilsService.getTitleFromUrl(this.router.url)
   }
 
+  /**
+   * 
+   * 
+   * @param map carte leafltet
+   */
   onMapReady(map: Map) {
     this.map = map;
+    //Permet le chargement correct de la carte (attend le chargement des composants Ionic)
     setTimeout(() => this.map.invalidateSize(true), 500)
+
+    //Ajout boutton de géolocalisation
     let locateButton = L.Control.extend({
       options: {
         position: 'topleft'
       },
 
-      onAdd: (map: Map) => {
+      onAdd: () => {
         let container = L.DomUtil.create('img', 'leaflet-bar leaflet-control leaflet-control-custom');
         container.style.backgroundColor = 'white';
         container.style.width = '30px';
         container.style.height = '30px';
         container.src = "../../assets/icon/locate.png"
 
-        container.onclick = () => Geolocation.getCurrentPosition({enableHighAccuracy: true}).then((position) => {
+        //Appel au plugin Capacitor Geolocation puis ajoute le marqueur de géolocalisation et centre la carte sur celui-ci
+        container.onclick = () => Geolocation.getCurrentPosition({ enableHighAccuracy: true }).then((position) => {
           this.pin.setLatLng([position.coords.latitude, position.coords.longitude]).addTo(this.map)
           this.map.panTo([position.coords.latitude, position.coords.longitude]);
         });
@@ -89,29 +110,22 @@ export class HomePage implements OnInit {
       }
     })
 
-    /** Ion Search bar substituée par la barre de recherche geocoder (cf ci-dessous) */
-    // let searchBar = L.Control.extend({
+    this.map.addControl(new locateButton())
 
-    //   onAdd: (map: Map) => {
-    //     let container = L.DomUtil.create('ion-searchbar', 'leaflet-bar searchBar');
-    //     container.placeholder = "Entrez un lieu"
-    //     return container;
-    //   },
-    // })
-
+    // Ajout geocoder pour recherche de lieu (via API Nominatim)
     let geoCoderOptions = {
       collapsed: false,
       geocoder: (L.Control as any).Geocoder.nominatim({
-            geocodingQueryParams: {
-              countrycodes: 'fr'
-            }
-        })
+        geocodingQueryParams: {
+          countrycodes: 'fr'
+        }
+      })
     };
-    
+
     (L.Control as any).geocoder(geoCoderOptions).addTo(map);
 
-    this.map.addControl(new locateButton())
-
+    //Ajoute un marqueur pour tous les sommets de l'application et 
+    //ajoute un listener sur chaque marqueur pour ouvrir un ion-modal
     this.summitService.getCoordinates().forEach((coordinate) => {
       let summitMarker: Marker
       summitMarker = marker([coordinate.lat, coordinate.lng], {
@@ -131,24 +145,50 @@ export class HomePage implements OnInit {
 
   }
 
-  async openSummitModal(summitParam: Summit){
+  /**
+   * Controller d'un ion-modal
+   * 
+   * @param summitParam summit à envoyer au component de l'ion-modal
+   */
+  async openSummitModal(summitParam: Summit) {
     const modal = await this.modalCtrl.create({
       component: SummitModalComponent,
       componentProps: {
-        summit : summitParam
+        summit: summitParam
       },
       cssClass: 'summitModal'
     });
     modal.present()
   }
 
+
+  /**
+   * Méthode pour l'autocomplétion (non implémenté)
+   * @param userQuery 
+   */
+  // autocomplete(userQuery: string) {
+  //   this.utilsService.findByUserQueryWithPhotonAPI(userQuery).subscribe()
+  // }
+
+  /** Pour l'autocomplémtion (Non implémenté)*/
+  // protected isItemAvailable = false;
+
+  /**Liste des adresses proposées pour l'autocomplétion (Non implémenté) */
+  // protected autocompleteList = this.utilsService.listAdressesForAutocomplete$
+
+  /** Ion Search bar substituée par la barre de recherche geocoder (cf ci-dessous) */
+  // let searchBar = L.Control.extend({
+
+  //   onAdd: (map: Map) => {
+  //     let container = L.DomUtil.create('ion-searchbar', 'leaflet-bar searchBar');
+  //     container.placeholder = "Entrez un lieu"
+  //     return container;
+  //   },
+  // })
+
   // getItems(event: any) {
   //   this.autocomplete(event.target.value != null ? event.target.value : '')
   //   event.target.value && event.target.value.trim() != '' ? this.isItemAvailable = true : this.isItemAvailable = false
   // }
-
-  autocomplete(userQuery: string){
-    this.utilsService.findByUserQueryWithPhotonAPI(userQuery).subscribe()
-  }
 
 }
