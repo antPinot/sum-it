@@ -8,6 +8,7 @@ import { SummitService } from '../services/summit/summit.service';
 import { ModalController } from '@ionic/angular';
 import { SummitModalComponent } from '../summit-modal/summit-modal.component';
 import { Summit } from '../models/ISummit';
+import Geocoder from 'leaflet-control-geocoder';
 
 @Component({
   selector: 'app-home',
@@ -23,6 +24,10 @@ export class HomePage implements OnInit {
   protected summitMarkers: Marker[] = []
 
   protected summitToDisplay!: Summit
+
+  protected isItemAvailable = false;
+
+  protected autocompleteList = this.utilsService.listAdressesForAutocomplete$
 
   options = {
     layers: [
@@ -84,7 +89,7 @@ export class HomePage implements OnInit {
         let container = L.DomUtil.create('ion-searchbar', 'leaflet-bar searchBar');
         container.placeholder = "Entrez un lieu"
         return container;
-      }
+      },
     })
 
     this.map.addControl(new locateButton()).addControl(new searchBar())
@@ -101,7 +106,7 @@ export class HomePage implements OnInit {
       })
       summitMarker.addTo(this.map)
       summitMarker.addEventListener('click', (ev) => {
-        this.summitService.summitModal(ev.latlng).then((s) => this.openSummitModal(s))
+        this.summitService.summitModalToDisplay(ev.latlng).then((s) => this.openSummitModal(s))
       })
       this.summitMarkers.push(summitMarker)
     })
@@ -117,6 +122,19 @@ export class HomePage implements OnInit {
       cssClass: 'summitModal'
     });
     modal.present()
+  }
+
+  // getItems(event: any) {
+  //   this.autocomplete(event.target.value != null ? event.target.value : '')
+  //   event.target.value && event.target.value.trim() != '' ? this.isItemAvailable = true : this.isItemAvailable = false
+  // }
+
+  autocomplete(userQuery: string){
+    this.utilsService.findByUserQueryWithPhotonAPI(userQuery).subscribe()
+  }
+
+  testGeocoder(){
+    (L.Control as any).geocoder()
   }
 
 }
