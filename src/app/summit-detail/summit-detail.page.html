@@ -24,21 +24,22 @@
     </ion-img>
   </ion-card>
   <ion-card>
-    <ion-card-content>{{summit.wikiDescription}}</ion-card-content>
+    <ion-card-content>
+      <ion-item lines="none">{{summit.wikiDescription}}</ion-item>
+      <ion-item lines="none">
+        <ion-buttons slot="end">
+          <ion-button (click)="openInAppBrowser(summitWikiPage)">Voir les informations détaillées</ion-button>
+        </ion-buttons>
+      </ion-item>
+  </ion-card-content>
+    
   </ion-card>
   <ion-card>
     <ion-card-content>
       <ion-grid>
         <ion-row>
-          <ion-col *ngFor="let link of summit.linksUrl">
-            <ion-button (click) = "openInAppBrowser(link)"><ion-thumbnail><ion-img src="../../assets/icon/Visorando.jpg"></ion-img> </ion-thumbnail></ion-button>
-            <!-- <a *ngIf="summit.linksUrl" [href]="summit.linksUrl[0]"><ion-thumbnail><ion-img src="../../assets/icon/Visorando.jpg"></ion-img> </ion-thumbnail></a>
-          </ion-col>
-          <ion-col>
-            <a *ngIf="summit.linksUrl" [href]="summit.linksUrl[1]"><ion-thumbnail><ion-img src="../../assets/icon/altituderando.jpg"></ion-img></ion-thumbnail></a>
-          </ion-col>
-          <ion-col>
-            <a *ngIf="summit.linksUrl" [href]="summit.linksUrl[2]"><ion-thumbnail><ion-img src="../../assets/icon/camp2camp.png"></ion-img></ion-thumbnail></a> -->
+          <ion-col *ngFor="let link of summit.linksUrl; let i = index">
+            <ion-button (click) = "openInAppBrowser(link)" fill="clear"><ion-thumbnail><ion-img [src]="thumbnailsSrc[i]"></ion-img> </ion-thumbnail></ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -47,11 +48,14 @@
   <ion-card>
     <ion-card-content style="height: 25%;">
       <swiper-container slides-per-view="2">
-        <swiper-slide *ngFor="let photo of summit.photoGallery"><img [src]="photo"></swiper-slide>
+        <swiper-slide *ngFor="let photo of summit.photoGallery"><ion-card><img [src]="photo"></ion-card></swiper-slide>
       </swiper-container>
+      <ion-item lines="none">
+        <ion-buttons slot="end">
+          <ion-button (click)="takePicture()" fill="outline" color="primary"><ion-icon name="camera-outline"></ion-icon>Ajouter une photo</ion-button>
+        </ion-buttons>
+      </ion-item>
     </ion-card-content>
   </ion-card>
-  <ion-buttons>
-    <ion-button (click)="takePicture()"><ion-icon name="camera-outline"></ion-icon>Ajouter une photo</ion-button>
-  </ion-buttons>
+  
 </ion-content>

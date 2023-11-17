@@ -9,5 +9,6 @@ export interface Summit{
     photoUrl?: string,
     wikiDescription?: string,
     linksUrl?: string[]
-    photoGallery?: string[]
+    photoGallery?: string[],
+    isFavorite?: boolean
 }

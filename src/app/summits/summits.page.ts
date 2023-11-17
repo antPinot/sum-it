@@ -15,15 +15,30 @@ export class SummitsPage implements OnInit {
 
   protected summitList!: Summit[]
 
+  protected isFavorite!: boolean
+
   constructor(private utilsService: UtilsService, private router:Router, private summitService: SummitService) { }
 
   ngOnInit() {
     this.title = this.utilsService.getTitleFromUrl(this.router.url)
-    this.summitList = this.summitService.getSummitList();
+    this.router.url.includes('favorites') ? this.isFavorite = true : this.isFavorite = false
+    this.isFavorite ? this.summitList = this.summitService.getAllFavorites() : this.summitList = this.summitService.getSummitList();
   }
 
   showDetail(summit: Summit){
     this.router.navigateByUrl(`summitlist/summit-detail/${summit.id}`)
   }
+
+  addToFavorites(summit: Summit){
+    this.summitService.addToFavorites(summit)
+  }
+
+  favoriteIcon(summit: Summit) : string{
+    let name = ''
+    summit.isFavorite ? name = 'heart' : name ='heart-outline'
+    return name
+  }
+
+  
 
 }

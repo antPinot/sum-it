@@ -17,9 +17,11 @@ export class SummitDetailPage implements OnInit {
   @Input()
   protected summit!: Summit
 
-  protected isFavorite : boolean = false
-
   protected takenPicture!: Photo
+
+  protected thumbnailsSrc!: string[]
+
+  protected summitWikiPage!: string
 
   constructor(private activatedRoute:ActivatedRoute, private summitService: SummitService) { }
 
@@ -28,13 +30,15 @@ export class SummitDetailPage implements OnInit {
     this.summitService.getExtractFromWikipedia(this.summit.name).subscribe(() => {
       this.summit.photoUrl = this.summitService.summitImageUrl$.getValue()
       this.summit.wikiDescription = this.summitService.summitWikiDescription$.getValue()
-      register();
+      this.summitWikiPage = this.summitService.summitWikiPage$.getValue()
     })
+    this.thumbnailsSrc = this.summitService.getThumbnailsSrc()
+    register();
   }
 
   favoriteIcon() : string{
     let name = ''
-    this.isFavorite ? name = 'heart' : name ='heart-outline'
+    this.summit.isFavorite ? name = 'heart' : name ='heart-outline'
     return name
   }
 
@@ -48,13 +52,12 @@ export class SummitDetailPage implements OnInit {
   }
 
   async addFavorite() {
-    this.isFavorite = !this.isFavorite
+    this.summit.isFavorite ? this.summit.isFavorite = !this.summit.isFavorite : this.summit.isFavorite = true
     await Haptics.impact({ style: ImpactStyle.Medium });
   }
 
   async openInAppBrowser(urlToOpen: string){
     await Browser.open({ url: urlToOpen });
   }
-  
 
 }

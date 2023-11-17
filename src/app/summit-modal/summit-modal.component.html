@@ -14,7 +14,14 @@
     </ion-toolbar>
   </ion-header> -->
   <ion-card>
-    <ion-card-content>{{summit.name}}</ion-card-content>
+    
+    <ion-card-content><ion-item lines="none">
+      <ion-buttons slot="start">
+        <ion-button (click) = cancel()>
+          <ion-icon name="chevron-back-circle-outline" slot="icon-only"></ion-icon>
+        </ion-button>
+      </ion-buttons>{{summit.name}}
+    </ion-item></ion-card-content>
   </ion-card>
   <ion-card style="height: 30%;">
     <ion-img [src]="summit.photoUrl" style="max-width: 100%; max-height: 100%;">
@@ -23,7 +30,4 @@
   <ion-card>
     <ion-card-content>{{summit.wikiDescription}}</ion-card-content>
   </ion-card>
-  <ion-button (click) = cancel()>
-    <ion-icon name="chevron-back-circle-outline"></ion-icon>
-  </ion-button>
 </ion-content>

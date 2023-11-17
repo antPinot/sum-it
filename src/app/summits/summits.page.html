@@ -27,6 +27,7 @@
           <ion-col>
             <strong>Massif</strong>
           </ion-col>
+          <ion-col></ion-col>
         </ion-row>
         <ion-row>
           <ion-col>
@@ -38,6 +39,13 @@
           <ion-col>
             <strong>{{summit.massif}}</strong>
           </ion-col>
+            <ion-col>
+              <ion-buttons style="z-index: 999;">
+                <ion-button (click)="addToFavorites(summit)">
+                  <ion-icon [name]="favoriteIcon(summit)" size="large"></ion-icon>
+                </ion-button>
+              </ion-buttons>
+            </ion-col>
         </ion-row>
       </ion-grid>
     </ion-card-content>
