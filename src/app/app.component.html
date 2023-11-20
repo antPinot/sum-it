@@ -6,7 +6,7 @@
       </ion-toolbar>
     </ion-header>
     <ion-content>
-      <ion-list lines="none">
+      <ion-list>
         <ion-item *ngFor="let route of allRoutes" routerDirection="root" [routerLink]="route.url">
           <ion-icon [name]="route.icon"></ion-icon>
           <ion-label>{{route.title}}</ion-label>

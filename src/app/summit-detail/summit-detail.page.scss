@@ -1,0 +1,16 @@
+ion-card{
+    --background:#f4f4f4;
+    ion-item{
+        @extend ion-card
+    }
+}
+
+.pictureButton{
+    --border-radius: 10px;
+    --color: black;
+    --background: white;
+    --background-hover: rgb(34, 147, 212);
+    ion-icon{
+        margin-right: 2%;
+    }
+}

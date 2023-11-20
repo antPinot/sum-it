@@ -1,12 +1,13 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Summit } from '../models/ISummit';
 import { SummitService } from '../services/summit/summit.service';
 import { register } from 'swiper/element/bundle';
 import { Camera, CameraResultType, Photo } from '@capacitor/camera';
 import { Haptics, ImpactStyle } from '@capacitor/haptics';
 import { Browser } from '@capacitor/browser';
-import { AlertController, ToastController } from '@ionic/angular';
+import { AlertController, ModalController, PopoverController, ToastController } from '@ionic/angular';
+import { GalleryModalComponent } from '../gallery-modal/gallery-modal.component';
 
 /**
  * Component matérialisant un sommet et ses informations détaillées
@@ -17,6 +18,7 @@ import { AlertController, ToastController } from '@ionic/angular';
   styleUrls: ['./summit-detail.page.scss'],
 })
 export class SummitDetailPage implements OnInit {
+
 
   /** Sommet dont les informations détaillées sont à afficher*/
   @Input()
@@ -31,7 +33,7 @@ export class SummitDetailPage implements OnInit {
   /**Lien wikipédia de l'article du sommet */
   protected summitWikiPage!: string
 
-  constructor(private activatedRoute: ActivatedRoute, private summitService: SummitService, private toastCtrl: ToastController, private alertCtrl: AlertController) { }
+  constructor(private activatedRoute: ActivatedRoute, private summitService: SummitService, private toastCtrl: ToastController, private alertCtrl: AlertController, private router:Router, private popoverCtrl:PopoverController) { }
 
   /**
    * Initialise la photo générale, la déscription wikipédia (extrait), le lien vers l'article wikipédia du sommet et la liste des url des icônes de sites de randonnée
@@ -56,6 +58,10 @@ export class SummitDetailPage implements OnInit {
     let name = ''
     this.summit.isFavorite ? name = 'heart' : name = 'heart-outline'
     return name
+  }
+
+  goBack(){
+    this.router.navigateByUrl('/summitlist')
   }
 
   /**
@@ -110,6 +116,19 @@ export class SummitDetailPage implements OnInit {
    */
   async openInAppBrowser(urlToOpen: string) {
     await Browser.open({ url: urlToOpen });
+  }
+
+  async enlargePictures(photoGalleryParam: string[]) {
+    const popover = await this.popoverCtrl.create({
+      component: GalleryModalComponent,
+      componentProps:{
+        photoGallery : photoGalleryParam
+      },
+    });
+
+    popover.style.cssText = "size=cover"
+
+    popover.present();
   }
 
 }
