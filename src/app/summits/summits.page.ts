@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { SummitService } from '../services/summit/summit.service';
 import { Summit } from '../models/ISummit';
 import { ToastController } from '@ionic/angular';
+import { BehaviorSubject } from 'rxjs';
 
 /**
  * Component matérialisant la liste de tous les sommets OU la liste des favoris
@@ -19,10 +20,10 @@ export class SummitsPage implements OnInit {
   protected title!: string
 
   /**Liste de tous les sommets */
-  protected summitList!: Summit[]
+  protected summitList$ = this.summitService.summitList$
 
   /**Booléen permettant d'initialiser le component avec la liste de tous les sommets ou uniquement la liste des favoris */
-  protected isFavorite!: boolean
+  // protected isFavorite!: boolean
 
   constructor(private utilsService: UtilsService, private router: Router, private summitService: SummitService, private toastCtrl: ToastController) { }
 
@@ -33,7 +34,7 @@ export class SummitsPage implements OnInit {
     this.title = this.utilsService.getTitleFromUrl(this.router.url)
     // this.router.url.includes('favorites') ? this.isFavorite = true : this.isFavorite = false
     // this.isFavorite ? this.summitList = this.summitService.getAllFavorites() : this.summitList = this.summitService.getSummitList();
-    this.router.url.includes('favorites') ? this.summitList = this.summitService.getAllFavorites() : this.summitList = this.summitService.getSummitList();
+    this.router.url.includes('favorites') ? this.summitService.getAllFavorites().subscribe() : this.summitService.getSummitList().subscribe();
   }
 
   /**
@@ -48,8 +49,9 @@ export class SummitsPage implements OnInit {
    * Ajoute un sommet aux favoris et notifie avec un toast en fond de page
    * @param summit
    */
-  async addToFavorites(summit: Summit) {
+  async addToFavorites(summit: Summit, event: Event) {
     this.summitService.addToFavorites(summit)
+    event.stopPropagation();
     const toast = await this.toastCtrl.create({
       message: summit.isFavorite ? 'Ce sommet a été ajouté à vos favoris' : 'Ce sommet a été retiré de vos favoris',
       duration: 2000,
