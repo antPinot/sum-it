@@ -1,10 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-menu-button slot="start"></ion-menu-button>
-    <ion-title>
-      {{title}}
-    </ion-title>
+    <ion-title> {{title}} </ion-title>
   </ion-toolbar>
+  <!-- Searchbar avec autocomplétion (NON IMPLEMENTE) -->
+  <ion-searchbar
+    debounce="500"
+    (ionInput)="getItems($event)"
+    style="z-index: 900"
+    placeholder="Entrez un lieu"
+  >
+    <ion-list *ngIf="isItemAvailable">
+      <ion-item *ngFor="let option of autocompleteList | async">
+        {{ option }}
+      </ion-item>
+    </ion-list>
+  </ion-searchbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
@@ -14,19 +25,11 @@
     </ion-toolbar>
   </ion-header>
 
-  <!-- Searchbar avec autocomplétion (NON IMPLEMENTE) -->
-  <!-- <ion-searchbar debounce="500" (ionInput)="getItems($event)" style="z-index: 900;">
-    <ion-list *ngIf="isItemAvailable">
-      <ion-item>
-        <ion-select  interface="popover" placeholder="Entrez un lieu">
-          <ion-select-option *ngFor="let option of autocompleteList | async"> {{ option }}</ion-select-option>
-        </ion-select>
-     </ion-item>
-    </ion-list>
-  </ion-searchbar> -->
-
-  <div style="height: 100%; width: 100%;" leaflet [leafletOptions]="options" [leafletLayersControl]="layersControl"
-    (leafletMapReady)="onMapReady($event)">
-  </div>
-
+  <div
+    style="height: 100%; width: 100%"
+    leaflet
+    [leafletOptions]="options"
+    [leafletLayersControl]="layersControl"
+    (leafletMapReady)="onMapReady($event)"
+  ></div>
 </ion-content>

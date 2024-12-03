@@ -48,7 +48,7 @@
       <ion-grid>
         <ion-row>
           <ion-col *ngFor="let link of summit.linksUrl; let i = index">
-            <ion-button (click)="openInAppBrowser(link)" fill="clear"><ion-thumbnail><ion-img style="--border-radius : 10px; object-fit: content;" 
+            <ion-button (click)="openInAppBrowser(link)" fill="clear"><ion-thumbnail><ion-img style="--border-radius : 10px; object-fit: content;"
                   [src]="thumbnailsSrc[i]"></ion-img> </ion-thumbnail></ion-button>
           </ion-col>
         </ion-row>

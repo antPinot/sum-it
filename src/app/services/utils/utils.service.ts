@@ -49,10 +49,10 @@ export class UtilsService {
   }
 
   /**
-   * Méthode pour l'autocomplétion (NON IMPLEMENTE)
-   * 
-   * @param userQuery 
-   * @returns 
+   * Méthode pour l'autocomplétion
+   *
+   * @param userQuery
+   * @returns
    */
   findByUserQueryWithPhotonAPI(userQuery: string): Observable<FeatureCollection<Geometry, GeoJsonProperties>> {
     return this.http.get<FeatureCollection>(`${this.photonBaseUrl}?q=${userQuery}`).pipe(
@@ -60,9 +60,7 @@ export class UtilsService {
         let adressesResults: Adresse[] = [];
         photonResultsGEOJSON.features.forEach((singleResult: Feature) => {
           let adresse: Adresse = {
-            numero: singleResult.properties?.['housenumber'],
-            voie: singleResult.properties?.['street'],
-            codePostal: singleResult.properties?.['postcode'],
+            name:singleResult.properties?.['name'],
             ville: singleResult.properties?.['city'],
             departement: singleResult.properties?.['county'],
             pays: singleResult.properties?.['country']
@@ -78,26 +76,25 @@ export class UtilsService {
         })
 
         let adressesFormatted: string[] = []
-        adressesResults.forEach((a) => adressesFormatted.push(this.displayAdresse(a)))
+        for (let i = 0; i <4; i++) {
+          adressesFormatted.push(this.displayAdresse(adressesResults[i]))
+          console.log(adressesResults[i])
+        }
+        // adressesResults.forEach((a) => adressesFormatted.push(this.displayAdresse(a)))
         this.listAdressesForAutocomplete$.next(adressesFormatted)
       }))
   }
 
   /**
-   * Méthode pour l'autocomplétion (NON IMPLEMENTE)
-   * 
-   * @param adresse 
-   * @returns 
+   * Méthode pour l'autocomplétion
+   *
+   * @param adresse
+   * @returns
    */
   displayAdresse(adresse: Adresse): string {
     if (adresse !== null) {
-      let complementNum: boolean;
-      adresse.complementNumero ? complementNum = true : complementNum = false;
-      return complementNum ? `${adresse.numero} ${adresse.complementNumero} ${adresse.voie} ${adresse.codePostal} ${adresse.ville} ${adresse.departement} ${adresse.pays} ` : `${adresse.numero} ${adresse.voie} ${adresse.codePostal} ${adresse.ville} ${adresse.departement} ${adresse.pays} `
+      return Object.values(adresse).filter((v) => v).join(' ')
     }
     return '';
   }
-
-
-
 }
