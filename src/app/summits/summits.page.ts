@@ -31,13 +31,14 @@ export class SummitsPage implements OnInit {
    */
   ngOnInit() {
     this.title = this.utilsService.getTitleFromUrl(this.router.url)
-    this.router.url.includes('favorites') ? this.isFavorite = true : this.isFavorite = false
-    this.isFavorite ? this.summitList = this.summitService.getAllFavorites() : this.summitList = this.summitService.getSummitList();
+    // this.router.url.includes('favorites') ? this.isFavorite = true : this.isFavorite = false
+    // this.isFavorite ? this.summitList = this.summitService.getAllFavorites() : this.summitList = this.summitService.getSummitList();
+    this.router.url.includes('favorites') ? this.summitList = this.summitService.getAllFavorites() : this.summitList = this.summitService.getSummitList();
   }
 
   /**
    * Navigue vers le component d'affichage des informations détaillées d'un sommet
-   * @param summit 
+   * @param summit
    */
   showDetail(summit: Summit) {
     this.router.navigateByUrl(`summitlist/summit-detail/${summit.id}`)
@@ -45,7 +46,7 @@ export class SummitsPage implements OnInit {
 
   /**
    * Ajoute un sommet aux favoris et notifie avec un toast en fond de page
-   * @param summit 
+   * @param summit
    */
   async addToFavorites(summit: Summit) {
     this.summitService.addToFavorites(summit)
@@ -60,8 +61,8 @@ export class SummitsPage implements OnInit {
 
   /**
    * Récupère les icônes favoris des sommets et modifie l'icône en fonction
-   * @param summit 
-   * @returns 
+   * @param summit
+   * @returns
    */
   favoriteIcon(summit: Summit): string {
     let name = ''
