@@ -9,6 +9,7 @@ import { ModalController } from '@ionic/angular';
 import { SummitModalComponent } from '../summit-modal/summit-modal.component';
 import { Summit } from '../models/ISummit';
 import 'leaflet-control-geocoder/dist/Control.Geocoder.js';
+import { Adresse } from '../models/IAdresse';
 
 /**
  * Composant de la page d'accueil qui contient notamment
@@ -21,6 +22,7 @@ import 'leaflet-control-geocoder/dist/Control.Geocoder.js';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
+
   /**Titre de la page */
   protected title!: string;
 
@@ -30,8 +32,13 @@ export class HomePage implements OnInit {
   /**Marqueurs de sommets */
   protected summitMarkers: Marker[] = [];
 
-  /** */
-  // protected summitToDisplay!: Summit
+  /** Pour l'autocomplémtion (Non implémenté)*/
+  protected isItemAvailable = false;
+
+  /**Liste des adresses proposées pour l'autocomplétion (Non implémenté) */
+  protected autocompleteList = this.utilsService.listAdressesForAutocomplete$;
+
+  protected coordinates = this.utilsService.coordinates$;
 
   /**Couche Open Street Map */
   protected openStreetMap: L.TileLayer = tileLayer(
@@ -72,7 +79,7 @@ export class HomePage implements OnInit {
   });
 
   constructor(
-    private utilsService: UtilsService,
+    protected utilsService: UtilsService,
     private router: Router,
     private summitService: SummitService,
     private modalCtrl: ModalController
@@ -200,11 +207,7 @@ export class HomePage implements OnInit {
     modal.present();
   }
 
-  /** Pour l'autocomplémtion (Non implémenté)*/
-  protected isItemAvailable = false;
 
-  /**Liste des adresses proposées pour l'autocomplétion (Non implémenté) */
-  protected autocompleteList = this.utilsService.listAdressesForAutocomplete$;
 
   getItems(event: any) {
     this.autocomplete(event.target.value != null ? event.target.value : '');
@@ -219,5 +222,10 @@ export class HomePage implements OnInit {
    */
   autocomplete(userQuery: string) {
     this.utilsService.findByUserQueryWithPhotonAPI(userQuery).subscribe();
+  }
+
+  selectedQuery(option : Adresse) {
+    if (option.point)
+      this.map.panTo(latLng(option.point?.coordinates[1], option.point.coordinates[0]))
   }
 }

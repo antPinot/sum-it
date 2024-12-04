@@ -24,7 +24,7 @@ export class UtilsService {
   private photonBaseUrl = 'https://photon.komoot.io/api/'
 
   /** Observable de la liste des adresses pour l'autocomplétion (NON IMPLEMENTE) */
-  public listAdressesForAutocomplete$ = new BehaviorSubject<string[]>([]);
+  public listAdressesForAutocomplete$ = new BehaviorSubject<Adresse[]>([]);
 
   /** Coordonées de l'adresse saisie par l'utilisateur (NON IMPLEMENTE) */
   public coordinates$ = new BehaviorSubject<Point>({ type: 'Point', coordinates: [] })
@@ -55,7 +55,7 @@ export class UtilsService {
    * @returns
    */
   findByUserQueryWithPhotonAPI(userQuery: string): Observable<FeatureCollection<Geometry, GeoJsonProperties>> {
-    return this.http.get<FeatureCollection>(`${this.photonBaseUrl}?q=${userQuery}`).pipe(
+    return this.http.get<FeatureCollection>(`${this.photonBaseUrl}?q=${userQuery}&limit=4`).pipe(
       tap((photonResultsGEOJSON: FeatureCollection) => {
         let adressesResults: Adresse[] = [];
         photonResultsGEOJSON.features.forEach((singleResult: Feature) => {
@@ -63,25 +63,21 @@ export class UtilsService {
             name:singleResult.properties?.['name'],
             ville: singleResult.properties?.['city'],
             departement: singleResult.properties?.['county'],
-            pays: singleResult.properties?.['country']
+            pays: singleResult.properties?.['country'],
           };
-          adressesResults.push(adresse);
           if (singleResult.geometry.type === 'Point') {
             let coordinates: Point = {
               type: 'Point',
               coordinates: [singleResult.geometry?.['coordinates'][0], singleResult.geometry?.['coordinates'][1]]
             };
-            this.coordinates$.next(coordinates);
+            adresse.point = coordinates
           }
+          adressesResults.push(adresse);
         })
 
-        let adressesFormatted: string[] = []
-        for (let i = 0; i <4; i++) {
-          adressesFormatted.push(this.displayAdresse(adressesResults[i]))
-          console.log(adressesResults[i])
-        }
+        // let adressesFormatted: string[] = []
         // adressesResults.forEach((a) => adressesFormatted.push(this.displayAdresse(a)))
-        this.listAdressesForAutocomplete$.next(adressesFormatted)
+        this.listAdressesForAutocomplete$.next(adressesResults)
       }))
   }
 

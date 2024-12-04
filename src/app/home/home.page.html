@@ -9,13 +9,13 @@
     (ionInput)="getItems($event)"
     style="z-index: 900"
     placeholder="Entrez un lieu"
-  >
+  ></ion-searchbar>
     <ion-list *ngIf="isItemAvailable">
-      <ion-item *ngFor="let option of autocompleteList | async">
-        {{ option }}
+      <ion-item *ngFor="let option of autocompleteList | async" button (click)="selectedQuery(option)">
+        {{ this.utilsService.displayAdresse(option) }}
       </ion-item>
     </ion-list>
-  </ion-searchbar>
+
 </ion-header>
 
 <ion-content [fullscreen]="true">
