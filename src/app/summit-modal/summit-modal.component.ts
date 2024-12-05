@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
 
 /**
  * Component matérialisant un ion-modal affichant les informations condensées d'un sommet
- * 
+ *
  */
 @Component({
   selector: 'app-summit-modal',
@@ -14,25 +14,33 @@ import { Router } from '@angular/router';
   styleUrls: ['./summit-modal.component.scss'],
 })
 export class SummitModalComponent implements OnInit {
-
   /**Sommet dont les informations sont à afficher de façon condensée */
-  protected summit!: Summit
+  protected summit!: Summit;
 
-  constructor(private modalCtrl: ModalController, private summitService: SummitService, private router: Router) { }
+  constructor(
+    private modalCtrl: ModalController,
+    private summitService: SummitService,
+    private router: Router
+  ) {}
 
   /**
    * Initialise le component avec l'extrait wikipédia et la photo générale du sommet
    */
   ngOnInit() {
-    this.summitService.getExtractFromWikipedia(this.summit.name).subscribe(() => {
-      this.summit.photoUrl = this.summitService.summitImageUrl$.getValue()
-      this.summit.wikiDescription = this.summitService.summitWikiDescription$.getValue()
-    })
-  }
+    let wikipediaQuery : string = ""
+    this.summit.wikipediaUri != null ? wikipediaQuery = this.summit.wikipediaUri : wikipediaQuery = this.summit.name
+    this.summitService.getExtractFromWikipedia(wikipediaQuery)
+        .subscribe(() => {
+          this.summit.photoUrl = this.summitService.summitImageUrl$.getValue();
+          this.summit.wikiDescription =
+            this.summitService.summitWikiDescription$.getValue();
+        });
+    }
+
 
   /**
    * Annule
-   * @returns 
+   * @returns
    */
   cancel() {
     return this.modalCtrl.dismiss(null, 'cancel');
@@ -40,7 +48,7 @@ export class SummitModalComponent implements OnInit {
 
   /**
    * Confirme
-   * @returns 
+   * @returns
    */
   confirm() {
     return this.modalCtrl.dismiss(null, 'confirm');
@@ -48,10 +56,11 @@ export class SummitModalComponent implements OnInit {
 
   /**
    * Navigue vers le component affichant les informations détaillées du sommet et ferme le ion-modal
-   * @param summit 
+   * @param summit
    */
   displayDetails(summit: Summit) {
-    this.router.navigateByUrl(`/summitlist/summit-detail/${summit.id}`).finally(() => this.cancel())
+    this.router
+      .navigateByUrl(`/summitlist/summit-detail/${summit.id}`)
+      .finally(() => this.cancel());
   }
-
 }

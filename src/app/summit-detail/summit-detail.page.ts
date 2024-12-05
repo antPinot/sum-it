@@ -40,7 +40,11 @@ export class SummitDetailPage implements OnInit {
    */
   ngOnInit() {
     this.summit = this.summitService.getSummitById(this.activatedRoute.snapshot.paramMap.get('id') as string)
-    this.summitService.getExtractFromWikipedia(this.summit.name).subscribe(() => {
+    console.log(this.summit)
+    console.log(this.summit.wikipediaUri != null)
+    let wikipediaQuery : string = ""
+    this.summit.wikipediaUri != null ? wikipediaQuery = this.summit.wikipediaUri : wikipediaQuery = this.summit.name
+    this.summitService.getExtractFromWikipedia(wikipediaQuery).subscribe(() => {
       this.summit.photoUrl = this.summitService.summitImageUrl$.getValue()
       this.summit.wikiDescription = this.summitService.summitWikiDescription$.getValue()
       this.summitWikiPage = this.summitService.summitWikiPage$.getValue()

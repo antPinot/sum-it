@@ -1,3 +1,4 @@
+import { Point } from "geojson"
 import { LatLng } from "leaflet"
 
 /**
@@ -6,10 +7,11 @@ import { LatLng } from "leaflet"
 export interface Summit{
     id: string,
     name: string,
-    altitude: number,
-    massif: string,
-    coordinates?: LatLng
+    elevation?: number,
+    massif?: string,
+    geometry: Point,
     photoUrl?: string,
+    wikipediaUri?:string,
     wikiDescription?: string,
     linksUrl?: string[]
     photoGallery?: string[],

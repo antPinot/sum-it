@@ -74,9 +74,6 @@ export class UtilsService {
           }
           adressesResults.push(adresse);
         })
-
-        // let adressesFormatted: string[] = []
-        // adressesResults.forEach((a) => adressesFormatted.push(this.displayAdresse(a)))
         this.listAdressesForAutocomplete$.next(adressesResults)
       }))
   }

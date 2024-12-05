@@ -140,52 +140,7 @@ export class HomePage implements OnInit {
 
     this.map.addControl(new locateButton());
 
-    // Ajout geocoder pour recherche de lieu (via API Nominatim)
-    // let geoCoderOptions = {
-    //   collapsed: false,
-    //   geocoder: (L.Control as any).Geocoder.nominatim({
-    //     geocodingQueryParams: {
-    //       countrycodes: 'fr',
-    //     },
-    //   }),
-    // };
-
-    // (L.Control as any).geocoder(geoCoderOptions).addTo(map);
-
-    /** Ion Search bar substituée par la barre de recherche geocoder (cf ci-dessous) */
-    // let SearchBar = L.Control.extend({
-    //   onAdd: () => {
-    //     let container = L.DomUtil.create(
-    //       'ion-searchbar',
-    //       'leaflet-bar searchBar'
-    //     );
-    //     container.placeholder = 'Entrez un lieu';
-    //     return container;
-    //   },
-    // });
-
-    // this.map.addControl(new SearchBar());
-
-    //Ajoute un marqueur pour tous les sommets de l'application et
-    //ajoute un listener sur chaque marqueur pour ouvrir un ion-modal
-    this.summitService.getCoordinates().forEach((coordinate) => {
-      let summitMarker: Marker;
-      summitMarker = marker([coordinate.lat, coordinate.lng], {
-        icon: icon({
-          ...Icon.Default.prototype.options,
-          iconUrl: '../../assets/icon/marker-icon.png',
-          iconRetinaUrl: '../../assets/icon/marker-icon-2x.png',
-          shadowUrl: '../../assets/icon/marker-shadow.png',
-        }),
-      });
-      summitMarker.addTo(this.map);
-      summitMarker.addEventListener('click', (ev) => {
-        this.summitService
-          .summitModalToDisplay(ev.latlng)
-          .then((s) => this.openSummitModal(s));
-      });
-      this.summitMarkers.push(summitMarker);
-    });
+    this.summitService.getSummitList().subscribe(() => this.addMarkers());
 
   }
 
@@ -206,6 +161,30 @@ export class HomePage implements OnInit {
     });
     modal.present();
   }
+
+  //Ajoute un marqueur pour tous les sommets de l'application et
+  //ajoute un listener sur chaque marqueur pour ouvrir un ion-modal
+    addMarkers(){
+      this.summitService.summitList$.value.forEach((s) => {
+        let summitMarker: Marker;
+        summitMarker = marker([s.geometry.coordinates[1], s.geometry.coordinates[0]], {
+          icon: icon({
+            ...Icon.Default.prototype.options,
+            iconUrl: '../../assets/icon/marker-icon.png',
+            iconRetinaUrl: '../../assets/icon/marker-icon-2x.png',
+            shadowUrl: '../../assets/icon/marker-shadow.png',
+          }),
+        });
+        summitMarker.addTo(this.map);
+        summitMarker.addEventListener('click', (ev) => {
+          this.summitService
+            .summitModalToDisplay(ev.latlng)
+            .then((s) => this.openSummitModal(s));
+        });
+        this.summitMarkers.push(summitMarker);
+      });
+      console.log(this.summitService.summitList$.value.length)
+    }
 
 
 
