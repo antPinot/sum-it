@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import * as L from 'leaflet';
 import { LatLng, latLng } from 'leaflet';
-import { BehaviorSubject, filter, map, Observable, tap } from 'rxjs';
+import { BehaviorSubject, filter, from, map, mergeMap, Observable, tap } from 'rxjs';
 import { Summit } from 'src/app/models/ISummit';
 
 /**
@@ -92,7 +92,10 @@ export class SummitService {
    *
    * @returns Liste de tous les sommets
    */
-  getSummitList() : Observable<Summit[]> {
+  getSummitList(limitResults?: number) : Observable<Summit[]> {
+    if (this.summitList$.getValue().length != 0){
+      return this.summitList$.pipe(map(s => limitResults ? s.slice(0,limitResults) : s))
+    }
     return this.http.get<Summit[]>(`${this.baseUrl}all`).pipe(
       tap(summits => this.summitList$.next(summits)));
   }
@@ -126,19 +129,6 @@ export class SummitService {
     })
     );
   }
-
-  /**
-   * Récupère les coordonnées de tous les sommets
-   *
-   * @returns Tableau de coordonnées (latitude, longitude)
-   */
-  // getCoordinates(): LatLng[] {
-  //   let coordinatesList: LatLng[] = []
-  //   this.summitList$.value.forEach((s) => {
-  //       coordinatesList.push(s.coordinates)
-  //   })
-  //   return coordinatesList;
-  // }
 
   /**
    * Permet d'ouvrir un ion-modal avec les informations condensées d'un sommet

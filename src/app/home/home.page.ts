@@ -183,7 +183,6 @@ export class HomePage implements OnInit {
         });
         this.summitMarkers.push(summitMarker);
       });
-      console.log(this.summitService.summitList$.value.length)
     }
 
 

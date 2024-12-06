@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { UtilsService } from './services/utils/utils.service';
+import { SummitService } from './services/summit/summit.service';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,7 @@ import { UtilsService } from './services/utils/utils.service';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+
   constructor(private utilsService : UtilsService) {}
 
   public allRoutes = this.utilsService.getAllRoutes()

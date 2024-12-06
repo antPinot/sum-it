@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { SummitService } from '../services/summit/summit.service';
 import { Summit } from '../models/ISummit';
 import { ToastController } from '@ionic/angular';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable, take, takeUntil } from 'rxjs';
 
 /**
  * Component matérialisant la liste de tous les sommets OU la liste des favoris
@@ -20,7 +20,7 @@ export class SummitsPage implements OnInit {
   protected title!: string
 
   /**Liste de tous les sommets */
-  protected summitList$ = this.summitService.summitList$
+  protected summitList$ = new Observable<Summit[]>()
 
   /**Booléen permettant d'initialiser le component avec la liste de tous les sommets ou uniquement la liste des favoris */
   // protected isFavorite!: boolean
@@ -32,13 +32,11 @@ export class SummitsPage implements OnInit {
    */
   ngOnInit() {
     this.title = this.utilsService.getTitleFromUrl(this.router.url)
-    // this.router.url.includes('favorites') ? this.isFavorite = true : this.isFavorite = false
-    // this.isFavorite ? this.summitList = this.summitService.getAllFavorites() : this.summitList = this.summitService.getSummitList();
-    this.router.url.includes('favorites') ? this.summitService.getAllFavorites().subscribe() : this.summitService.getSummitList().subscribe();
+    this.router.url.includes('favorites') ? this.summitList$ = this.summitService.getAllFavorites() : this.summitList$ = this.summitService.getSummitList(50);
   }
 
   /**
-   * Navigue vers le component d'affichage des informations détaillées d'un sommet
+   * Navigue vers le component d'affichage des informations détaillées d'un sommetC
    * @param summit
    */
   showDetail(summit: Summit) {
