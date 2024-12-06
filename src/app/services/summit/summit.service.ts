@@ -100,6 +100,10 @@ export class SummitService {
       tap(summits => this.summitList$.next(summits)));
   }
 
+  loadMoreOfSummitList(currentObservable : Observable<Summit[]>): Observable<Summit[]>{
+    return currentObservable.pipe(map((obs) => obs.concat(this.summitList$.getValue().slice(obs.length, (obs.length + 50)))))
+  }
+
   /**
    * Recherche un sommet par id
    *

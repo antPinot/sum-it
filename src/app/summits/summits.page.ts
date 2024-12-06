@@ -3,8 +3,8 @@ import { UtilsService } from '../services/utils/utils.service';
 import { Router } from '@angular/router';
 import { SummitService } from '../services/summit/summit.service';
 import { Summit } from '../models/ISummit';
-import { ToastController } from '@ionic/angular';
-import { BehaviorSubject, Observable, take, takeUntil } from 'rxjs';
+import { InfiniteScrollCustomEvent, ToastController } from '@ionic/angular';
+import { BehaviorSubject, map, Observable, take, takeUntil, tap } from 'rxjs';
 
 /**
  * Component matérialisant la liste de tous les sommets OU la liste des favoris
@@ -15,6 +15,7 @@ import { BehaviorSubject, Observable, take, takeUntil } from 'rxjs';
   styleUrls: ['./summits.page.scss'],
 })
 export class SummitsPage implements OnInit {
+
 
   /**Titre de la page */
   protected title!: string
@@ -68,6 +69,11 @@ export class SummitsPage implements OnInit {
     let name = ''
     summit.isFavorite ? name = 'heart' : name = 'heart-outline'
     return name
+  }
+
+  loadMoreSummits(ev : InfiniteScrollCustomEvent) {
+    this.summitList$ = this.summitService.loadMoreOfSummitList(this.summitList$)
+    setTimeout(() => ev.target.complete(), 500)
   }
 
 }
