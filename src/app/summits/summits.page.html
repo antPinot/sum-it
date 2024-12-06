@@ -1,14 +1,15 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-menu-button slot="start"></ion-menu-button>
-    <ion-title>
-      {{title}}
-    </ion-title>
+    <ion-title> {{title}} </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-card (click)="showDetail(summit)" *ngFor="let summit of summitList$ | async">
+  <ion-card
+    (click)="showDetail(summit)"
+    *ngFor="let summit of summitList$ | async"
+  >
     <ion-card-content>
       <ion-grid>
         <ion-row>
@@ -24,15 +25,9 @@
           <ion-col></ion-col>
         </ion-row>
         <ion-row>
-          <ion-col>
-            {{summit.name}}
-          </ion-col>
-          <ion-col>
-            {{summit.elevation}}m
-          </ion-col>
-          <ion-col>
-            {{summit.massif}}
-          </ion-col>
+          <ion-col> {{summit.name}} </ion-col>
+          <ion-col> {{summit.elevation}}m </ion-col>
+          <ion-col> {{summit.massif}} </ion-col>
           <ion-col>
             <ion-buttons>
               <ion-button (click)="addToFavorites(summit, $event)">
@@ -44,5 +39,7 @@
       </ion-grid>
     </ion-card-content>
   </ion-card>
-  <ion-infinite-scroll (ionInfinite)="loadMoreSummits($event)"><ion-infinite-scroll-content></ion-infinite-scroll-content></ion-infinite-scroll>
+  <ion-infinite-scroll (ionInfinite)="loadMoreSummits($event)"
+    ><ion-infinite-scroll-content></ion-infinite-scroll-content
+  ></ion-infinite-scroll>
 </ion-content>

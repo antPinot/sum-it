@@ -8,6 +8,7 @@ import { Haptics, ImpactStyle } from '@capacitor/haptics';
 import { Browser } from '@capacitor/browser';
 import { AlertController, ModalController, PopoverController, ToastController } from '@ionic/angular';
 import { GalleryModalComponent } from '../gallery-modal/gallery-modal.component';
+import { Location } from '@angular/common';
 
 /**
  * Component matérialisant un sommet et ses informations détaillées
@@ -33,7 +34,7 @@ export class SummitDetailPage implements OnInit {
   /**Lien wikipédia de l'article du sommet */
   protected summitWikiPage!: string
 
-  constructor(private activatedRoute: ActivatedRoute, private summitService: SummitService, private toastCtrl: ToastController, private alertCtrl: AlertController, private router:Router, private popoverCtrl:PopoverController) { }
+  constructor(private activatedRoute: ActivatedRoute, private summitService: SummitService, private toastCtrl: ToastController, private alertCtrl: AlertController, private location:Location, private popoverCtrl:PopoverController) { }
 
   /**
    * Initialise la photo générale, la déscription wikipédia (extrait), le lien vers l'article wikipédia du sommet et la liste des url des icônes de sites de randonnée
@@ -64,8 +65,9 @@ export class SummitDetailPage implements OnInit {
     return name
   }
 
+
   goBack(){
-    this.router.navigateByUrl('/summitlist')
+    this.location.back()
   }
 
   /**
