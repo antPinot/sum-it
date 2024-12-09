@@ -1,42 +1,55 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Feature, FeatureCollection, GeoJsonProperties, Geometry, Point } from 'geojson';
+import {
+  Feature,
+  FeatureCollection,
+  GeoJsonProperties,
+  Geometry,
+  Point,
+} from 'geojson';
 import { BehaviorSubject, Observable, tap } from 'rxjs';
 import { Adresse } from 'src/app/models/IAdresse';
+import { Summit } from 'src/app/models/ISummit';
 
 /**
  * Service fournissant des méthodes utiles
  * (Ex: Récupération des routes)
  */
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UtilsService {
-
   /** Routes de navigation de l'application */
   private allRoutes = [
     { title: 'Accueil', url: '/home', icon: 'home-outline' },
-    { title: 'Liste des sommets', url: '/summitlist', icon: 'triangle-outline' },
+    {
+      title: 'Liste des sommets',
+      url: '/summitlist',
+      icon: 'triangle-outline',
+    },
     { title: 'Favoris', url: '/favorites', icon: 'heart-outline' },
   ];
 
   /** URL de base de requêtage de l'API Photon pour l'autocomplétion (NON IMPLEMENTE) */
-  private photonBaseUrl = 'https://photon.komoot.io/api/'
+  private photonBaseUrl = 'https://photon.komoot.io/api/';
 
   /** Observable de la liste des adresses pour l'autocomplétion (NON IMPLEMENTE) */
   public listAdressesForAutocomplete$ = new BehaviorSubject<Adresse[]>([]);
 
   /** Coordonées de l'adresse saisie par l'utilisateur (NON IMPLEMENTE) */
-  public coordinates$ = new BehaviorSubject<Point>({ type: 'Point', coordinates: [] })
+  public coordinates$ = new BehaviorSubject<Point>({
+    type: 'Point',
+    coordinates: [],
+  });
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   /**
    * Récupère toutes les routes de l'application
    * @returns Tableau de routes
    */
   getAllRoutes() {
-    return this.allRoutes
+    return this.allRoutes;
   }
 
   /***
@@ -45,7 +58,10 @@ export class UtilsService {
    * @returns Titre associé
    */
   getTitleFromUrl(url: string): string {
-    return this.allRoutes.filter((r) => r.url.includes(url)).map((r) => r.title).reduce(t => t)
+    return this.allRoutes
+      .filter((r) => r.url.includes(url))
+      .map((r) => r.title)
+      .reduce((t) => t);
   }
 
   /**
@@ -54,28 +70,36 @@ export class UtilsService {
    * @param userQuery
    * @returns
    */
-  findByUserQueryWithPhotonAPI(userQuery: string): Observable<FeatureCollection<Geometry, GeoJsonProperties>> {
-    return this.http.get<FeatureCollection>(`${this.photonBaseUrl}?q=${userQuery}&limit=4`).pipe(
-      tap((photonResultsGEOJSON: FeatureCollection) => {
-        let adressesResults: Adresse[] = [];
-        photonResultsGEOJSON.features.forEach((singleResult: Feature) => {
-          let adresse: Adresse = {
-            name:singleResult.properties?.['name'],
-            ville: singleResult.properties?.['city'],
-            departement: singleResult.properties?.['county'],
-            pays: singleResult.properties?.['country'],
-          };
-          if (singleResult.geometry.type === 'Point') {
-            let coordinates: Point = {
-              type: 'Point',
-              coordinates: [singleResult.geometry?.['coordinates'][0], singleResult.geometry?.['coordinates'][1]]
+  findByUserQueryWithPhotonAPI(
+    userQuery: string
+  ): Observable<FeatureCollection<Geometry, GeoJsonProperties>> {
+    return this.http
+      .get<FeatureCollection>(`${this.photonBaseUrl}?q=${userQuery}&limit=4`)
+      .pipe(
+        tap((photonResultsGEOJSON: FeatureCollection) => {
+          let adressesResults: Adresse[] = [];
+          photonResultsGEOJSON.features.forEach((singleResult: Feature) => {
+            let adresse: Adresse = {
+              name: singleResult.properties?.['name'],
+              ville: singleResult.properties?.['city'],
+              departement: singleResult.properties?.['county'],
+              pays: singleResult.properties?.['country'],
             };
-            adresse.point = coordinates
-          }
-          adressesResults.push(adresse);
+            if (singleResult.geometry.type === 'Point') {
+              let coordinates: Point = {
+                type: 'Point',
+                coordinates: [
+                  singleResult.geometry?.['coordinates'][0],
+                  singleResult.geometry?.['coordinates'][1],
+                ],
+              };
+              adresse.point = coordinates;
+            }
+            adressesResults.push(adresse);
+          });
+          this.listAdressesForAutocomplete$.next(adressesResults);
         })
-        this.listAdressesForAutocomplete$.next(adressesResults)
-      }))
+      );
   }
 
   /**
@@ -86,8 +110,34 @@ export class UtilsService {
    */
   displayAdresse(adresse: Adresse): string {
     if (adresse !== null) {
-      return Object.values(adresse).filter((v) => v).join(' ')
+      return Object.values(adresse)
+        .filter((v) => v)
+        .join(' ');
     }
     return '';
+  }
+
+  ascendingSummitSorter(a: Summit, b: Summit) {
+    if (a.name < b.name) {
+      return -1;
+    } else if (a.name > b.name) {
+      return 1;
+    }
+    return 0;
+  }
+
+  elevationSummitSorter(a: Summit, b: Summit) {
+    if (a.elevation < b.elevation) return -1;
+    if (a.elevation > b.elevation) return 1;
+    return 0;
+  }
+
+  massifSummitSorter(a: Summit, b: Summit) {
+    if (a.massif === undefined && b.massif === undefined) return 0;
+    if (a.massif === undefined) return 1;
+    if (b.massif === undefined) return -1;
+    if (a.massif < b.massif) return -1;
+    if (a.massif > b.massif) return 1;
+    return 0;
   }
 }

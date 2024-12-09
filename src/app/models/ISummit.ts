@@ -7,7 +7,7 @@ import { LatLng } from "leaflet"
 export interface Summit{
     id: string,
     name: string,
-    elevation?: number,
+    elevation: number,
     massif?: string,
     geometry: Point,
     photoUrl?: string,

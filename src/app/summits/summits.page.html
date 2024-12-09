@@ -6,6 +6,15 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item>
+      <ion-select label="Trier par : " (ionChange)="handleChangeOnSort($event)">
+        <ion-select-option value="ordre alphabetique">Ordre alphabétique</ion-select-option>
+        <ion-select-option value="altitude">Altitude croissante</ion-select-option>
+        <ion-select-option value="massif">Massif</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
   <ion-card
     (click)="showDetail(summit)"
     *ngFor="let summit of summitList$ | async"
@@ -40,6 +49,6 @@
     </ion-card-content>
   </ion-card>
   <ion-infinite-scroll (ionInfinite)="loadMoreSummits($event)"
-    ><ion-infinite-scroll-content></ion-infinite-scroll-content
+    ><ion-infinite-scroll-content loadingText="Chargement en cours..." loadingSpinner="bubbles"></ion-infinite-scroll-content
   ></ion-infinite-scroll>
 </ion-content>
