@@ -1,0 +1,6858 @@
+[
+  {
+    "name": "Aiguille Centrale d'Arves",
+    "ele": 3513,
+    "coordinates": [
+      6.3364559,
+      45.1272656
+    ],
+    "photoUrl": "https://s1.qwant.com/thumbr/474x631/0/a/062a45425f4adbb4738069159211e42beede64959d606890b6ec127c3952dc/th.jpg?u=https%3A%2F%2Ftse1.explicit.bing.net%2Fth%3Fid%3DOIP.nwS1exFg8nx5reQd2oT0bgHaJ3%26pid%3DApi&q=0&b=1&p=0&a=0"
+  },
+  {
+    "wikipediaUri": "fr:Aiguille de Chambeyron",
+    "name": "Aiguille de Chambeyron",
+    "ele": 3412,
+    "coordinates": [
+      6.8561426,
+      44.5476021
+    ],
+    "photoUrl": "https://s1.qwant.com/thumbr/474x315/1/7/162a6488714c2929a400e72a7993bda76082463477c2c162e9fdd05d603de6/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.Jx5ILHI2aiBhy6SVyi_fxwHaE7%26pid%3DApi&q=0&b=1&p=0&a=0"
+  },
+  {
+    "wikipediaUri": "it:Aiguille de la Grande Sassière",
+    "name": "Aiguille de la Grande Sassière",
+    "ele": 3747,
+    "coordinates": [
+      6.9998427,
+      45.5049956
+    ],
+    "photoUrl": "https://s2.qwant.com/thumbr/474x316/d/9/ad22a8f55e4d5335bbcfc846c7247e9f948d51f1d4cbbaf97be681748c1f90/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.mOFP2v-QxMz8FIlGUf-JYAHaE8%26pid%3DApi&q=0&b=1&p=0&a=0"
+  },
+  {
+    "name": "Aiguille de Péclet",
+    "ele": 3561,
+    "coordinates": [
+      6.6240193,
+      45.2813645
+    ],
+    "photoUrl": "https://s2.qwant.com/thumbr/474x316/d/c/2609529b8ca1cf9e85aa4aa73fde4a39228bfde84f9ed45f0de4abb9edd080/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.ksEoBjb13WxS5wQuYr5iNQHaE8%26pid%3DApi&q=0&b=1&p=0&a=0"
+  },
+  {
+    "wikipediaUri": "en:Aiguille Verte",
+    "name": "Aiguille Verte",
+    "ele": 4121,
+    "coordinates": [
+      6.97006,
+      45.9347326
+    ],
+    "photoUrl": "https://s2.qwant.com/thumbr/474x316/f/c/b1416311918055790d29a7089f1119feba73c3173f0630a6bbaae604e65e8f/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.eod0R0hYOjvHajVhL9IhswHaE8%26pid%3DApi&q=0&b=1&p=0&a=0"
+  },
+  {
+    "wikipediaUri": "fr:Barre des Écrins",
+    "name": "Barre des Écrins",
+    "ele": 4102,
+    "coordinates": [
+      6.359547,
+      44.92216
+    ]
+  },
+  {
+    "wikipediaUri": "it:Cima Mongioia",
+    "name": "Bric de Rubren / Cima Mongioia",
+    "ele": 3340,
+    "coordinates": [
+      6.9496597,
+      44.6195969
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Pic Schrader",
+    "name": "Bachimala / Schrader",
+    "ele": 3177,
+    "coordinates": [
+      0.3944255,
+      42.6985978
+    ]
+  },
+  {
+    "name": "Grand Roc Noir",
+    "ele": 3587,
+    "coordinates": [
+      6.8919412,
+      45.3302786
+    ]
+  },
+  {
+    "wikipediaUri": "it:Punta Walker",
+    "name": "Grandes Jorasses / Pointe Walker",
+    "ele": 4208,
+    "coordinates": [
+      6.9889831,
+      45.8681562
+    ]
+  },
+  {
+    "name": "L'Ailefroide Occidentale",
+    "ele": 3953,
+    "coordinates": [
+      6.3559521,
+      44.884701
+    ]
+  },
+  {
+    "name": "La Grande Casse",
+    "ele": 3855,
+    "coordinates": [
+      6.8275635,
+      45.4051415
+    ]
+  },
+  {
+    "wikipediaUri": "fr:La Meije",
+    "name": "Grand Pic de la Meije",
+    "ele": 3982,
+    "coordinates": [
+      6.3082538,
+      45.005036
+    ]
+  },
+  {
+    "name": "Le Grand Bérard",
+    "ele": 3048,
+    "coordinates": [
+      6.6602736,
+      44.4497277
+    ]
+  },
+  {
+    "name": "Le Grand Galibier",
+    "ele": 3228,
+    "coordinates": [
+      6.4341494,
+      45.063891
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Mont Buet",
+    "name": "Mont Buet",
+    "ele": 3096,
+    "coordinates": [
+      6.8525295,
+      46.0248299
+    ]
+  },
+  {
+    "wikipediaUri": "it:Monte Gelàs",
+    "name": "Cime du Gélas / Monte Gelàs",
+    "ele": 3143,
+    "coordinates": [
+      7.3842062,
+      44.1227794
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Mont Giusalet",
+    "name": "Mont Giusalet",
+    "ele": 3313,
+    "coordinates": [
+      6.93,
+      45.1805556
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Mont Pelat",
+    "name": "Mont Pelat",
+    "ele": 3050,
+    "coordinates": [
+      6.7058837,
+      44.2650103
+    ]
+  },
+  {
+    "name": "Pic de Rochebrune",
+    "ele": 3320,
+    "coordinates": [
+      6.7875068,
+      44.8222932
+    ]
+  },
+  {
+    "wikipediaUri": "en:Pic Long",
+    "name": "Pic Long",
+    "ele": 3192,
+    "coordinates": [
+      0.1001273,
+      42.8008266
+    ]
+  },
+  {
+    "name": "Pic Ouest de Combeynot",
+    "ele": 3155,
+    "coordinates": [
+      6.4111137,
+      45.01258
+    ]
+  },
+  {
+    "wikipediaUri": "es:Pica d'Estats",
+    "name": "Pica d'Estats",
+    "ele": 3143,
+    "coordinates": [
+      1.3978986,
+      42.666952
+    ]
+  },
+  {
+    "name": "Pics de la Font Sancte",
+    "ele": 3385,
+    "coordinates": [
+      6.7995823,
+      44.6045737
+    ]
+  },
+  {
+    "name": "Pointe de l'Aiglière",
+    "ele": 3307,
+    "coordinates": [
+      6.4147136,
+      44.8102815
+    ]
+  },
+  {
+    "name": "Pointe de Malhaubert",
+    "ele": 3049,
+    "coordinates": [
+      6.0325843,
+      44.975271
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Roche Bernaude",
+    "name": "Rocca Bernauda / Roche Bernaude",
+    "ele": 3222,
+    "coordinates": [
+      6.6274936,
+      45.1013915
+    ]
+  },
+  {
+    "name": "Signal du Petit Mont Cenis",
+    "ele": 3163,
+    "coordinates": [
+      6.8727681,
+      45.2442786
+    ]
+  },
+  {
+    "name": "Sommet de Bellecôte",
+    "ele": 3417,
+    "coordinates": [
+      6.7824968,
+      45.4925008
+    ]
+  },
+  {
+    "name": "Tête de la Courbe",
+    "ele": 3089,
+    "coordinates": [
+      6.823884,
+      44.4980593
+    ]
+  },
+  {
+    "wikipediaUri": "ca:Rodó de Canalbona",
+    "name": "Pic Rodó de Canalbona",
+    "ele": 3004,
+    "coordinates": [
+      1.4016988,
+      42.6625832
+    ]
+  },
+  {
+    "wikipediaUri": "es:Pico de Sotllo",
+    "name": "Pic de Sotllo",
+    "ele": 3072,
+    "coordinates": [
+      1.3874561,
+      42.6687125
+    ]
+  },
+  {
+    "name": "Punta de l'Abella",
+    "ele": 3025,
+    "coordinates": [
+      0.3928154,
+      42.7132443
+    ]
+  },
+  {
+    "name": "Le Râteau - Pic Est",
+    "ele": 3809,
+    "coordinates": [
+      6.2829415,
+      45.0008085
+    ]
+  },
+  {
+    "wikipediaUri": "en:Aiguille du Midi",
+    "name": "Aiguille du Midi",
+    "ele": 3842,
+    "coordinates": [
+      6.8875506,
+      45.8787035
+    ]
+  },
+  {
+    "name": "Pic Blanc",
+    "ele": 3323,
+    "coordinates": [
+      6.1276239,
+      45.1251943
+    ]
+  },
+  {
+    "name": "Dôme de Neige des Écrins",
+    "ele": 4015,
+    "coordinates": [
+      6.3535413,
+      44.9243102
+    ]
+  },
+  {
+    "name": "Le Rateau d'Aussois",
+    "ele": 3131,
+    "coordinates": [
+      6.6938877,
+      45.2463525
+    ]
+  },
+  {
+    "name": "Pointe de l'Observatoire",
+    "ele": 3015,
+    "coordinates": [
+      6.6851397,
+      45.2908908
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Mont Blanc",
+    "name": "Mont Blanc / Monte Bianco",
+    "ele": 4805,
+    "coordinates": [
+      6.8650773,
+      45.8327682
+    ]
+  },
+  {
+    "name": "Pointe des Sagnes Longues",
+    "ele": 3032,
+    "coordinates": [
+      6.9464662,
+      44.6873705
+    ]
+  },
+  {
+    "name": "Aiguille du Tour",
+    "ele": 3542,
+    "coordinates": [
+      7.0100128,
+      45.9945308
+    ]
+  },
+  {
+    "name": "Aiguille Purtscheller",
+    "ele": 3478,
+    "coordinates": [
+      7.012105,
+      45.9914303
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Aiguille du Chardonnet",
+    "name": "Aiguille de Chardonnet",
+    "ele": 3824,
+    "coordinates": [
+      7.0015516,
+      45.968306
+    ]
+  },
+  {
+    "wikipediaUri": "en:Aiguille d'Argentière",
+    "name": "Aiguille d'Argentière",
+    "ele": 3901,
+    "coordinates": [
+      7.0199726,
+      45.9595589
+    ]
+  },
+  {
+    "wikipediaUri": "it:Punta Elena",
+    "name": "Pointe Hélène / Punta Elena",
+    "ele": 4045,
+    "coordinates": [
+      6.9793403,
+      45.8687569
+    ]
+  },
+  {
+    "wikipediaUri": "it:Punta Croz",
+    "name": "Pointe Croz / Punta Croz",
+    "ele": 4110,
+    "coordinates": [
+      6.9821345,
+      45.8692394
+    ]
+  },
+  {
+    "wikipediaUri": "it:Aiguille de Talèfre",
+    "name": "Aiguille de Talèfre",
+    "ele": 3730,
+    "coordinates": [
+      7.0037821,
+      45.899499
+    ]
+  },
+  {
+    "name": "Pointe du Domino / Punta del Domino",
+    "ele": 3648,
+    "coordinates": [
+      7.0310586,
+      45.9206211
+    ]
+  },
+  {
+    "wikipediaUri": "it:Aiguille des Glaciers",
+    "name": "Aiguille des Glaciers",
+    "ele": 3815,
+    "coordinates": [
+      6.802571,
+      45.7783901
+    ]
+  },
+  {
+    "name": "Cime de Caron",
+    "ele": 3195,
+    "coordinates": [
+      6.5609518,
+      45.2632226
+    ]
+  },
+  {
+    "wikipediaUri": "it:Aiguille de Rochefort",
+    "name": "Aiguille de Rochefort",
+    "ele": 4001,
+    "coordinates": [
+      6.9599716,
+      45.8621023
+    ]
+  },
+  {
+    "wikipediaUri": "en:Mont Blanc du Tacul",
+    "name": "Mont Blanc du Tacul",
+    "ele": 4248,
+    "coordinates": [
+      6.8885201,
+      45.8565863
+    ]
+  },
+  {
+    "wikipediaUri": "en:Aiguille du Plan",
+    "name": "Aiguille du Plan",
+    "ele": 3673,
+    "coordinates": [
+      6.9064682,
+      45.8913485
+    ]
+  },
+  {
+    "wikipediaUri": "en:Aiguille de Blaitière",
+    "name": "Aiguille de Blaitière",
+    "ele": 3522,
+    "coordinates": [
+      6.9133265,
+      45.8989201
+    ]
+  },
+  {
+    "name": "Grand Dru",
+    "ele": 3754,
+    "coordinates": [
+      6.9561711,
+      45.9319514
+    ]
+  },
+  {
+    "wikipediaUri": "en:Les Droites",
+    "name": "Les Droites",
+    "ele": 4000,
+    "coordinates": [
+      6.9893056,
+      45.9306841
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Aiguille du Tacul",
+    "name": "Aiguille du Tacul",
+    "ele": 3444,
+    "coordinates": [
+      6.9607788,
+      45.884347
+    ]
+  },
+  {
+    "name": "Grande Aiguille de la Bérarde",
+    "ele": 3417,
+    "coordinates": [
+      6.2780427,
+      44.9168928
+    ]
+  },
+  {
+    "name": "Tête de l'Étret",
+    "ele": 3563,
+    "coordinates": [
+      6.2449979,
+      44.8897033
+    ]
+  },
+  {
+    "name": "Pointe du Vallon des Etages",
+    "ele": 3564,
+    "coordinates": [
+      6.2671851,
+      44.8848152
+    ]
+  },
+  {
+    "name": "Le Plaret",
+    "ele": 3563,
+    "coordinates": [
+      6.2592473,
+      44.9684719
+    ]
+  },
+  {
+    "name": "Mont Pelvoux Pointe Durand",
+    "ele": 3932,
+    "coordinates": [
+      6.4007544,
+      44.8987086
+    ]
+  },
+  {
+    "name": "Mont Pelvoux Pointe Puiseux",
+    "ele": 3943,
+    "coordinates": [
+      6.3959542,
+      44.8972813
+    ]
+  },
+  {
+    "name": "Petit Pelvoux",
+    "ele": 3753,
+    "coordinates": [
+      6.4093996,
+      44.8944244
+    ]
+  },
+  {
+    "name": "Pic Bourcet",
+    "ele": 3697,
+    "coordinates": [
+      6.3230041,
+      44.962013
+    ]
+  },
+  {
+    "name": "Grand Roc",
+    "ele": 3316,
+    "coordinates": [
+      6.6882491,
+      45.265387
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Mont Tondu",
+    "name": "Mont Tondu",
+    "ele": 3192,
+    "coordinates": [
+      6.7553564,
+      45.7635198
+    ]
+  },
+  {
+    "wikipediaUri": "it:Aiguille de Bionnassay",
+    "name": "Aiguille de Bionnassay",
+    "ele": 4052,
+    "coordinates": [
+      6.8186739,
+      45.836054
+    ]
+  },
+  {
+    "wikipediaUri": "en:Aiguille des Grands Charmoz",
+    "name": "Aiguille des Grands Charmoz",
+    "ele": 3445,
+    "coordinates": [
+      6.9188413,
+      45.9042308
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Dent du Requin",
+    "name": "Dent du Requin",
+    "ele": 3422,
+    "coordinates": [
+      6.9174277,
+      45.8873048
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Les Périades",
+    "name": "Les Périades",
+    "ele": 3503,
+    "coordinates": [
+      6.9621884,
+      45.8809491
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Aiguille du Moine",
+    "name": "Aiguille du Moine",
+    "ele": 3412,
+    "coordinates": [
+      6.9605217,
+      45.916786
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Mont Mallet",
+    "name": "Mont Mallet",
+    "ele": 3970,
+    "coordinates": [
+      6.9616216,
+      45.8657449
+    ]
+  },
+  {
+    "wikipediaUri": "it:Grand Flambeau",
+    "name": "Grand Flambeau",
+    "ele": 3569,
+    "coordinates": [
+      6.9281489,
+      45.8479178
+    ]
+  },
+  {
+    "wikipediaUri": "en:Dômes de Miage",
+    "name": "Dômes de Miage",
+    "ele": 3673,
+    "coordinates": [
+      6.8002767,
+      45.8152681
+    ]
+  },
+  {
+    "name": "Tête Carrée",
+    "ele": 3752,
+    "coordinates": [
+      6.811815,
+      45.8017236
+    ]
+  },
+  {
+    "name": "Aiguille de la Bérangère",
+    "ele": 3425,
+    "coordinates": [
+      6.7787895,
+      45.8027724
+    ]
+  },
+  {
+    "wikipediaUri": "en:Grand Capucin",
+    "name": "Le Grand Capucin",
+    "ele": 3838,
+    "coordinates": [
+      6.8997785,
+      45.8520297
+    ]
+  },
+  {
+    "name": "Pic de la Pyramide",
+    "ele": 3382,
+    "coordinates": [
+      6.1293104,
+      45.1327023
+    ]
+  },
+  {
+    "name": "Pic de l'Herpie",
+    "ele": 3012,
+    "coordinates": [
+      6.1160766,
+      45.1095625
+    ]
+  },
+  {
+    "name": "Le Cardinal",
+    "ele": 3638,
+    "coordinates": [
+      6.9653994,
+      45.9278286
+    ]
+  },
+  {
+    "name": "L'Évêque",
+    "ele": 3469,
+    "coordinates": [
+      6.9619797,
+      45.9239521
+    ]
+  },
+  {
+    "name": "La Nonne",
+    "ele": 3341,
+    "coordinates": [
+      6.9607303,
+      45.9200315
+    ]
+  },
+  {
+    "name": "AIguille Occidentale de la Saussaz",
+    "ele": 3340,
+    "coordinates": [
+      6.3138338,
+      45.1118228
+    ]
+  },
+  {
+    "name": "Aiguille Méridionale d'Arves",
+    "ele": 3514,
+    "coordinates": [
+      6.3352834,
+      45.1224578
+    ]
+  },
+  {
+    "name": "Bec de l'Homme",
+    "ele": 3454,
+    "coordinates": [
+      6.3299734,
+      45.0163178
+    ]
+  },
+  {
+    "name": "Doigt de Dieu",
+    "ele": 3973,
+    "coordinates": [
+      6.3136876,
+      45.0041641
+    ]
+  },
+  {
+    "name": "Pic du Glacier Carré",
+    "ele": 3862,
+    "coordinates": [
+      6.3060385,
+      45.0044304
+    ]
+  },
+  {
+    "name": "Le Grand Doigt",
+    "ele": 3764,
+    "coordinates": [
+      6.3029383,
+      45.0036931
+    ]
+  },
+  {
+    "name": "Roche Noire",
+    "ele": 3067,
+    "coordinates": [
+      6.5389295,
+      45.1454456
+    ]
+  },
+  {
+    "name": "Pic du Thabor",
+    "ele": 3207,
+    "coordinates": [
+      6.5619384,
+      45.1187033
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Mont Thabor (France)",
+    "name": "Mont Thabor",
+    "ele": 3178,
+    "coordinates": [
+      6.5637534,
+      45.114076
+    ]
+  },
+  {
+    "name": "Mont de Gébroulaz",
+    "ele": 3511,
+    "coordinates": [
+      6.6293963,
+      45.2747423
+    ]
+  },
+  {
+    "name": "Rocher de l'Encoula",
+    "ele": 3538,
+    "coordinates": [
+      6.2817764,
+      44.906702
+    ]
+  },
+  {
+    "name": "Cime de Clot Châtel",
+    "ele": 3563,
+    "coordinates": [
+      6.2800469,
+      44.8972126
+    ]
+  },
+  {
+    "name": "Tête de l'Ours",
+    "ele": 3045,
+    "coordinates": [
+      6.2342261,
+      44.9193473
+    ]
+  },
+  {
+    "name": "Pointe Jeanne",
+    "ele": 3245,
+    "coordinates": [
+      6.2363503,
+      44.9082007
+    ]
+  },
+  {
+    "name": "Tête des Fétoules",
+    "ele": 3459,
+    "coordinates": [
+      6.2370618,
+      44.8998932
+    ]
+  },
+  {
+    "name": "Pointe de la Muande",
+    "ele": 3319,
+    "coordinates": [
+      6.2532172,
+      44.855063
+    ]
+  },
+  {
+    "name": "Tête de Lauranoure",
+    "ele": 3341,
+    "coordinates": [
+      6.1510908,
+      44.9261398
+    ]
+  },
+  {
+    "name": "Tête du Salude",
+    "ele": 3231,
+    "coordinates": [
+      6.1474513,
+      44.9148988
+    ]
+  },
+  {
+    "name": "Tête de la Marsare",
+    "ele": 3118,
+    "coordinates": [
+      6.2145819,
+      44.9511728
+    ]
+  },
+  {
+    "name": "Tête du Graou",
+    "ele": 3168,
+    "coordinates": [
+      6.2149683,
+      44.9566935
+    ]
+  },
+  {
+    "name": "Tête de la Gandolière",
+    "ele": 3542,
+    "coordinates": [
+      6.2710489,
+      44.9742415
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Pic de la Grave",
+    "name": "Pic de la Grave",
+    "ele": 3669,
+    "coordinates": [
+      6.2541959,
+      44.9952379
+    ]
+  },
+  {
+    "name": "Le Jandri",
+    "ele": 3292,
+    "coordinates": [
+      6.2044788,
+      44.9927481
+    ]
+  },
+  {
+    "name": "Tête Sud du Replat",
+    "ele": 3428,
+    "coordinates": [
+      6.2791448,
+      44.9837595
+    ]
+  },
+  {
+    "name": "Le Pave",
+    "ele": 3831,
+    "coordinates": [
+      6.32452,
+      44.99867
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Pic Gaspard",
+    "name": "Pic Gaspard",
+    "ele": 3882,
+    "coordinates": [
+      6.3305818,
+      44.9978931
+    ]
+  },
+  {
+    "name": "Pointe Nérot",
+    "ele": 3537,
+    "coordinates": [
+      6.3523292,
+      44.9997419
+    ]
+  },
+  {
+    "name": "Roc Noir de Combeynot",
+    "ele": 3118,
+    "coordinates": [
+      6.4016875,
+      45.0113503
+    ]
+  },
+  {
+    "name": "La Grande Ruine",
+    "ele": 3765,
+    "coordinates": [
+      6.3292408,
+      44.9675913
+    ]
+  },
+  {
+    "name": "Roche Méane",
+    "ele": 3712,
+    "coordinates": [
+      6.3352127,
+      44.97025
+    ]
+  },
+  {
+    "name": "Pics des Cavales",
+    "ele": 3309,
+    "coordinates": [
+      6.3236617,
+      44.971247
+    ]
+  },
+  {
+    "name": "Pointe Emma",
+    "ele": 3300,
+    "coordinates": [
+      6.316924,
+      44.9848649
+    ]
+  },
+  {
+    "name": "Tête de Charrière",
+    "ele": 3442,
+    "coordinates": [
+      6.3231039,
+      44.9546248
+    ]
+  },
+  {
+    "name": "Sommet Sud-Est de la Roche d'Alveau",
+    "ele": 3534,
+    "coordinates": [
+      6.3434886,
+      44.9437379
+    ]
+  },
+  {
+    "name": "Pic de Neige Cordier",
+    "ele": 3613,
+    "coordinates": [
+      6.3890661,
+      44.9560656
+    ]
+  },
+  {
+    "name": "Pic d'Arsine",
+    "ele": 3240,
+    "coordinates": [
+      6.3876436,
+      44.9644269
+    ]
+  },
+  {
+    "name": "Pic du Dragon",
+    "ele": 3188,
+    "coordinates": [
+      6.3868504,
+      44.9686089
+    ]
+  },
+  {
+    "name": "Dôme de Monêtier",
+    "ele": 3320,
+    "coordinates": [
+      6.4525231,
+      44.9307398
+    ]
+  },
+  {
+    "name": "Pic du Rif",
+    "ele": 3478,
+    "coordinates": [
+      6.446214,
+      44.9294782
+    ]
+  },
+  {
+    "name": "Pointe des Arcas",
+    "ele": 3480,
+    "coordinates": [
+      6.4469128,
+      44.9283522
+    ]
+  },
+  {
+    "name": "Pic de Clouzis",
+    "ele": 3465,
+    "coordinates": [
+      6.4608192,
+      44.91992
+    ]
+  },
+  {
+    "name": "Pic de Coste Vieille",
+    "ele": 3139,
+    "coordinates": [
+      6.4634799,
+      44.9124097
+    ]
+  },
+  {
+    "name": "Aiguille des Frères Estiennes",
+    "ele": 3025,
+    "coordinates": [
+      6.4635658,
+      44.9083329
+    ]
+  },
+  {
+    "name": "Tête de Chéret",
+    "ele": 3159,
+    "coordinates": [
+      6.3117956,
+      44.8883195
+    ]
+  },
+  {
+    "name": "Pics du Says",
+    "ele": 3409,
+    "coordinates": [
+      6.3039207,
+      44.8729709
+    ]
+  },
+  {
+    "name": "Mont Gioberney",
+    "ele": 3350,
+    "coordinates": [
+      6.3173525,
+      44.861586
+    ]
+  },
+  {
+    "name": "Pointe Richardson",
+    "ele": 3350,
+    "coordinates": [
+      6.3201176,
+      44.8570584
+    ]
+  },
+  {
+    "name": "Sommet Sud des Bans",
+    "ele": 3669,
+    "coordinates": [
+      6.3361499,
+      44.8488711
+    ]
+  },
+  {
+    "name": "Cime du Coin",
+    "ele": 3527,
+    "coordinates": [
+      6.3507842,
+      44.8734342
+    ]
+  },
+  {
+    "name": "Aiguille du Canard",
+    "ele": 3266,
+    "coordinates": [
+      6.179552,
+      44.8997499
+    ]
+  },
+  {
+    "name": "Pointe de la Mariande",
+    "ele": 3151,
+    "coordinates": [
+      6.1477088,
+      44.9011691
+    ]
+  },
+  {
+    "name": "Pointe du Grand Vallon",
+    "ele": 3137,
+    "coordinates": [
+      6.1654758,
+      44.896445
+    ]
+  },
+  {
+    "name": "Pointe Swan",
+    "ele": 3300,
+    "coordinates": [
+      6.1148357,
+      44.9080753
+    ]
+  },
+  {
+    "name": "Pointe Marguerite",
+    "ele": 3251,
+    "coordinates": [
+      6.1121749,
+      44.914856
+    ]
+  },
+  {
+    "name": "Le Petit Roux",
+    "ele": 3034,
+    "coordinates": [
+      6.1164664,
+      44.9404329
+    ]
+  },
+  {
+    "name": "Cîme du Montagnon",
+    "ele": 3263,
+    "coordinates": [
+      6.1454557,
+      44.9097989
+    ]
+  },
+  {
+    "name": "Aiguille des Arias",
+    "ele": 3400,
+    "coordinates": [
+      6.1710548,
+      44.8943971
+    ]
+  },
+  {
+    "name": "Aiguille d'Entre-Pierroux",
+    "ele": 3290,
+    "coordinates": [
+      6.1772271,
+      44.8901322
+    ]
+  },
+  {
+    "name": "Aiguille Rousse",
+    "ele": 3157,
+    "coordinates": [
+      6.1799737,
+      44.8824152
+    ]
+  },
+  {
+    "name": "Pointe Maximin",
+    "ele": 3329,
+    "coordinates": [
+      6.1867886,
+      44.8775676
+    ]
+  },
+  {
+    "name": "Aiguille de l'Olan",
+    "ele": 3373,
+    "coordinates": [
+      6.2008782,
+      44.8766635
+    ]
+  },
+  {
+    "name": "Cime du Vallon",
+    "ele": 3418,
+    "coordinates": [
+      6.2222957,
+      44.8537691
+    ]
+  },
+  {
+    "name": "Pic Turbat",
+    "ele": 3031,
+    "coordinates": [
+      6.1698394,
+      44.8530814
+    ]
+  },
+  {
+    "name": "Pic des Souffles",
+    "ele": 3099,
+    "coordinates": [
+      6.1364596,
+      44.86391
+    ]
+  },
+  {
+    "name": "Aiguille des Marmes",
+    "ele": 3057,
+    "coordinates": [
+      6.0994556,
+      44.8952784
+    ]
+  },
+  {
+    "name": "Pic Sans Nom",
+    "ele": 3913,
+    "coordinates": [
+      6.3842443,
+      44.8932777
+    ]
+  },
+  {
+    "name": "Pic de la Temple",
+    "ele": 3314,
+    "coordinates": [
+      6.3542175,
+      44.8969169
+    ]
+  },
+  {
+    "name": "Pic Coolidge",
+    "ele": 3775,
+    "coordinates": [
+      6.3570573,
+      44.9099462
+    ]
+  },
+  {
+    "name": "Le Fifre",
+    "ele": 3680,
+    "coordinates": [
+      6.3563295,
+      44.916376
+    ]
+  },
+  {
+    "name": "Pointe de la Grande Sagne",
+    "ele": 3660,
+    "coordinates": [
+      6.383829,
+      44.93464
+    ]
+  },
+  {
+    "name": "Pointe de Balme Rousse",
+    "ele": 3224,
+    "coordinates": [
+      6.3277816,
+      44.914341
+    ]
+  },
+  {
+    "name": "Pointe de Pié Bérarde",
+    "ele": 3188,
+    "coordinates": [
+      6.3286399,
+      44.926131
+    ]
+  },
+  {
+    "name": "Tête du Lac Noir",
+    "ele": 3071,
+    "coordinates": [
+      6.1914932,
+      44.9998219
+    ]
+  },
+  {
+    "name": "Roche Mantel",
+    "ele": 3052,
+    "coordinates": [
+      6.1969756,
+      45.0099016
+    ]
+  },
+  {
+    "name": "Pointe Léchaud / Punta Lechaud",
+    "ele": 3127,
+    "coordinates": [
+      6.8141703,
+      45.7337885
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Aiguille de Scolette",
+    "name": "Aiguille de Scolette / Pierre Menue",
+    "ele": 3506,
+    "coordinates": [
+      6.7682042,
+      45.1597528
+    ]
+  },
+  {
+    "name": "Pointe Orientale de l'Épéna",
+    "ele": 3348,
+    "coordinates": [
+      6.8119278,
+      45.4153527
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Pointe de la Grande Glière",
+    "name": "Pointe de la Grande Glière",
+    "ele": 3392,
+    "coordinates": [
+      6.7917929,
+      45.412729
+    ]
+  },
+  {
+    "name": "Ponte des Volnets",
+    "ele": 3247,
+    "coordinates": [
+      6.7766539,
+      45.416176
+    ]
+  },
+  {
+    "name": "Pointe de la Réchasse",
+    "ele": 3212,
+    "coordinates": [
+      6.8021235,
+      45.373394
+    ]
+  },
+  {
+    "name": "Dôme de l'Arpont",
+    "ele": 3601,
+    "coordinates": [
+      6.7429504,
+      45.3183334
+    ]
+  },
+  {
+    "name": "Pointe du Creux Noir",
+    "ele": 3154,
+    "coordinates": [
+      6.7569985,
+      45.4062995
+    ]
+  },
+  {
+    "name": "Dôme de la Sache",
+    "ele": 3595,
+    "coordinates": [
+      6.8701605,
+      45.5108554
+    ]
+  },
+  {
+    "name": "Mont Pourri",
+    "ele": 3779,
+    "coordinates": [
+      6.8600956,
+      45.5281163
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Pointe d'Archeboc",
+    "name": "Ormelune / Pointe d'Archeboc",
+    "ele": 3277,
+    "coordinates": [
+      6.9805825,
+      45.5833904
+    ]
+  },
+  {
+    "name": "Pointe de Claret",
+    "ele": 3355,
+    "coordinates": [
+      6.9710826,
+      45.3420027
+    ]
+  },
+  {
+    "name": "Pointe NE du Chatelard",
+    "ele": 3434,
+    "coordinates": [
+      6.9601174,
+      45.3373979
+    ]
+  },
+  {
+    "name": "Pointe du Vallonbrun",
+    "ele": 3413,
+    "coordinates": [
+      6.9379677,
+      45.330137
+    ]
+  },
+  {
+    "wikipediaUri": "it:Monte Niblè",
+    "name": "Monte Niblè / Pointe Ferrand",
+    "ele": 3365,
+    "coordinates": [
+      6.8957982,
+      45.1388896
+    ]
+  },
+  {
+    "wikipediaUri": "it:Rognosa d'Etiache",
+    "name": "Rognosa d'Etache / Rognosa d'Etiache",
+    "ele": 3373,
+    "coordinates": [
+      6.8360477,
+      45.1352253
+    ]
+  },
+  {
+    "name": "Pointe des Buffettes",
+    "ele": 3233,
+    "coordinates": [
+      7.0074659,
+      45.3655573
+    ]
+  },
+  {
+    "name": "Pointe des Lauses Noires / Punta Lose Nere",
+    "ele": 3371,
+    "coordinates": [
+      7.1168876,
+      45.2455905
+    ]
+  },
+  {
+    "name": "Le Signal de Méan Martin",
+    "ele": 3315,
+    "coordinates": [
+      6.9980778,
+      45.3667895
+    ]
+  },
+  {
+    "name": "Pointe Sud du Couart Dessus",
+    "ele": 3469,
+    "coordinates": [
+      7.0486167,
+      45.472447
+    ]
+  },
+  {
+    "name": "Pic du Montcalm",
+    "ele": 3077,
+    "coordinates": [
+      1.4063347,
+      42.6719036
+    ]
+  },
+  {
+    "wikipediaUri": "es:Pico Verdaguer",
+    "name": "Pic Verdaguer",
+    "ele": 3129,
+    "coordinates": [
+      1.396855,
+      42.6680493
+    ]
+  },
+  {
+    "name": "Pointe Mathews",
+    "ele": 3783,
+    "coordinates": [
+      6.8216468,
+      45.3995013
+    ]
+  },
+  {
+    "name": "Tête Blanche",
+    "ele": 3421,
+    "coordinates": [
+      7.0190616,
+      45.983959
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Pic de Troumouse",
+    "name": "Pic de Troumouse",
+    "ele": 3085,
+    "coordinates": [
+      0.1367431,
+      42.7224452
+    ]
+  },
+  {
+    "wikipediaUri": "es:Pico Balaitús",
+    "name": "Pic du Balaïtous",
+    "ele": 3146,
+    "coordinates": [
+      -0.290257,
+      42.8389387
+    ]
+  },
+  {
+    "name": "Petit Dru",
+    "ele": 3733,
+    "coordinates": [
+      6.9544787,
+      45.9319163
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Les Courtes",
+    "name": "Les Courtes",
+    "ele": 3856,
+    "coordinates": [
+      7.0039859,
+      45.9273818
+    ]
+  },
+  {
+    "name": "Aiguille Chenavier",
+    "ele": 3799,
+    "coordinates": [
+      7.0055417,
+      45.9263537
+    ]
+  },
+  {
+    "name": "Aiguille qui Remue",
+    "ele": 3742,
+    "coordinates": [
+      7.0070112,
+      45.9245978
+    ]
+  },
+  {
+    "name": "Pointe de Pré de Bar Est",
+    "ele": 3658,
+    "coordinates": [
+      7.03817,
+      45.9212942
+    ]
+  },
+  {
+    "wikipediaUri": "en:Aiguille du Jardin",
+    "name": "Aiguille du Jardin",
+    "ele": 4035,
+    "coordinates": [
+      6.9758972,
+      45.9333511
+    ]
+  },
+  {
+    "wikipediaUri": "en:Grande Rocheuse",
+    "name": "Grande Rocheuse",
+    "ele": 4102,
+    "coordinates": [
+      6.9725739,
+      45.9339484
+    ]
+  },
+  {
+    "name": "Aiguille Sans Nom",
+    "ele": 3982,
+    "coordinates": [
+      6.9642238,
+      45.9333605
+    ]
+  },
+  {
+    "name": "Pointe de Frébouze - Antoldi",
+    "ele": 3530,
+    "coordinates": [
+      6.9984471,
+      45.8786167
+    ]
+  },
+  {
+    "wikipediaUri": "it:Punta Margherita (Grandes Jorasses)",
+    "name": "Pointe Marguerite / Punta Margherita",
+    "ele": 4065,
+    "coordinates": [
+      6.9778602,
+      45.8685716
+    ]
+  },
+  {
+    "name": "Pointe Yeld",
+    "ele": 3560,
+    "coordinates": [
+      6.9438731,
+      45.865858
+    ]
+  },
+  {
+    "wikipediaUri": "it:Aiguilles Marbrées",
+    "name": "Aiguilles Marbrées",
+    "ele": 3535,
+    "coordinates": [
+      6.9411569,
+      45.8515876
+    ]
+  },
+  {
+    "name": "Pointe Sisyphe",
+    "ele": 3460,
+    "coordinates": [
+      6.9600284,
+      45.8745972
+    ]
+  },
+  {
+    "name": "Petite Fourche",
+    "ele": 3512,
+    "coordinates": [
+      7.0221096,
+      45.980414
+    ]
+  },
+  {
+    "name": "Dôme des Glaciers",
+    "ele": 3592,
+    "coordinates": [
+      6.7978047,
+      45.7792528
+    ]
+  },
+  {
+    "name": "Petit Vignemale",
+    "ele": 3032,
+    "coordinates": [
+      -0.135048,
+      42.774699
+    ]
+  },
+  {
+    "name": "Pico de Montferrato",
+    "ele": 3219,
+    "coordinates": [
+      -0.1382876,
+      42.7666277
+    ]
+  },
+  {
+    "wikipediaUri": "es:Pico Gran Facha",
+    "name": "Grande Fache",
+    "ele": 3005,
+    "coordinates": [
+      -0.237874,
+      42.8081942
+    ]
+  },
+  {
+    "name": "Aiguille Occidentale du Soreiller",
+    "ele": 3208,
+    "coordinates": [
+      6.2383888,
+      44.9665101
+    ]
+  },
+  {
+    "name": "Pointes de Burlan",
+    "ele": 3299,
+    "coordinates": [
+      6.2342911,
+      44.9685324
+    ]
+  },
+  {
+    "name": "Aiguille Dibona",
+    "ele": 3131,
+    "coordinates": [
+      6.2428893,
+      44.9632445
+    ]
+  },
+  {
+    "name": "Clochetons Gunneng",
+    "ele": 3108,
+    "coordinates": [
+      6.2426718,
+      44.9636376
+    ]
+  },
+  {
+    "name": "Tours Rouges de l'Aiguille Orientale",
+    "ele": 3167,
+    "coordinates": [
+      6.2499363,
+      44.96594
+    ]
+  },
+  {
+    "name": "Aiguille Orientale du Soreiller",
+    "ele": 3380,
+    "coordinates": [
+      6.2485168,
+      44.9678346
+    ]
+  },
+  {
+    "name": "Aiguille Centrale du Soreiller",
+    "ele": 3338,
+    "coordinates": [
+      6.2417123,
+      44.9668766
+    ]
+  },
+  {
+    "name": "Pointe d'Amont",
+    "ele": 3338,
+    "coordinates": [
+      6.2434467,
+      44.9681545
+    ]
+  },
+  {
+    "name": "Pic Gény",
+    "ele": 3435,
+    "coordinates": [
+      6.2636665,
+      44.957495
+    ]
+  },
+  {
+    "name": "Dôme de la Gandolière",
+    "ele": 3495,
+    "coordinates": [
+      6.2672297,
+      44.9734211
+    ]
+  },
+  {
+    "name": "Dôme de la Lauze",
+    "ele": 3568,
+    "coordinates": [
+      6.2460457,
+      44.9971305
+    ]
+  },
+  {
+    "name": "Tête Nord du Replat",
+    "ele": 3442,
+    "coordinates": [
+      6.2832789,
+      44.9873545
+    ]
+  },
+  {
+    "name": "Pointe Thorant",
+    "ele": 3583,
+    "coordinates": [
+      6.2629451,
+      44.9959485
+    ]
+  },
+  {
+    "name": "Pointe Dosia",
+    "ele": 3611,
+    "coordinates": [
+      6.2671532,
+      44.9986204
+    ]
+  },
+  {
+    "name": "Le Râteau - Pic Ouest",
+    "ele": 3769,
+    "coordinates": [
+      6.2769173,
+      45.0008033
+    ]
+  },
+  {
+    "name": "Pic Est de Combeynot",
+    "ele": 3145,
+    "coordinates": [
+      6.4208357,
+      45.0155736
+    ]
+  },
+  {
+    "name": "Pic du Lac de Combeynot",
+    "ele": 3088,
+    "coordinates": [
+      6.4158124,
+      44.9969494
+    ]
+  },
+  {
+    "name": "Roche Émile Pic",
+    "ele": 3586,
+    "coordinates": [
+      6.3844992,
+      44.955328
+    ]
+  },
+  {
+    "name": "Tête de Couleau",
+    "ele": 3038,
+    "coordinates": [
+      6.4547791,
+      44.6842873
+    ]
+  },
+  {
+    "name": "Pointe du Dard",
+    "ele": 3206,
+    "coordinates": [
+      6.7653601,
+      45.3637568
+    ]
+  },
+  {
+    "name": "Pointe de Chevrière",
+    "ele": 3057,
+    "coordinates": [
+      6.7119583,
+      45.2938863
+    ]
+  },
+  {
+    "name": "Pointe du Génépi",
+    "ele": 3551,
+    "coordinates": [
+      6.7344643,
+      45.3029949
+    ]
+  },
+  {
+    "name": "Dôme des Nants",
+    "ele": 3570,
+    "coordinates": [
+      6.7414594,
+      45.3258696
+    ]
+  },
+  {
+    "name": "Dôme de Chasseforêt",
+    "ele": 3586,
+    "coordinates": [
+      6.7607046,
+      45.3307549
+    ]
+  },
+  {
+    "name": "Dôme des Sonnailles",
+    "ele": 3361,
+    "coordinates": [
+      6.745442,
+      45.3453667
+    ]
+  },
+  {
+    "wikipediaUri": "es:Pico Viñamala",
+    "name": "Vignemale",
+    "ele": 3298,
+    "coordinates": [
+      -0.1473437,
+      42.773943
+    ]
+  },
+  {
+    "wikipediaUri": "it:Tête de la Frema",
+    "name": "Tête de la Frema",
+    "ele": 3151,
+    "coordinates": [
+      6.869905,
+      44.537341
+    ]
+  },
+  {
+    "wikipediaUri": "it:Tête de l'Homme",
+    "name": "Brec de l'Homme / Tête de l'Homme",
+    "ele": 3211,
+    "coordinates": [
+      6.8732327,
+      44.5459864
+    ]
+  },
+  {
+    "name": "Pointe des Estaris",
+    "ele": 3086,
+    "coordinates": [
+      6.3418092,
+      44.7424605
+    ]
+  },
+  {
+    "name": "Neige de Marie - Rocce Rosse",
+    "ele": 3375,
+    "coordinates": [
+      7.1321578,
+      45.273673
+    ]
+  },
+  {
+    "name": "Ouille du Midi",
+    "ele": 3042,
+    "coordinates": [
+      7.0939409,
+      45.3613341
+    ]
+  },
+  {
+    "name": "Tête de Longet",
+    "ele": 3146,
+    "coordinates": [
+      6.9158267,
+      44.6599148
+    ]
+  },
+  {
+    "name": "Pic de la Farnéiréta",
+    "ele": 3133,
+    "coordinates": [
+      6.9332252,
+      44.6533938
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Gros Rognon",
+    "name": "Gros Rognon",
+    "ele": 3536,
+    "coordinates": [
+      6.9048567,
+      45.8686385
+    ]
+  },
+  {
+    "name": "Petit Flambeau",
+    "ele": 3440,
+    "coordinates": [
+      6.9291924,
+      45.8519534
+    ]
+  },
+  {
+    "name": "Aiguille des Espères",
+    "ele": 3059,
+    "coordinates": [
+      6.2382457,
+      44.7725256
+    ]
+  },
+  {
+    "name": "L'Olan",
+    "ele": 3564,
+    "coordinates": [
+      6.1967866,
+      44.859056
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Grand Astazou",
+    "name": "Grand Astazou",
+    "ele": 3071,
+    "coordinates": [
+      0.0236816,
+      42.7024839
+    ]
+  },
+  {
+    "name": "Pic de Lustou",
+    "ele": 3023,
+    "coordinates": [
+      0.3600008,
+      42.7347815
+    ]
+  },
+  {
+    "name": "Tour Choisy",
+    "ele": 3671,
+    "coordinates": [
+      6.3278726,
+      44.9640787
+    ]
+  },
+  {
+    "name": "Pointe des Aigles",
+    "ele": 3336,
+    "coordinates": [
+      6.3159399,
+      44.9902691
+    ]
+  },
+  {
+    "name": "Bonnet des Cavales",
+    "ele": 3285,
+    "coordinates": [
+      6.3180279,
+      44.9756383
+    ]
+  },
+  {
+    "name": "Pointe des Chamois",
+    "ele": 3315,
+    "coordinates": [
+      6.3172006,
+      44.9884181
+    ]
+  },
+  {
+    "wikipediaUri": "it:Rocce Fourioun",
+    "name": "Pointe de Marte / Rocce Fourioun",
+    "ele": 3153,
+    "coordinates": [
+      7.0658621,
+      44.7075194
+    ]
+  },
+  {
+    "wikipediaUri": "it:Punta Venezia",
+    "name": "Pointe de Venise / Punta Venezia",
+    "ele": 3095,
+    "coordinates": [
+      7.07077,
+      44.7002352
+    ]
+  },
+  {
+    "name": "Pointe Salvador",
+    "ele": 3202,
+    "coordinates": [
+      6.339928,
+      45.1161191
+    ]
+  },
+  {
+    "name": "Ailefroide Orientale",
+    "ele": 3847,
+    "coordinates": [
+      6.3687468,
+      44.8880751
+    ]
+  },
+  {
+    "name": "Ailefroide Pointe Fourastier",
+    "ele": 3908,
+    "coordinates": [
+      6.3625738,
+      44.8880808
+    ]
+  },
+  {
+    "name": "Aiguille de Sialouze",
+    "ele": 3576,
+    "coordinates": [
+      6.3849027,
+      44.8880352
+    ]
+  },
+  {
+    "name": "Pointe du Sélé",
+    "ele": 3556,
+    "coordinates": [
+      6.3543887,
+      44.8654812
+    ]
+  },
+  {
+    "name": "Pointe des Boeufs Rouges",
+    "ele": 3516,
+    "coordinates": [
+      6.3554829,
+      44.8549972
+    ]
+  },
+  {
+    "name": "L'Ailefroide Centrale",
+    "ele": 3927,
+    "coordinates": [
+      6.3593674,
+      44.8879853
+    ]
+  },
+  {
+    "name": "Trois Dents du Pelvoux",
+    "ele": 3683,
+    "coordinates": [
+      6.4105396,
+      44.8975582
+    ]
+  },
+  {
+    "name": "Pointe Guyard",
+    "ele": 3461,
+    "coordinates": [
+      6.3910455,
+      44.8599163
+    ]
+  },
+  {
+    "name": "Pointe de Celse Nière",
+    "ele": 3429,
+    "coordinates": [
+      6.3951185,
+      44.862841
+    ]
+  },
+  {
+    "name": "Roche Paillon",
+    "ele": 3636,
+    "coordinates": [
+      6.3799945,
+      44.9523813
+    ]
+  },
+  {
+    "name": "Pic du Glacier Blanc",
+    "ele": 3525,
+    "coordinates": [
+      6.392611,
+      44.9544228
+    ]
+  },
+  {
+    "name": "Pic Lory",
+    "ele": 4086,
+    "coordinates": [
+      6.3576641,
+      44.9222662
+    ]
+  },
+  {
+    "name": "Dômes de Miage (5ème dôme)",
+    "ele": 3672,
+    "coordinates": [
+      6.8032859,
+      45.8158975
+    ]
+  },
+  {
+    "name": "Dômes de Miage (2nd dôme)",
+    "ele": 3633,
+    "coordinates": [
+      6.7939263,
+      45.813531
+    ]
+  },
+  {
+    "name": "Dômes de Miage - Pointe Sud-Ouest",
+    "ele": 3670,
+    "coordinates": [
+      6.7897905,
+      45.8104261
+    ]
+  },
+  {
+    "wikipediaUri": "it:Piton des Italiens",
+    "name": "Piton des Italiens",
+    "ele": 4002,
+    "coordinates": [
+      6.8304317,
+      45.8372078
+    ]
+  },
+  {
+    "name": "Pointe de Méan-Martin",
+    "ele": 3330,
+    "coordinates": [
+      6.9900608,
+      45.3672244
+    ]
+  },
+  {
+    "name": "Pic des Spijeoles",
+    "ele": 3065,
+    "coordinates": [
+      0.4848204,
+      42.7101212
+    ]
+  },
+  {
+    "name": "Bosse de Sialouze",
+    "ele": 3229,
+    "coordinates": [
+      6.3966174,
+      44.8869174
+    ]
+  },
+  {
+    "wikipediaUri": "it:Pic d'Asti",
+    "name": "Pic d'Asti",
+    "ele": 3219,
+    "coordinates": [
+      7.0015598,
+      44.6876608
+    ]
+  },
+  {
+    "wikipediaUri": "it:Monte Aiguillette",
+    "name": "L'Asti / Monte Aiguillette",
+    "ele": 3298,
+    "coordinates": [
+      7.0244772,
+      44.6914519
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Cime de la Malédie",
+    "name": "Cima Maledia / Cime de la Malédie",
+    "ele": 3061,
+    "coordinates": [
+      7.3982143,
+      44.1223794
+    ]
+  },
+  {
+    "wikipediaUri": "it:Monte Losetta",
+    "name": "Monte Losetta / Pointe Joanne",
+    "ele": 3054,
+    "coordinates": [
+      7.0632619,
+      44.6803231
+    ]
+  },
+  {
+    "wikipediaUri": "it:Monte Salza",
+    "name": "Mont de Salsa / Monte Salza",
+    "ele": 3326,
+    "coordinates": [
+      6.9623586,
+      44.6195432
+    ]
+  },
+  {
+    "name": "Punta Calabre",
+    "ele": 3445,
+    "coordinates": [
+      7.0472761,
+      45.4772089
+    ]
+  },
+  {
+    "wikipediaUri": "it:Aiguille de Toula",
+    "name": "Aiguille de Toula",
+    "ele": 3528,
+    "coordinates": [
+      6.9218302,
+      45.8476722
+    ]
+  },
+  {
+    "wikipediaUri": "it:Tsanteleina",
+    "name": "Tsanteleina",
+    "ele": 3601,
+    "coordinates": [
+      7.0459805,
+      45.4795237
+    ]
+  },
+  {
+    "name": "Pointe du Montet",
+    "ele": 3428,
+    "coordinates": [
+      7.070391,
+      45.422394
+    ]
+  },
+  {
+    "wikipediaUri": "it:Punta di Galisia",
+    "name": "Pointe de la Galise / Punta di Galisia",
+    "ele": 3346,
+    "coordinates": [
+      7.1044364,
+      45.4669522
+    ]
+  },
+  {
+    "wikipediaUri": "an:Tuca de Malpás",
+    "name": "Pic du Maupas",
+    "ele": 3109,
+    "coordinates": [
+      0.5455762,
+      42.7014229
+    ]
+  },
+  {
+    "name": "Tuca Roya de Lliterola",
+    "ele": 3122,
+    "coordinates": [
+      0.5208907,
+      42.6976332
+    ]
+  },
+  {
+    "name": "Pic Gourdon",
+    "ele": 3034,
+    "coordinates": [
+      0.4830237,
+      42.7053053
+    ]
+  },
+  {
+    "name": "Le Rochail",
+    "ele": 3022,
+    "coordinates": [
+      6.0312809,
+      44.9801121
+    ]
+  },
+  {
+    "name": "Pic du Clapier du Peyron",
+    "ele": 3169,
+    "coordinates": [
+      6.0752448,
+      44.9361978
+    ]
+  },
+  {
+    "name": "Pic des Crabioules",
+    "ele": 3107,
+    "coordinates": [
+      0.52985,
+      42.7026989
+    ]
+  },
+  {
+    "wikipediaUri": "an:El Sellant de la Vaca",
+    "name": "El Sellán de la Vaca",
+    "ele": 3108,
+    "coordinates": [
+      0.496233,
+      42.6923874
+    ]
+  },
+  {
+    "name": "Grand Quayrat",
+    "ele": 3060,
+    "coordinates": [
+      0.5150965,
+      42.7133834
+    ]
+  },
+  {
+    "name": "Pic Lézat",
+    "ele": 3101,
+    "coordinates": [
+      0.516697,
+      42.7073572
+    ]
+  },
+  {
+    "name": "Piton Carré",
+    "ele": 3197,
+    "coordinates": [
+      -0.1449871,
+      42.7734295
+    ]
+  },
+  {
+    "name": "Pointe Chausenque",
+    "ele": 3204,
+    "coordinates": [
+      -0.1422823,
+      42.7734628
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Aiguille de Roc",
+    "name": "Aiguille de Roc",
+    "ele": 3409,
+    "coordinates": [
+      6.9209798,
+      45.9019708
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Dent du Caïman",
+    "name": "Dent du Caïman",
+    "ele": 3554,
+    "coordinates": [
+      6.9088879,
+      45.8942123
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Aiguille du Fou",
+    "name": "Aiguille du Fou",
+    "ele": 3501,
+    "coordinates": [
+      6.9114855,
+      45.8981415
+    ]
+  },
+  {
+    "name": "Aiguille des Ciseaux",
+    "ele": 3479,
+    "coordinates": [
+      6.9121292,
+      45.8984849
+    ]
+  },
+  {
+    "wikipediaUri": "en:Aiguille du Grépon",
+    "name": "Aiguille du Grépon",
+    "ele": 3482,
+    "coordinates": [
+      6.9190588,
+      45.9028436
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Aiguille de la République",
+    "name": "Aiguille de la République",
+    "ele": 3305,
+    "coordinates": [
+      6.9212635,
+      45.9056685
+    ]
+  },
+  {
+    "name": "Pointe Lépiney",
+    "ele": 3429,
+    "coordinates": [
+      6.9114628,
+      45.895855
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Dent du Crocodile",
+    "name": "Dent du Crocodile",
+    "ele": 3640,
+    "coordinates": [
+      6.9075827,
+      45.8926054
+    ]
+  },
+  {
+    "name": "Bec d'Oiseau",
+    "ele": 3417,
+    "coordinates": [
+      6.9188126,
+      45.9011346
+    ]
+  },
+  {
+    "name": "Punta de l'Ibón Gran Norte",
+    "ele": 3096,
+    "coordinates": [
+      0.3950628,
+      42.7033866
+    ]
+  },
+  {
+    "name": "Pic de Serre de Mourène",
+    "ele": 3090,
+    "coordinates": [
+      0.1353078,
+      42.7207426
+    ]
+  },
+  {
+    "name": "Tuca del Pas Alt de Lliterola",
+    "ele": 3097,
+    "coordinates": [
+      0.5211923,
+      42.695402
+    ]
+  },
+  {
+    "name": "Petit Astazou",
+    "ele": 3015,
+    "coordinates": [
+      0.014493,
+      42.7018762
+    ]
+  },
+  {
+    "name": "Bachimala Chicot N",
+    "ele": 3048,
+    "coordinates": [
+      0.3933877,
+      42.7075447
+    ]
+  },
+  {
+    "name": "Punda dera Ula",
+    "ele": 3098,
+    "coordinates": [
+      0.0024152,
+      42.6866993
+    ]
+  },
+  {
+    "name": "Pointe de la Sana",
+    "ele": 3435,
+    "coordinates": [
+      6.9174454,
+      45.3850652
+    ]
+  },
+  {
+    "name": "Bec de Grenier",
+    "ele": 3298,
+    "coordinates": [
+      6.3149713,
+      45.1075312
+    ]
+  },
+  {
+    "name": "Pic des Trois Évêchés",
+    "ele": 3116,
+    "coordinates": [
+      6.3649601,
+      45.070009
+    ]
+  },
+  {
+    "name": "Aiguille des Saffres",
+    "ele": 3135,
+    "coordinates": [
+      6.2466297,
+      44.8519289
+    ]
+  },
+  {
+    "name": "Tête de Malacombe",
+    "ele": 3124,
+    "coordinates": [
+      6.2393331,
+      44.9147659
+    ]
+  },
+  {
+    "name": "Pointe Lemercier",
+    "ele": 3170,
+    "coordinates": [
+      6.234976,
+      44.9123513
+    ]
+  },
+  {
+    "name": "Pointe Trifide",
+    "ele": 3450,
+    "coordinates": [
+      6.2726772,
+      45.0057743
+    ]
+  },
+  {
+    "name": "Pointe Marie-Louise",
+    "ele": 3545,
+    "coordinates": [
+      6.257616,
+      44.9969454
+    ]
+  },
+  {
+    "name": "Pointe Madeleine",
+    "ele": 3627,
+    "coordinates": [
+      6.2631201,
+      44.9971209
+    ]
+  },
+  {
+    "name": "Pointe Claire",
+    "ele": 3368,
+    "coordinates": [
+      6.3450979,
+      44.9934546
+    ]
+  },
+  {
+    "name": "Pointe des Pichettes",
+    "ele": 3534,
+    "coordinates": [
+      6.3487028,
+      45.0000248
+    ]
+  },
+  {
+    "name": "Pointe Gravelotte",
+    "ele": 3387,
+    "coordinates": [
+      6.3573931,
+      44.9969591
+    ]
+  },
+  {
+    "name": "Pointe Piaget",
+    "ele": 3569,
+    "coordinates": [
+      6.3453339,
+      44.9987048
+    ]
+  },
+  {
+    "name": "Tête des Corridors",
+    "ele": 3734,
+    "coordinates": [
+      6.3173739,
+      45.0067166
+    ]
+  },
+  {
+    "name": "Bec de l'Aigle",
+    "ele": 3411,
+    "coordinates": [
+      6.3266973,
+      45.014021
+    ]
+  },
+  {
+    "name": "Pointe Nord de la Selle",
+    "ele": 3295,
+    "coordinates": [
+      6.2764096,
+      44.9812557
+    ]
+  },
+  {
+    "name": "Aiguille de la Gandolière",
+    "ele": 3324,
+    "coordinates": [
+      6.2782549,
+      44.9714804
+    ]
+  },
+  {
+    "name": "Pic Nord des Cavales",
+    "ele": 3362,
+    "coordinates": [
+      6.3151846,
+      44.9804794
+    ]
+  },
+  {
+    "name": "Pointe Castelnau",
+    "ele": 3458,
+    "coordinates": [
+      6.3192871,
+      44.9940349
+    ]
+  },
+  {
+    "name": "Corne des Chamois",
+    "ele": 3305,
+    "coordinates": [
+      6.3165279,
+      44.9870295
+    ]
+  },
+  {
+    "name": "L'Ourson",
+    "ele": 3735,
+    "coordinates": [
+      6.3265792,
+      44.9988343
+    ]
+  },
+  {
+    "name": "Pointe Chalonge",
+    "ele": 3344,
+    "coordinates": [
+      6.3211284,
+      44.9751221
+    ]
+  },
+  {
+    "name": "Pic Sud des Cavales",
+    "ele": 3360,
+    "coordinates": [
+      6.3223944,
+      44.9746211
+    ]
+  },
+  {
+    "name": "Clochers de l'Alpe",
+    "ele": 3504,
+    "coordinates": [
+      6.3439605,
+      44.9722827
+    ]
+  },
+  {
+    "name": "Pic Maître",
+    "ele": 3728,
+    "coordinates": [
+      6.32969,
+      44.9692473
+    ]
+  },
+  {
+    "name": "Les Clochetons",
+    "ele": 3263,
+    "coordinates": [
+      6.3493463,
+      44.9755
+    ]
+  },
+  {
+    "name": "Tête Sud de la Somme",
+    "ele": 3389,
+    "coordinates": [
+      6.330131,
+      44.9470657
+    ]
+  },
+  {
+    "name": "Sommet Nord-Ouest de la Roche d'Alvau",
+    "ele": 3538,
+    "coordinates": [
+      6.3381235,
+      44.9475029
+    ]
+  },
+  {
+    "name": "Pointe Xavier Blanc",
+    "ele": 3677,
+    "coordinates": [
+      6.3620917,
+      44.9427196
+    ]
+  },
+  {
+    "name": "Jumeaux des Écrins",
+    "ele": 3730,
+    "coordinates": [
+      6.3540244,
+      44.9276123
+    ]
+  },
+  {
+    "name": "Clocher des Écrins",
+    "ele": 3808,
+    "coordinates": [
+      6.3489596,
+      44.9233964
+    ]
+  },
+  {
+    "name": "Flambeau des Écrins",
+    "ele": 3551,
+    "coordinates": [
+      6.339468,
+      44.9220404
+    ]
+  },
+  {
+    "name": "Tour de Bonne Pierre",
+    "ele": 3692,
+    "coordinates": [
+      6.3556973,
+      44.9287495
+    ]
+  },
+  {
+    "name": "Pointe de Bonne Pierre",
+    "ele": 3683,
+    "coordinates": [
+      6.3555181,
+      44.9297764
+    ]
+  },
+  {
+    "name": "Cornes de Pié Bérarde",
+    "ele": 3012,
+    "coordinates": [
+      6.319583,
+      44.9299899
+    ]
+  },
+  {
+    "name": "Pointe d'entre les Cols",
+    "ele": 3407,
+    "coordinates": [
+      6.2437515,
+      44.8934285
+    ]
+  },
+  {
+    "name": "Aiguillette de l'Étret",
+    "ele": 3281,
+    "coordinates": [
+      6.2453394,
+      44.8940814
+    ]
+  },
+  {
+    "name": "Pic Central de Vaccivier",
+    "ele": 3312,
+    "coordinates": [
+      6.2829762,
+      44.8706224
+    ]
+  },
+  {
+    "name": "Pic Est de Vaccivier",
+    "ele": 3266,
+    "coordinates": [
+      6.2950075,
+      44.8741063
+    ]
+  },
+  {
+    "name": "Tours de Boverjat",
+    "ele": 3064,
+    "coordinates": [
+      6.3137465,
+      44.8822387
+    ]
+  },
+  {
+    "name": "Cime de l'Encoula",
+    "ele": 3536,
+    "coordinates": [
+      6.2826994,
+      44.9051314
+    ]
+  },
+  {
+    "name": "Épaule Nord Ouest des Bans",
+    "ele": 3475,
+    "coordinates": [
+      6.3288097,
+      44.8516713
+    ]
+  },
+  {
+    "name": "Sommet Nord Ouest des Bans",
+    "ele": 3630,
+    "coordinates": [
+      6.3316422,
+      44.8503927
+    ]
+  },
+  {
+    "name": "Pointe de Conte Faviel",
+    "ele": 3238,
+    "coordinates": [
+      6.3242822,
+      44.8523862
+    ]
+  },
+  {
+    "name": "Sommet Nord des Bans",
+    "ele": 3662,
+    "coordinates": [
+      6.3351623,
+      44.8497849
+    ]
+  },
+  {
+    "name": "Pointe Est de la Condamine",
+    "ele": 3443,
+    "coordinates": [
+      6.3521782,
+      44.8529331
+    ]
+  },
+  {
+    "name": "Têtes de la Pilatte",
+    "ele": 3421,
+    "coordinates": [
+      6.3403121,
+      44.84872
+    ]
+  },
+  {
+    "name": "Pointe Ouest de la Condamine",
+    "ele": 3405,
+    "coordinates": [
+      6.3470713,
+      44.8514271
+    ]
+  },
+  {
+    "name": "Pointe de la Pilatte",
+    "ele": 3476,
+    "coordinates": [
+      6.3443722,
+      44.8494224
+    ]
+  },
+  {
+    "name": "Pointe des Frères Chamois",
+    "ele": 3570,
+    "coordinates": [
+      6.3508264,
+      44.879137
+    ]
+  },
+  {
+    "name": "Aiguille de Coste Rouge",
+    "ele": 3252,
+    "coordinates": [
+      6.3576479,
+      44.8951095
+    ]
+  },
+  {
+    "name": "Tour Pointue",
+    "ele": 3431,
+    "coordinates": [
+      6.3585941,
+      44.8919236
+    ]
+  },
+  {
+    "name": "Tour Tatra",
+    "ele": 3624,
+    "coordinates": [
+      6.3505904,
+      44.8806126
+    ]
+  },
+  {
+    "name": "Tour du Géant",
+    "ele": 3618,
+    "coordinates": [
+      6.3584439,
+      44.8902963
+    ]
+  },
+  {
+    "name": "Dents de Coste Rouge",
+    "ele": 3373,
+    "coordinates": [
+      6.3580791,
+      44.8929269
+    ]
+  },
+  {
+    "name": "Pic des Aupillous",
+    "ele": 3505,
+    "coordinates": [
+      6.3295165,
+      44.8408388
+    ]
+  },
+  {
+    "name": "Épaule Sud de la Condamine",
+    "ele": 3496,
+    "coordinates": [
+      6.3337796,
+      44.8439118
+    ]
+  },
+  {
+    "name": "Piton de la Viaclose",
+    "ele": 3010,
+    "coordinates": [
+      6.3160003,
+      44.8391956
+    ]
+  },
+  {
+    "name": "Flèche Rousse",
+    "ele": 3879,
+    "coordinates": [
+      7.0227325,
+      45.9582209
+    ]
+  },
+  {
+    "name": "Pic de la Moulinière",
+    "ele": 3073,
+    "coordinates": [
+      6.4864664,
+      45.0561953
+    ]
+  },
+  {
+    "name": "Tête de Colombe",
+    "ele": 3022,
+    "coordinates": [
+      6.4492349,
+      45.0479204
+    ]
+  },
+  {
+    "name": "Tête de la Cassille",
+    "ele": 3069,
+    "coordinates": [
+      6.4992271,
+      45.0436172
+    ]
+  },
+  {
+    "name": "Le Tuba",
+    "ele": 3008,
+    "coordinates": [
+      6.4016226,
+      44.6983299
+    ]
+  },
+  {
+    "name": "Grand Pinier ou Pic Brun",
+    "ele": 3117,
+    "coordinates": [
+      6.4011564,
+      44.7230647
+    ]
+  },
+  {
+    "name": "Roc Diolon",
+    "ele": 3071,
+    "coordinates": [
+      6.3630684,
+      44.7333863
+    ]
+  },
+  {
+    "name": "Culfreda / Batoua",
+    "ele": 3034,
+    "coordinates": [
+      0.336307,
+      42.7087042
+    ]
+  },
+  {
+    "name": "Pointe de l'Aval - Cime Ouest",
+    "ele": 3320,
+    "coordinates": [
+      6.8443666,
+      44.5449664
+    ]
+  },
+  {
+    "wikipediaUri": "en:Aiguille du Goûter",
+    "name": "Aiguille du Goûter",
+    "ele": 3863,
+    "coordinates": [
+      6.8312381,
+      45.8509504
+    ]
+  },
+  {
+    "wikipediaUri": "it:Punta Ramiere",
+    "name": "Bric Froid/Punta Ramière",
+    "ele": 3302,
+    "coordinates": [
+      6.9314224,
+      44.8644491
+    ]
+  },
+  {
+    "wikipediaUri": "it:Monte Tenibres",
+    "name": "Mont Ténibre / Monte Tenibres",
+    "ele": 3031,
+    "coordinates": [
+      6.9717044,
+      44.2836511
+    ]
+  },
+  {
+    "name": "Barre Noire",
+    "ele": 3751,
+    "coordinates": [
+      6.3686143,
+      44.9280268
+    ]
+  },
+  {
+    "name": "Pic de Mal Cros",
+    "ele": 3116,
+    "coordinates": [
+      6.1951877,
+      44.7407711
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Rocher de la Grande Tempête",
+    "name": "Rocher de la Grande Tempête",
+    "ele": 3002,
+    "coordinates": [
+      6.558355,
+      45.080203
+    ]
+  },
+  {
+    "name": "Turge de la Suffie",
+    "ele": 3024,
+    "coordinates": [
+      6.7769825,
+      44.8375217
+    ]
+  },
+  {
+    "name": "Roche Michel",
+    "ele": 3429,
+    "coordinates": [
+      7.0152078,
+      45.2389637
+    ]
+  },
+  {
+    "name": "Pointe du Lamet",
+    "ele": 3504,
+    "coordinates": [
+      6.9988573,
+      45.2393908
+    ]
+  },
+  {
+    "wikipediaUri": "it:Punta dell'Alp",
+    "name": "Punta dell'Alp",
+    "ele": 3031,
+    "coordinates": [
+      6.9708699,
+      44.6772362
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Aiguille Rouge",
+    "name": "Aiguille Rouge",
+    "ele": 3227,
+    "coordinates": [
+      6.8486969,
+      45.551903
+    ]
+  },
+  {
+    "name": "Grande Fourche",
+    "ele": 3610,
+    "coordinates": [
+      7.0210454,
+      45.9763829
+    ]
+  },
+  {
+    "name": "Pointe de Labby",
+    "ele": 3521,
+    "coordinates": [
+      6.7323032,
+      45.2987631
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Pointe des Cerces",
+    "name": "Pointe des Cerces",
+    "ele": 3098,
+    "coordinates": [
+      6.4889393,
+      45.0655706
+    ]
+  },
+  {
+    "name": "Mont Bréquin",
+    "ele": 3131,
+    "coordinates": [
+      6.5335416,
+      45.252003
+    ]
+  },
+  {
+    "name": "Cairn",
+    "ele": 3178,
+    "coordinates": [
+      6.2003849,
+      45.0003352
+    ]
+  },
+  {
+    "name": "Dôme de Puy Salié",
+    "ele": 3417,
+    "coordinates": [
+      6.222599,
+      44.9971601
+    ]
+  },
+  {
+    "name": "Cime du Grand Sauvage",
+    "ele": 3217,
+    "coordinates": [
+      6.165648,
+      45.154432
+    ]
+  },
+  {
+    "wikipediaUri": "it:Punta Bagnà",
+    "name": "Cime du Grand Vallon / Punta Bagnà",
+    "ele": 3129,
+    "coordinates": [
+      6.7112792,
+      45.1449615
+    ]
+  },
+  {
+    "name": "La Belle Plinier",
+    "ele": 3086,
+    "coordinates": [
+      6.714318,
+      45.1624954
+    ]
+  },
+  {
+    "name": "Sommet Nord de Sarenne",
+    "ele": 3128,
+    "coordinates": [
+      6.1358836,
+      45.1177693
+    ]
+  },
+  {
+    "name": "Les Choucières Vertes",
+    "ele": 3058,
+    "coordinates": [
+      6.2334341,
+      44.768532
+    ]
+  },
+  {
+    "name": "Aiguille du Bouchet",
+    "ele": 3254,
+    "coordinates": [
+      6.610118,
+      45.2585801
+    ]
+  },
+  {
+    "wikipediaUri": "en:Pointe Rénod",
+    "name": "Pointe Rénod",
+    "ele": 3380,
+    "coordinates": [
+      6.6055972,
+      45.2462312
+    ]
+  },
+  {
+    "name": "Pointe du Bouchet",
+    "ele": 3416,
+    "coordinates": [
+      6.6042942,
+      45.253888
+    ]
+  },
+  {
+    "name": "Aiguille Doran",
+    "ele": 3040,
+    "coordinates": [
+      6.6784696,
+      45.2515022
+    ]
+  },
+  {
+    "name": "Aiguille de Polset",
+    "ele": 3528,
+    "coordinates": [
+      6.6341493,
+      45.2760538
+    ]
+  },
+  {
+    "name": "Dome de Polset",
+    "ele": 3497,
+    "coordinates": [
+      6.6392762,
+      45.2762992
+    ]
+  },
+  {
+    "name": "Pointe de l'Echelle",
+    "ele": 3422,
+    "coordinates": [
+      6.6850604,
+      45.2691898
+    ]
+  },
+  {
+    "name": "Aiguille Centrale de la Saussaz",
+    "ele": 3361,
+    "coordinates": [
+      6.3193956,
+      45.1136615
+    ]
+  },
+  {
+    "name": "Aiguille Orientale de la Saussaz",
+    "ele": 3323,
+    "coordinates": [
+      6.3268865,
+      45.1156889
+    ]
+  },
+  {
+    "name": "Pic Heid",
+    "ele": 3022,
+    "coordinates": [
+      0.135119,
+      42.7286951
+    ]
+  },
+  {
+    "name": "Pointe de Terre Rouge",
+    "ele": 3080,
+    "coordinates": [
+      6.5517502,
+      45.1246785
+    ]
+  },
+  {
+    "name": "La Petite Tête Noire",
+    "ele": 3039,
+    "coordinates": [
+      6.9401623,
+      44.6517562
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Pic de Néouvielle",
+    "name": "Pic de Néouvielle",
+    "ele": 3091,
+    "coordinates": [
+      0.1151204,
+      42.8353661
+    ]
+  },
+  {
+    "name": "Pointe de la Saume",
+    "ele": 3043,
+    "coordinates": [
+      6.7628505,
+      44.6393503
+    ]
+  },
+  {
+    "wikipediaUri": "es:Punta de Gabarró",
+    "name": "Punta de Gabarró",
+    "ele": 3114,
+    "coordinates": [
+      1.3998781,
+      42.6654679
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Brec de Chambeyron",
+    "name": "Brec de Chambeyron",
+    "ele": 3389,
+    "coordinates": [
+      6.8534447,
+      44.5279539
+    ]
+  },
+  {
+    "name": "Tête des Cibiroles",
+    "ele": 3236,
+    "coordinates": [
+      6.8563736,
+      44.5176756
+    ]
+  },
+  {
+    "name": "Pointe des Cirques",
+    "ele": 3234,
+    "coordinates": [
+      6.8656995,
+      44.5473355
+    ]
+  },
+  {
+    "name": "Pic de Panestrel",
+    "ele": 3254,
+    "coordinates": [
+      6.7922756,
+      44.5920255
+    ]
+  },
+  {
+    "name": "Pointe d'Escreins",
+    "ele": 3038,
+    "coordinates": [
+      6.7820186,
+      44.594684
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Mont Chaberton",
+    "name": "Mont Chaberton",
+    "ele": 3131,
+    "coordinates": [
+      6.7514195,
+      44.9645385
+    ]
+  },
+  {
+    "name": "Pointes de Rougnoux",
+    "ele": 3179,
+    "coordinates": [
+      6.359696,
+      44.7580041
+    ]
+  },
+  {
+    "name": "Pointe de la Haie",
+    "ele": 3452,
+    "coordinates": [
+      7.0012905,
+      45.2463885
+    ]
+  },
+  {
+    "name": "Pointe du Chapeau",
+    "ele": 3419,
+    "coordinates": [
+      6.9924682,
+      45.2551149
+    ]
+  },
+  {
+    "name": "Signal du Grand Mont Cenis",
+    "ele": 3377,
+    "coordinates": [
+      6.9552927,
+      45.2644191
+    ]
+  },
+  {
+    "name": "Mont Avril",
+    "ele": 3212,
+    "coordinates": [
+      7.0956853,
+      45.2308438
+    ]
+  },
+  {
+    "name": "Pointe Costans / Punta Costan",
+    "ele": 3305,
+    "coordinates": [
+      7.106038,
+      45.2373324
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Aiguille du Fruit",
+    "name": "Aiguille du Fruit",
+    "ele": 3048,
+    "coordinates": [
+      6.6306532,
+      45.3560445
+    ]
+  },
+  {
+    "name": "Le Grand Bec",
+    "ele": 3399,
+    "coordinates": [
+      6.7520849,
+      45.4233352
+    ]
+  },
+  {
+    "name": "Pointe du Vallonet",
+    "ele": 3371,
+    "coordinates": [
+      6.7607551,
+      45.4172618
+    ]
+  },
+  {
+    "name": "Pic du Coup de Sabre",
+    "ele": 3699,
+    "coordinates": [
+      6.3769645,
+      44.8910089
+    ]
+  },
+  {
+    "name": "Escalinade",
+    "ele": 3087,
+    "coordinates": [
+      6.7837358,
+      44.8312466
+    ]
+  },
+  {
+    "name": "Pointe Mieulet",
+    "ele": 4287,
+    "coordinates": [
+      6.8724569,
+      45.8500501
+    ]
+  },
+  {
+    "wikipediaUri": "en:Pointe Bayeux",
+    "name": "Pointe Bayeux",
+    "ele": 4258,
+    "coordinates": [
+      6.8433769,
+      45.8467909
+    ]
+  },
+  {
+    "name": "Pointe des Avers",
+    "ele": 3089,
+    "coordinates": [
+      6.8878267,
+      44.6612323
+    ]
+  },
+  {
+    "name": "Pas de la Cula",
+    "ele": 3085,
+    "coordinates": [
+      6.9137687,
+      44.6589618
+    ]
+  },
+  {
+    "name": "Punta del Vallone del Lupo / Tête de Gandin",
+    "ele": 3155,
+    "coordinates": [
+      6.9326338,
+      44.5927127
+    ]
+  },
+  {
+    "wikipediaUri": "it:Pelvo di Ciabrera",
+    "name": "Pelvas de Chabrière / Pelvo di Ciabrera",
+    "ele": 3157,
+    "coordinates": [
+      6.9330694,
+      44.5795915
+    ]
+  },
+  {
+    "name": "Dents de Maniglia",
+    "ele": 3166,
+    "coordinates": [
+      6.9122919,
+      44.5687635
+    ]
+  },
+  {
+    "name": "Pointe du Fond de Roure",
+    "ele": 3181,
+    "coordinates": [
+      6.9128927,
+      44.564941
+    ]
+  },
+  {
+    "name": "Pointe Basse de Mary",
+    "ele": 3126,
+    "coordinates": [
+      6.8895438,
+      44.5829576
+    ]
+  },
+  {
+    "name": "Pointe Haute de Mary",
+    "ele": 3206,
+    "coordinates": [
+      6.8949452,
+      44.575411
+    ]
+  },
+  {
+    "name": "Pic du Pelvat",
+    "ele": 3220,
+    "coordinates": [
+      6.9186568,
+      44.5887702
+    ]
+  },
+  {
+    "name": "Tête des Bréquets",
+    "ele": 3079,
+    "coordinates": [
+      6.8279826,
+      44.4935044
+    ]
+  },
+  {
+    "name": "La Massour",
+    "ele": 3024,
+    "coordinates": [
+      6.8580662,
+      44.5073398
+    ]
+  },
+  {
+    "name": "Tête de Vautisse",
+    "ele": 3156,
+    "coordinates": [
+      6.4854209,
+      44.7010069
+    ]
+  },
+  {
+    "name": "Le Grand Queyras",
+    "ele": 3114,
+    "coordinates": [
+      6.951375,
+      44.7152712
+    ]
+  },
+  {
+    "name": "Le Peouvou",
+    "ele": 3232,
+    "coordinates": [
+      6.8831141,
+      44.6300028
+    ]
+  },
+  {
+    "name": "La Roche Noire",
+    "ele": 3134,
+    "coordinates": [
+      6.8916255,
+      44.6366886
+    ]
+  },
+  {
+    "name": "Corne du Diable",
+    "ele": 4064,
+    "coordinates": [
+      6.8933439,
+      45.8543421
+    ]
+  },
+  {
+    "wikipediaUri": "it:L'Isolée",
+    "name": "L'Isolée",
+    "ele": 4114,
+    "coordinates": [
+      6.8909713,
+      45.8545834
+    ]
+  },
+  {
+    "name": "Le Clocher",
+    "ele": 3853,
+    "coordinates": [
+      6.8966883,
+      45.851101
+    ]
+  },
+  {
+    "name": "Le Petit Capucin",
+    "ele": 3693,
+    "coordinates": [
+      6.9010209,
+      45.8537012
+    ]
+  },
+  {
+    "name": "Le Trident",
+    "ele": 3639,
+    "coordinates": [
+      6.8997262,
+      45.8507227
+    ]
+  },
+  {
+    "name": "Pointe Adolphe Rey",
+    "ele": 3536,
+    "coordinates": [
+      6.9040909,
+      45.85407
+    ]
+  },
+  {
+    "wikipediaUri": "it:Punta Carmen du Tacul",
+    "name": "Pointe Carmen",
+    "ele": 4109,
+    "coordinates": [
+      6.8917806,
+      45.8545513
+    ]
+  },
+  {
+    "name": "Pointe Chaubert",
+    "ele": 4074,
+    "coordinates": [
+      6.8930535,
+      45.8544068
+    ]
+  },
+  {
+    "wikipediaUri": "en:Pointe Lachenal",
+    "name": "Pointe Lachenal",
+    "ele": 3613,
+    "coordinates": [
+      6.8958205,
+      45.8646998
+    ]
+  },
+  {
+    "name": "Pointe Médiane",
+    "ele": 4097,
+    "coordinates": [
+      6.8920627,
+      45.854535
+    ]
+  },
+  {
+    "name": "Pyramide du Tacul",
+    "ele": 3468,
+    "coordinates": [
+      6.9022491,
+      45.8565071
+    ]
+  },
+  {
+    "wikipediaUri": "it:Monte Pelvo (Pic de Caramantran)",
+    "name": "Caramantran / Monte Pelvo",
+    "ele": 3025,
+    "coordinates": [
+      6.963705,
+      44.678296
+    ]
+  },
+  {
+    "name": "Rocca Rossa",
+    "ele": 3190,
+    "coordinates": [
+      6.9997832,
+      44.6902646
+    ]
+  },
+  {
+    "wikipediaUri": "en:Tour du Marboré",
+    "name": "Tour du Marboré",
+    "ele": 3012,
+    "coordinates": [
+      -0.0170776,
+      42.685787
+    ]
+  },
+  {
+    "name": "Le Bec Roux",
+    "ele": 3013,
+    "coordinates": [
+      6.825658,
+      44.5391619
+    ]
+  },
+  {
+    "name": "Pic de Campbieil",
+    "ele": 3173,
+    "coordinates": [
+      0.1197083,
+      42.792033
+    ]
+  },
+  {
+    "name": "Pic Badet",
+    "ele": 3160,
+    "coordinates": [
+      0.1042392,
+      42.7977717
+    ]
+  },
+  {
+    "name": "Pic Maou",
+    "ele": 3074,
+    "coordinates": [
+      0.1058456,
+      42.7941054
+    ]
+  },
+  {
+    "name": "Pic d'Estaragne",
+    "ele": 3006,
+    "coordinates": [
+      0.1302987,
+      42.7971603
+    ]
+  },
+  {
+    "name": "Pic des Trois Conseillers",
+    "ele": 3039,
+    "coordinates": [
+      0.1129302,
+      42.831159
+    ]
+  },
+  {
+    "name": "Turon de Néouvielle",
+    "ele": 3035,
+    "coordinates": [
+      0.1077501,
+      42.8277711
+    ]
+  },
+  {
+    "name": "Tuca del Molsero",
+    "ele": 3176,
+    "coordinates": [
+      0.5152916,
+      42.6914274
+    ]
+  },
+  {
+    "name": "Cime sud du Gélas",
+    "ele": 3134,
+    "coordinates": [
+      7.3841085,
+      44.1221848
+    ]
+  },
+  {
+    "name": "La Mortice Sud",
+    "ele": 3169,
+    "coordinates": [
+      6.769249,
+      44.5738851
+    ]
+  },
+  {
+    "name": "La Mortice sommet Nord",
+    "ele": 3187,
+    "coordinates": [
+      6.7679079,
+      44.5822295
+    ]
+  },
+  {
+    "wikipediaUri": "it:Grand Assaly",
+    "name": "Grand Assaly",
+    "ele": 3173,
+    "coordinates": [
+      6.9701976,
+      45.6542259
+    ]
+  },
+  {
+    "wikipediaUri": "it:Monte Maniglia",
+    "name": "Mont de Maniglia / Monte Maniglia",
+    "ele": 3177,
+    "coordinates": [
+      6.9158512,
+      44.56207
+    ]
+  },
+  {
+    "wikipediaUri": "en:Aiguille des Grands Montets",
+    "name": "Aiguille des Grands Montets",
+    "ele": 3296,
+    "coordinates": [
+      6.9605461,
+      45.9482017
+    ]
+  },
+  {
+    "name": "Grande Motte",
+    "ele": 3653,
+    "coordinates": [
+      6.8698803,
+      45.4107909
+    ]
+  },
+  {
+    "name": "Pointe de l'Invernet",
+    "ele": 3128,
+    "coordinates": [
+      6.9852184,
+      45.6374208
+    ]
+  },
+  {
+    "name": "Bec de l'Ane",
+    "ele": 3215,
+    "coordinates": [
+      6.9819299,
+      45.6146264
+    ]
+  },
+  {
+    "name": "Pointe d'Ormelune",
+    "ele": 3256,
+    "coordinates": [
+      6.9879336,
+      45.5797935
+    ]
+  },
+  {
+    "name": "Pointe des Plates des Chamois",
+    "ele": 3567,
+    "coordinates": [
+      6.9912718,
+      45.5303956
+    ]
+  },
+  {
+    "name": "Pointe du Nant Cruet",
+    "ele": 3605,
+    "coordinates": [
+      6.9958717,
+      45.5277687
+    ]
+  },
+  {
+    "name": "Pointe de l'Argentière",
+    "ele": 3053,
+    "coordinates": [
+      6.9616444,
+      45.5793914
+    ]
+  },
+  {
+    "name": "Triangle du Tacul",
+    "ele": 3970,
+    "coordinates": [
+      6.8868817,
+      45.8621168
+    ]
+  },
+  {
+    "name": "Pic des Houerts",
+    "ele": 3235,
+    "coordinates": [
+      6.7665904,
+      44.5873577
+    ]
+  },
+  {
+    "name": "Pointe des Neyzets",
+    "ele": 3248,
+    "coordinates": [
+      6.4028099,
+      44.7997852
+    ]
+  },
+  {
+    "name": "Aliet",
+    "ele": 3100,
+    "coordinates": [
+      6.8172109,
+      45.4976689
+    ]
+  },
+  {
+    "name": "Dôme de Pramecou",
+    "ele": 3081,
+    "coordinates": [
+      6.8780966,
+      45.4343658
+    ]
+  },
+  {
+    "wikipediaUri": "it:Monte Collerin",
+    "name": "Monte Collerin / Pointe du Colerin",
+    "ele": 3475,
+    "coordinates": [
+      7.1118917,
+      45.324006
+    ]
+  },
+  {
+    "name": "Pic de Parières",
+    "ele": 3076,
+    "coordinates": [
+      6.2405698,
+      44.7791076
+    ]
+  },
+  {
+    "name": "Pointe du Ribon",
+    "ele": 3529,
+    "coordinates": [
+      7.077707,
+      45.2284607
+    ]
+  },
+  {
+    "name": "Pointe des Arandelières",
+    "ele": 3178,
+    "coordinates": [
+      6.8451567,
+      45.5477693
+    ]
+  },
+  {
+    "name": "Aiguille du Saint-Esprit",
+    "ele": 3414,
+    "coordinates": [
+      6.8459651,
+      45.5364038
+    ]
+  },
+  {
+    "name": "Mont Turia",
+    "ele": 3646,
+    "coordinates": [
+      6.86074,
+      45.5328397
+    ]
+  },
+  {
+    "name": "Brèche de Puiseux",
+    "ele": 3462,
+    "coordinates": [
+      6.8629138,
+      45.5219485
+    ]
+  },
+  {
+    "name": "Brèche Poccard",
+    "ele": 3223,
+    "coordinates": [
+      6.8503026,
+      45.5265516
+    ]
+  },
+  {
+    "name": "Cime de Bard",
+    "ele": 3168,
+    "coordinates": [
+      6.9324134,
+      45.1923152
+    ]
+  },
+  {
+    "name": "Sommet de la Nunda",
+    "ele": 3023,
+    "coordinates": [
+      6.9393475,
+      45.2617404
+    ]
+  },
+  {
+    "name": "Pointe de Ronce",
+    "ele": 3612,
+    "coordinates": [
+      6.978393,
+      45.2644481
+    ]
+  },
+  {
+    "name": "Le Cheval Blanc",
+    "ele": 3020,
+    "coordinates": [
+      6.5764127,
+      45.1227333
+    ]
+  },
+  {
+    "name": "Le Grand Argentier",
+    "ele": 3042,
+    "coordinates": [
+      6.6542697,
+      45.1259013
+    ]
+  },
+  {
+    "wikipediaUri": "it:Punta Nera (Alpi Cozie)",
+    "name": "Punta Nera cime nord-ouest",
+    "ele": 3047,
+    "coordinates": [
+      6.6585804,
+      45.12231
+    ]
+  },
+  {
+    "name": "La Meyna",
+    "ele": 3067,
+    "coordinates": [
+      6.8585627,
+      44.4806756
+    ]
+  },
+  {
+    "name": "Pointe de Pramecou",
+    "ele": 3009,
+    "coordinates": [
+      6.8688045,
+      45.4372776
+    ]
+  },
+  {
+    "name": "Rochers Rouges",
+    "ele": 3003,
+    "coordinates": [
+      6.8776641,
+      45.4798888
+    ]
+  },
+  {
+    "wikipediaUri": "it:Punta Marmottere",
+    "name": "Mont Tour / Punta Marmottere",
+    "ele": 3385,
+    "coordinates": [
+      7.0510821,
+      45.2255555
+    ]
+  },
+  {
+    "wikipediaUri": "it:Punta Baldassarre",
+    "name": "Pointe Balthazar / Punta Baldassarre",
+    "ele": 3158,
+    "coordinates": [
+      6.6318546,
+      45.0961465
+    ]
+  },
+  {
+    "name": "Aiguille de L'Amône",
+    "ele": 3584,
+    "coordinates": [
+      7.0417358,
+      45.9302495
+    ]
+  },
+  {
+    "name": "Pic de Rochelaire",
+    "ele": 3108,
+    "coordinates": [
+      6.4675878,
+      44.6964842
+    ]
+  },
+  {
+    "name": "Pointe de Pré de Bar Est",
+    "ele": 3608,
+    "coordinates": [
+      7.0346514,
+      45.9212068
+    ]
+  },
+  {
+    "name": "Roc Basagne",
+    "ele": 3220,
+    "coordinates": [
+      7.0867706,
+      45.4726079
+    ]
+  },
+  {
+    "wikipediaUri": "it:Punta Calabre",
+    "name": "Pointe de Calabre / Punta Calabre",
+    "ele": 3351,
+    "coordinates": [
+      7.0734748,
+      45.4731011
+    ]
+  },
+  {
+    "name": "Pointe des Grands Becs",
+    "ele": 3042,
+    "coordinates": [
+      6.7371132,
+      44.9935589
+    ]
+  },
+  {
+    "wikipediaUri": "it:Cima Gardiola",
+    "name": "Cima Gardiola / Cime Gardoria",
+    "ele": 3136,
+    "coordinates": [
+      6.7362214,
+      45.1384655
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Gros Morne",
+    "name": "Gros Morne",
+    "ele": 3019,
+    "coordinates": [
+      55.4673218,
+      -21.0865754
+    ]
+  },
+  {
+    "name": "Pic Ramougn",
+    "ele": 3011,
+    "coordinates": [
+      0.1201617,
+      42.8348178
+    ]
+  },
+  {
+    "name": "Tête de Dormillouse",
+    "ele": 3085,
+    "coordinates": [
+      6.4581934,
+      44.7680051
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Aiguille des Pélerins",
+    "name": "Aiguille des Pèlerins - Secteur du Plan",
+    "ele": 3318,
+    "coordinates": [
+      6.9014862,
+      45.8949457
+    ]
+  },
+  {
+    "wikipediaUri": "en:Aiguilles du Diable",
+    "name": "Aiguille du Diable",
+    "ele": 4114,
+    "coordinates": [
+      6.89111,
+      45.85444
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Petit Pinier",
+    "name": "Petit Pinier",
+    "ele": 3100,
+    "coordinates": [
+      6.4056,
+      44.70611
+    ]
+  },
+  {
+    "name": "Pic Jocelme",
+    "ele": 3458,
+    "coordinates": [
+      6.3354538,
+      44.8279617
+    ]
+  },
+  {
+    "name": "Pic de Bonvoisin",
+    "ele": 3480,
+    "coordinates": [
+      6.3463748,
+      44.8234313
+    ]
+  },
+  {
+    "name": "Aiguille Septentrionale",
+    "ele": 3364,
+    "coordinates": [
+      6.3409959,
+      45.1324076
+    ]
+  },
+  {
+    "name": "Cap de la Coma de Riufred",
+    "ele": 3041,
+    "coordinates": [
+      1.4015231,
+      42.6687455
+    ]
+  },
+  {
+    "wikipediaUri": "it:Rocca Bianca (Valle Varaita)",
+    "name": "Rocca Bianca",
+    "ele": 3063,
+    "coordinates": [
+      6.9594999,
+      44.6647152
+    ]
+  },
+  {
+    "name": "Pic Brusalana",
+    "ele": 3170,
+    "coordinates": [
+      7.0085668,
+      44.6891404
+    ]
+  },
+  {
+    "name": "O Casterillet/Torre de Cadier",
+    "ele": 3049,
+    "coordinates": [
+      -0.2859567,
+      42.8376788
+    ]
+  },
+  {
+    "name": "Roche de Jabel",
+    "ele": 3570,
+    "coordinates": [
+      6.4378205,
+      44.9511964
+    ]
+  },
+  {
+    "name": "Pic des Prés les Fonts",
+    "ele": 3358,
+    "coordinates": [
+      6.4472597,
+      44.9543691
+    ]
+  },
+  {
+    "name": "Pointe Charlet",
+    "ele": 3194,
+    "coordinates": [
+      6.4531373,
+      44.9536817
+    ]
+  },
+  {
+    "name": "Pics du Casset",
+    "ele": 3113,
+    "coordinates": [
+      6.4505581,
+      44.9603415
+    ]
+  },
+  {
+    "name": "Pointe du Vieux",
+    "ele": 3464,
+    "coordinates": [
+      6.9884541,
+      45.2570149
+    ]
+  },
+  {
+    "name": "Signal du Lamet",
+    "ele": 3480,
+    "coordinates": [
+      6.9948607,
+      45.2382415
+    ]
+  },
+  {
+    "wikipediaUri": "it:Levanna Orientale",
+    "name": "Levanna Orientale",
+    "ele": 3555,
+    "coordinates": [
+      7.1856662,
+      45.4032562
+    ]
+  },
+  {
+    "name": "Vieux Chaillol",
+    "ele": 3162,
+    "coordinates": [
+      6.1898156,
+      44.7358733
+    ]
+  },
+  {
+    "name": "Pain de sucre du Mont Tondu",
+    "ele": 3169,
+    "coordinates": [
+      6.7562157,
+      45.7670081
+    ]
+  },
+  {
+    "name": "Pic Wilson",
+    "ele": 3266,
+    "coordinates": [
+      6.8604871,
+      45.8627091
+    ]
+  },
+  {
+    "name": "Pointe Durier",
+    "ele": 3997,
+    "coordinates": [
+      6.8711361,
+      45.8532951
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Aiguille de Saussure",
+    "name": "Aiguille de Saussure",
+    "ele": 3839,
+    "coordinates": [
+      6.87606,
+      45.8595636
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Dôme du Goûter",
+    "name": "Dôme du Goûter",
+    "ele": 4304,
+    "coordinates": [
+      6.8436128,
+      45.8429841
+    ]
+  },
+  {
+    "name": "Aiguille de Tré-la-Tête Centrale Nord-Ouest",
+    "ele": 3908,
+    "coordinates": [
+      6.8133076,
+      45.7955742
+    ]
+  },
+  {
+    "name": "Gran Toasso",
+    "ele": 3291,
+    "coordinates": [
+      6.8911341,
+      45.1632847
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Mont d'Ambin",
+    "name": "Mont d'Ambin / Rocca d'Ambin",
+    "ele": 3378,
+    "coordinates": [
+      6.8841425,
+      45.156767
+    ]
+  },
+  {
+    "name": "Tête du Clot",
+    "ele": 3074,
+    "coordinates": [
+      6.3814178,
+      44.7885812
+    ]
+  },
+  {
+    "name": "Petite Aiguille des Glaciers",
+    "ele": 3463,
+    "coordinates": [
+      6.804148,
+      45.7712476
+    ]
+  },
+  {
+    "name": "Le Mourjean",
+    "ele": 3356,
+    "coordinates": [
+      6.8544163,
+      44.5268698
+    ]
+  },
+  {
+    "name": "Gros Peyron - cima nordest / Gros Peyron - cime nord-est",
+    "ele": 3041,
+    "coordinates": [
+      6.821419,
+      45.1454984
+    ]
+  },
+  {
+    "name": "Tête de la Muraillette",
+    "ele": 3019,
+    "coordinates": [
+      6.0803462,
+      44.9465983
+    ]
+  },
+  {
+    "name": "Cime de Chafrion",
+    "ele": 3073,
+    "coordinates": [
+      7.3892205,
+      44.1251399
+    ]
+  },
+  {
+    "name": "Pointe des Lessières",
+    "ele": 3043,
+    "coordinates": [
+      7.0230722,
+      45.4149694
+    ]
+  },
+  {
+    "name": "Roche Pompée",
+    "ele": 3164,
+    "coordinates": [
+      6.6309466,
+      45.094708
+    ]
+  },
+  {
+    "name": "Petit Rochebrune",
+    "ele": 3078,
+    "coordinates": [
+      6.846349,
+      44.8252868
+    ]
+  },
+  {
+    "name": "Pointe d'Arnès / Punta del Crot",
+    "ele": 3211,
+    "coordinates": [
+      7.132805,
+      45.285368
+    ]
+  },
+  {
+    "wikipediaUri": "it:Rocher de la Tournette",
+    "name": "Rocher de la Tournette",
+    "ele": 4677,
+    "coordinates": [
+      6.8598973,
+      45.8329507
+    ]
+  },
+  {
+    "name": "Punta del Fort",
+    "ele": 3385,
+    "coordinates": [
+      7.0885048,
+      45.2260075
+    ]
+  },
+  {
+    "name": "Pointe des Cavales / Punta delle Cavalle",
+    "ele": 3394,
+    "coordinates": [
+      7.0821545,
+      45.2225184
+    ]
+  },
+  {
+    "name": "Dôme de la Cochette",
+    "ele": 3041,
+    "coordinates": [
+      6.1590603,
+      45.1796369
+    ]
+  },
+  {
+    "name": "Cimes de la Cochette",
+    "ele": 3232,
+    "coordinates": [
+      6.152335,
+      45.1682688
+    ]
+  },
+  {
+    "name": "Cimes de la Cochette",
+    "ele": 3240,
+    "coordinates": [
+      6.1493824,
+      45.1683172
+    ]
+  },
+  {
+    "name": "Cimes de la Barbarate",
+    "ele": 3291,
+    "coordinates": [
+      6.1475507,
+      45.1630459
+    ]
+  },
+  {
+    "name": "Cime du Petit Sauvage",
+    "ele": 3163,
+    "coordinates": [
+      6.158844,
+      45.151095
+    ]
+  },
+  {
+    "name": "Pointe de Longe Côte",
+    "ele": 3104,
+    "coordinates": [
+      6.7759594,
+      45.1884568
+    ]
+  },
+  {
+    "name": "Entre Piniers",
+    "ele": 3044,
+    "coordinates": [
+      6.3996207,
+      44.713027
+    ]
+  },
+  {
+    "name": "L'Etoile",
+    "ele": 3066,
+    "coordinates": [
+      6.4659956,
+      44.7672904
+    ]
+  },
+  {
+    "name": "Pointe du Rascrouset",
+    "ele": 3082,
+    "coordinates": [
+      6.4085594,
+      44.8561942
+    ]
+  },
+  {
+    "name": "Becca Motta",
+    "ele": 3045,
+    "coordinates": [
+      6.7492604,
+      45.4329599
+    ]
+  },
+  {
+    "name": "Pointe Bravais",
+    "ele": 4057,
+    "coordinates": [
+      6.8507174,
+      45.8513515
+    ]
+  },
+  {
+    "name": "Calotte de Rochefort",
+    "ele": 3981,
+    "coordinates": [
+      6.9698355,
+      45.8667882
+    ]
+  },
+  {
+    "name": "Pointe de l'Autaret / Punta Autaret",
+    "ele": 3332,
+    "coordinates": [
+      7.1105022,
+      45.2466286
+    ]
+  },
+  {
+    "name": "Tête de la Petite Part",
+    "ele": 3144,
+    "coordinates": [
+      6.8119765,
+      44.6035564
+    ]
+  },
+  {
+    "name": "Pic de Séguret",
+    "ele": 3438,
+    "coordinates": [
+      6.4555543,
+      44.9238856
+    ]
+  },
+  {
+    "name": "Pic Gardiner",
+    "ele": 3440,
+    "coordinates": [
+      6.458145,
+      44.9252074
+    ]
+  },
+  {
+    "name": "Aiguille Pers",
+    "ele": 3386,
+    "coordinates": [
+      7.0710265,
+      45.42644
+    ]
+  },
+  {
+    "name": "L'Ouille Noire",
+    "ele": 3357,
+    "coordinates": [
+      7.0716163,
+      45.4064576
+    ]
+  },
+  {
+    "name": "Crete de la Taillante",
+    "ele": 3197,
+    "coordinates": [
+      6.9941827,
+      44.7103416
+    ]
+  },
+  {
+    "name": "Mont Ruine / Monte Ruine",
+    "ele": 3145,
+    "coordinates": [
+      7.0379838,
+      44.689291
+    ]
+  },
+  {
+    "name": "Cimes de la Cochette",
+    "ele": 3238,
+    "coordinates": [
+      6.1549105,
+      45.1689376
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Petite Aiguille Verte",
+    "name": "Petite Aiguille Verte",
+    "ele": 3512,
+    "coordinates": [
+      6.963623,
+      45.9438549
+    ]
+  },
+  {
+    "name": "Pointe Pers",
+    "ele": 3327,
+    "coordinates": [
+      7.0691843,
+      45.4271966
+    ]
+  },
+  {
+    "name": "Pointe des Fours",
+    "ele": 3072,
+    "coordinates": [
+      7.0054739,
+      45.389573
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Roche de la Muzelle",
+    "name": "Grande Roche de la Muzelle",
+    "ele": 3465,
+    "coordinates": [
+      6.1061251,
+      44.9306737
+    ]
+  },
+  {
+    "name": "Roche d'Étache",
+    "ele": 3088,
+    "coordinates": [
+      6.8573998,
+      45.1860601
+    ]
+  },
+  {
+    "name": "Le Grand Cordonnier",
+    "ele": 3086,
+    "coordinates": [
+      6.8625637,
+      45.140578
+    ]
+  },
+  {
+    "name": "Le Petit Vallon",
+    "ele": 3236,
+    "coordinates": [
+      6.8446971,
+      45.1634762
+    ]
+  },
+  {
+    "name": "Rochers Cléry",
+    "ele": 3142,
+    "coordinates": [
+      6.8934695,
+      45.1770764
+    ]
+  },
+  {
+    "name": "Le Sparveyre",
+    "ele": 3002,
+    "coordinates": [
+      6.9707708,
+      44.7289464
+    ]
+  },
+  {
+    "name": "Pointe des Rochers Charniers",
+    "ele": 3056,
+    "coordinates": [
+      6.7351571,
+      44.9873375
+    ]
+  },
+  {
+    "name": "Pointe des Trois Scies",
+    "ele": 3028,
+    "coordinates": [
+      6.7359492,
+      44.9820576
+    ]
+  },
+  {
+    "name": "Roc de Valmeinier",
+    "ele": 3002,
+    "coordinates": [
+      6.5615125,
+      45.1052659
+    ]
+  },
+  {
+    "name": "Pointe des Angelières",
+    "ele": 3060,
+    "coordinates": [
+      6.5614119,
+      45.1111496
+    ]
+  },
+  {
+    "name": "Cima della Vacca / Cime de la Vache",
+    "ele": 3186,
+    "coordinates": [
+      7.1107676,
+      45.4468331
+    ]
+  },
+  {
+    "name": "Pale Crabounouse",
+    "ele": 3021,
+    "coordinates": [
+      0.0880206,
+      42.8031583
+    ]
+  },
+  {
+    "name": "Bugarret",
+    "ele": 3031,
+    "coordinates": [
+      0.0915211,
+      42.8010064
+    ]
+  },
+  {
+    "name": "Dent D'Estibère Male",
+    "ele": 3017,
+    "coordinates": [
+      0.0944013,
+      42.800697
+    ]
+  },
+  {
+    "name": "Grand Pic de Tapou",
+    "ele": 3151,
+    "coordinates": [
+      -0.1358368,
+      42.7627842
+    ]
+  },
+  {
+    "wikipediaUri": "it:Monte Ambin",
+    "name": "Monte Ambin/Pointe d'Ambin",
+    "ele": 3264,
+    "coordinates": [
+      6.8635128,
+      45.1311494
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Pointe de la Fournache",
+    "name": "Pointe de la Fournache",
+    "ele": 3642,
+    "coordinates": [
+      6.7524247,
+      45.2873167
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Cimet",
+    "name": "Le Cimet",
+    "ele": 3020,
+    "coordinates": [
+      6.7041993,
+      44.2904896
+    ]
+  },
+  {
+    "name": "Aiguille Tourrat",
+    "ele": 3014,
+    "coordinates": [
+      0.1036836,
+      42.8048196
+    ]
+  },
+  {
+    "name": "Pic Maubic",
+    "ele": 3058,
+    "coordinates": [
+      0.1029226,
+      42.8027444
+    ]
+  },
+  {
+    "name": "Tetons dera Labaza",
+    "ele": 3124,
+    "coordinates": [
+      -0.1358584,
+      42.7635186
+    ]
+  },
+  {
+    "name": "Punta Superior del Tapou",
+    "ele": 3132,
+    "coordinates": [
+      -0.1365252,
+      42.7640917
+    ]
+  },
+  {
+    "name": "Espalda Chausenque",
+    "ele": 3154,
+    "coordinates": [
+      -0.1400177,
+      42.7732923
+    ]
+  },
+  {
+    "name": "Pale Crabounouse N.",
+    "ele": 3016,
+    "coordinates": [
+      0.089618,
+      42.8044299
+    ]
+  },
+  {
+    "name": "Pic de Lentilla",
+    "ele": 3157,
+    "coordinates": [
+      0.1171267,
+      42.7888571
+    ]
+  },
+  {
+    "name": "Aguja Badet",
+    "ele": 3135,
+    "coordinates": [
+      0.102117,
+      42.7988645
+    ]
+  },
+  {
+    "name": "Premier Conseiller",
+    "ele": 3035,
+    "coordinates": [
+      0.1099062,
+      42.8299126
+    ]
+  },
+  {
+    "name": "Pointe Aires",
+    "ele": 3028,
+    "coordinates": [
+      0.1352262,
+      42.7272805
+    ]
+  },
+  {
+    "name": "Punta de la Cruz",
+    "ele": 3107,
+    "coordinates": [
+      0.3952905,
+      42.6999105
+    ]
+  },
+  {
+    "name": "Punta Culfreda Norte",
+    "ele": 3033,
+    "coordinates": [
+      0.3395033,
+      42.7105028
+    ]
+  },
+  {
+    "name": "Punta Culfreda d'el Medio",
+    "ele": 3031,
+    "coordinates": [
+      0.3380227,
+      42.7099313
+    ]
+  },
+  {
+    "name": "Punta Lacq",
+    "ele": 3010,
+    "coordinates": [
+      0.5234295,
+      42.7039186
+    ]
+  },
+  {
+    "name": "Aguja Inferior de Lézat",
+    "ele": 3023,
+    "coordinates": [
+      0.5203008,
+      42.7050096
+    ]
+  },
+  {
+    "name": "Aguja Central SE de Lézat",
+    "ele": 3037,
+    "coordinates": [
+      0.5198332,
+      42.7054724
+    ]
+  },
+  {
+    "name": "Aguja Central NW de Lézat",
+    "ele": 3058,
+    "coordinates": [
+      0.5192036,
+      42.7058207
+    ]
+  },
+  {
+    "name": "Aguja Superior de Lézat",
+    "ele": 3069,
+    "coordinates": [
+      0.518787,
+      42.7062007
+    ]
+  },
+  {
+    "name": "Aguja Jean Garnier",
+    "ele": 3025,
+    "coordinates": [
+      0.5330515,
+      42.701251
+    ]
+  },
+  {
+    "name": "Tuca d'el Portillón d'O / Tuca d'el Portillón d'el Molsero",
+    "ele": 3050,
+    "coordinates": [
+      0.5073666,
+      42.6927035
+    ]
+  },
+  {
+    "name": "Tuca d'el Sellán de la Vaca",
+    "ele": 3104,
+    "coordinates": [
+      0.4927623,
+      42.6931007
+    ]
+  },
+  {
+    "name": "Pointe Belloc Sud",
+    "ele": 3007,
+    "coordinates": [
+      0.4800128,
+      42.7126732
+    ]
+  },
+  {
+    "name": "Pointe Belloc Central",
+    "ele": 3006,
+    "coordinates": [
+      0.479742,
+      42.7131173
+    ]
+  },
+  {
+    "name": "Pico Belloc",
+    "ele": 3008,
+    "coordinates": [
+      0.4793732,
+      42.7138699
+    ]
+  },
+  {
+    "name": "Pico Camboué",
+    "ele": 3043,
+    "coordinates": [
+      0.4715431,
+      42.7023469
+    ]
+  },
+  {
+    "name": "Pico Saint-Saud",
+    "ele": 3003,
+    "coordinates": [
+      0.4678845,
+      42.7022129
+    ]
+  },
+  {
+    "name": "Sotllo N",
+    "ele": 3058,
+    "coordinates": [
+      1.3875262,
+      42.6697873
+    ]
+  },
+  {
+    "name": "Pic des Heuvières",
+    "ele": 3271,
+    "coordinates": [
+      6.7938208,
+      44.6121468
+    ]
+  },
+  {
+    "name": "Pic de Foréant",
+    "ele": 3081,
+    "coordinates": [
+      6.9689644,
+      44.7067412
+    ]
+  },
+  {
+    "wikipediaUri": "an:Tuca d'el Bom",
+    "name": "Pic de Boum",
+    "ele": 3006,
+    "coordinates": [
+      0.5575771,
+      42.6993707
+    ]
+  },
+  {
+    "name": "Pointe Saint Michel / Punta San Michele",
+    "ele": 3252,
+    "coordinates": [
+      6.7967758,
+      45.1530607
+    ]
+  },
+  {
+    "name": "Mont du Borgne",
+    "ele": 3153,
+    "coordinates": [
+      6.6134691,
+      45.3041651
+    ]
+  },
+  {
+    "name": "Point de l'Arcelle",
+    "ele": 3493,
+    "coordinates": [
+      7.0750773,
+      45.2321376
+    ]
+  },
+  {
+    "name": "Pointe Sella",
+    "ele": 4009,
+    "coordinates": [
+      6.9518096,
+      45.8616766
+    ]
+  },
+  {
+    "name": "Walkerpfeiler",
+    "ele": 4203,
+    "coordinates": [
+      6.9880181,
+      45.8688108
+    ]
+  },
+  {
+    "name": "Pointe de la Vallaisonnay",
+    "ele": 3020,
+    "coordinates": [
+      6.8176505,
+      45.4578547
+    ]
+  },
+  {
+    "name": "Mont Miravidi",
+    "ele": 3066,
+    "coordinates": [
+      6.8219411,
+      45.7113718
+    ]
+  },
+  {
+    "name": "Pointe des Cinéastes",
+    "ele": 3203,
+    "coordinates": [
+      6.4203393,
+      44.9457545
+    ]
+  },
+  {
+    "name": "Tête de la Cula",
+    "ele": 3121,
+    "coordinates": [
+      6.9070062,
+      44.6567597
+    ]
+  },
+  {
+    "name": "Meije Orientale",
+    "ele": 3891,
+    "coordinates": [
+      6.3189377,
+      45.0036757
+    ]
+  },
+  {
+    "name": "Pointe de Pierre Fendue",
+    "ele": 3037,
+    "coordinates": [
+      6.3591405,
+      45.1423738
+    ]
+  },
+  {
+    "name": "Petite Argentière",
+    "ele": 3092,
+    "coordinates": [
+      6.373132,
+      45.1057114
+    ]
+  },
+  {
+    "name": "Pointe des Lauzettes",
+    "ele": 3053,
+    "coordinates": [
+      6.3747836,
+      45.0831678
+    ]
+  },
+  {
+    "name": "Signal de l'Iseran",
+    "ele": 3237,
+    "coordinates": [
+      7.0412922,
+      45.4323471
+    ]
+  },
+  {
+    "name": "Pointe du Gros Caval",
+    "ele": 3285,
+    "coordinates": [
+      7.0877293,
+      45.4337221
+    ]
+  },
+  {
+    "name": "Petite Aiguille Rousse",
+    "ele": 3432,
+    "coordinates": [
+      7.1023393,
+      45.4311886
+    ]
+  },
+  {
+    "name": "Pointe de Derrière le Clapier",
+    "ele": 3403,
+    "coordinates": [
+      7.076666,
+      45.2423592
+    ]
+  },
+  {
+    "name": "Pointe Nord de la Grande Felouse",
+    "ele": 3478,
+    "coordinates": [
+      7.069423,
+      45.2500602
+    ]
+  },
+  {
+    "name": "Pointe Sud du Grand Fond",
+    "ele": 3528,
+    "coordinates": [
+      7.0643802,
+      45.2576277
+    ]
+  },
+  {
+    "name": "Pointe Nord du Grand Fond",
+    "ele": 3483,
+    "coordinates": [
+      7.0638231,
+      45.2643186
+    ]
+  },
+  {
+    "name": "Ouille Mouta",
+    "ele": 3565,
+    "coordinates": [
+      7.0609041,
+      45.2718243
+    ]
+  },
+  {
+    "name": "La Tête",
+    "ele": 3503,
+    "coordinates": [
+      7.0587285,
+      45.2844094
+    ]
+  },
+  {
+    "name": "Pointe du Fond d'Orset",
+    "ele": 3415,
+    "coordinates": [
+      7.0465835,
+      45.2746535
+    ]
+  },
+  {
+    "name": "Pointe des Pignes",
+    "ele": 3370,
+    "coordinates": [
+      6.9770493,
+      45.278849
+    ]
+  },
+  {
+    "name": "Pointe des Fallets",
+    "ele": 3226,
+    "coordinates": [
+      7.0141747,
+      45.2442765
+    ]
+  },
+  {
+    "name": "Pointe des Fonds",
+    "ele": 3021,
+    "coordinates": [
+      6.6462089,
+      45.3073342
+    ]
+  },
+  {
+    "name": "Pointe SO du Chatelard",
+    "ele": 3479,
+    "coordinates": [
+      6.9548903,
+      45.3317658
+    ]
+  },
+  {
+    "name": "Pointes de la Frêche",
+    "ele": 3467,
+    "coordinates": [
+      6.9115451,
+      45.3258016
+    ]
+  },
+  {
+    "name": "Aiguille de Méan Martin",
+    "ele": 3278,
+    "coordinates": [
+      6.977828,
+      45.3573637
+    ]
+  },
+  {
+    "name": "Croix de Dom Jean Maurice",
+    "ele": 3146,
+    "coordinates": [
+      6.9965519,
+      45.3455488
+    ]
+  },
+  {
+    "name": "Aiguille de Tricot",
+    "ele": 3665,
+    "coordinates": [
+      6.8055727,
+      45.8371631
+    ]
+  },
+  {
+    "name": "Pointe Supérieure",
+    "ele": 3221,
+    "coordinates": [
+      6.7986761,
+      45.8406461
+    ]
+  },
+  {
+    "name": "Pointe Centrale",
+    "ele": 3061,
+    "coordinates": [
+      6.7922354,
+      45.8425129
+    ]
+  },
+  {
+    "name": "Rocher de la Davie",
+    "ele": 3157,
+    "coordinates": [
+      6.9646685,
+      45.5096513
+    ]
+  },
+  {
+    "name": "Le Petit Rateau",
+    "ele": 3125,
+    "coordinates": [
+      6.6947964,
+      45.2482883
+    ]
+  },
+  {
+    "name": "Point de Fond de Chambeyron",
+    "ele": 3128,
+    "coordinates": [
+      6.8708624,
+      44.5412618
+    ]
+  },
+  {
+    "wikipediaUri": "an:Tuca de l'Estraperlo",
+    "name": "Tuca de l'Estraperlo",
+    "ele": 3102,
+    "coordinates": [
+      0.5266251,
+      42.7026745
+    ]
+  },
+  {
+    "wikipediaUri": "an:Tuca de Navarro",
+    "name": "Tuca de Navarro",
+    "ele": 3039,
+    "coordinates": [
+      0.5396271,
+      42.7002331
+    ]
+  },
+  {
+    "name": "Bachimala Chicot S",
+    "ele": 3052,
+    "coordinates": [
+      0.3935444,
+      42.7063983
+    ]
+  },
+  {
+    "name": "Pointe du Notaire",
+    "ele": 3250,
+    "coordinates": [
+      6.7861744,
+      45.1795502
+    ]
+  },
+  {
+    "name": "Pointe de Bramanette",
+    "ele": 3215,
+    "coordinates": [
+      6.7981964,
+      45.1723197
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Petite Bosse",
+    "name": "Petite Bosse",
+    "ele": 4547,
+    "coordinates": [
+      6.8559139,
+      45.8352313
+    ]
+  },
+  {
+    "wikipediaUri": "it:Monte Maudit",
+    "name": "Mont Maudit / Monte Maudit",
+    "ele": 4465,
+    "coordinates": [
+      6.8759863,
+      45.8474391
+    ]
+  },
+  {
+    "wikipediaUri": "it:Tour Ronde",
+    "name": "La Tour Ronde",
+    "ele": 3792,
+    "coordinates": [
+      6.9075331,
+      45.8439992
+    ]
+  },
+  {
+    "wikipediaUri": "it:Aiguille d'Entrèves",
+    "name": "Aiguille d'Entrèves",
+    "ele": 3604,
+    "coordinates": [
+      6.9170955,
+      45.8448332
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Dent du Géant",
+    "name": "Dent du Géant / Pointe Graham",
+    "ele": 4013,
+    "coordinates": [
+      6.9518989,
+      45.861898
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Dôme de Rochefort",
+    "name": "Dôme de Rochefort",
+    "ele": 4015,
+    "coordinates": [
+      6.9676762,
+      45.8643541
+    ]
+  },
+  {
+    "name": "Pointe Young",
+    "ele": 3996,
+    "coordinates": [
+      6.9760926,
+      45.8684087
+    ]
+  },
+  {
+    "wikipediaUri": "it:Punta Whymper",
+    "name": "Pointe Whymper / Punta Whymper",
+    "ele": 4180,
+    "coordinates": [
+      6.9849822,
+      45.8687625
+    ]
+  },
+  {
+    "name": "Pics du Loup",
+    "ele": 3245,
+    "coordinates": [
+      6.343811,
+      44.816307
+    ]
+  },
+  {
+    "name": "Pic de Malamort",
+    "ele": 3335,
+    "coordinates": [
+      6.349937,
+      44.819054
+    ]
+  },
+  {
+    "name": "Pointe des Queyrettes",
+    "ele": 3189,
+    "coordinates": [
+      6.41063,
+      44.795419
+    ]
+  },
+  {
+    "name": "Tête de Bertrand ou de la Jaline",
+    "ele": 3191,
+    "coordinates": [
+      6.4031127,
+      44.7585836
+    ]
+  },
+  {
+    "name": "Pic Godefroy",
+    "ele": 3192,
+    "coordinates": [
+      6.4330462,
+      44.7615002
+    ]
+  },
+  {
+    "name": "Tête de la Canonnière",
+    "ele": 3219,
+    "coordinates": [
+      6.4284072,
+      44.7622976
+    ]
+  },
+  {
+    "name": "Tête de Soulaure (Pic Félix Neff)",
+    "ele": 3242,
+    "coordinates": [
+      6.414299,
+      44.762459
+    ]
+  },
+  {
+    "name": "Pic Tuckett",
+    "ele": 3568,
+    "coordinates": [
+      6.4303457,
+      44.9477864
+    ]
+  },
+  {
+    "name": "Pointe de la Petite Glière",
+    "ele": 3321,
+    "coordinates": [
+      6.7960092,
+      45.4106386
+    ]
+  },
+  {
+    "name": "Pointe Nord du Couart Dessus",
+    "ele": 3489,
+    "coordinates": [
+      7.0470414,
+      45.4747959
+    ]
+  },
+  {
+    "name": "Aiguille de la Lex Blanche",
+    "ele": 3684,
+    "coordinates": [
+      6.8031214,
+      45.7864985
+    ]
+  },
+  {
+    "name": "Trident de la Brenva",
+    "ele": 3720,
+    "coordinates": [
+      6.8966353,
+      45.8426765
+    ]
+  },
+  {
+    "name": "Calotta della Brenva / Calotte de la Brenva",
+    "ele": 3701,
+    "coordinates": [
+      6.8928105,
+      45.8435174
+    ]
+  },
+  {
+    "name": "Pic Jean Gauthier",
+    "ele": 3389,
+    "coordinates": [
+      6.4346874,
+      44.9414252
+    ]
+  },
+  {
+    "name": "Pic des Pavéous",
+    "ele": 3384,
+    "coordinates": [
+      6.4334743,
+      44.9382679
+    ]
+  },
+  {
+    "name": "Pic de Dormillouse",
+    "ele": 3410,
+    "coordinates": [
+      6.4405592,
+      44.9339629
+    ]
+  },
+  {
+    "name": "Pic de la Feste",
+    "ele": 3430,
+    "coordinates": [
+      6.4537464,
+      44.9230597
+    ]
+  },
+  {
+    "name": "Pic de l'Eychauda",
+    "ele": 3216,
+    "coordinates": [
+      6.4596286,
+      44.9259228
+    ]
+  },
+  {
+    "name": "Pointe Cézanne",
+    "ele": 3365,
+    "coordinates": [
+      6.4108978,
+      44.9502893
+    ]
+  },
+  {
+    "name": "Pic du Glacier d'Arsine",
+    "ele": 3364,
+    "coordinates": [
+      6.4045502,
+      44.9520073
+    ]
+  },
+  {
+    "name": "Pointe de Frébouze - Borgna",
+    "ele": 3526,
+    "coordinates": [
+      6.9995597,
+      45.8791892
+    ]
+  },
+  {
+    "name": "Pointe des Hirondelles Sud",
+    "ele": 3526,
+    "coordinates": [
+      6.999101,
+      45.8738943
+    ]
+  },
+  {
+    "name": "Pointe Isabelle Nord / Punta Isabella Nord",
+    "ele": 3761,
+    "coordinates": [
+      7.0182171,
+      45.9143064
+    ]
+  },
+  {
+    "name": "Petite Aiguille de Triolet Occidentale",
+    "ele": 3800,
+    "coordinates": [
+      7.0217121,
+      45.9167397
+    ]
+  },
+  {
+    "wikipediaUri": "it:Aiguille de Triolet",
+    "name": "Aiguille de Triolet",
+    "ele": 3870,
+    "coordinates": [
+      7.0242018,
+      45.9164659
+    ]
+  },
+  {
+    "name": "Aiguille des Saints-Pères",
+    "ele": 3369,
+    "coordinates": [
+      6.614549,
+      45.2760702
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Roc des Saints-Pères",
+    "name": "Roc des Saints-Pères",
+    "ele": 3472,
+    "coordinates": [
+      6.6160587,
+      45.2786675
+    ]
+  },
+  {
+    "name": "Pointe de la Partie",
+    "ele": 3299,
+    "coordinates": [
+      6.6749263,
+      45.2714309
+    ]
+  },
+  {
+    "name": "Mont Séti",
+    "ele": 3153,
+    "coordinates": [
+      7.1267326,
+      45.3635654
+    ]
+  },
+  {
+    "name": "Pointe du Grand Méan",
+    "ele": 3223,
+    "coordinates": [
+      7.1480369,
+      45.3694882
+    ]
+  },
+  {
+    "name": "Pointe du Pisset",
+    "ele": 3033,
+    "coordinates": [
+      6.9718795,
+      45.3769552
+    ]
+  },
+  {
+    "name": "Roc Termier",
+    "ele": 3078,
+    "coordinates": [
+      6.4471469,
+      45.0534546
+    ]
+  },
+  {
+    "name": "Sommet Est",
+    "ele": 3219,
+    "coordinates": [
+      6.4382796,
+      45.062656
+    ]
+  },
+  {
+    "name": "Roche de la Gardette",
+    "ele": 3049,
+    "coordinates": [
+      6.4316732,
+      45.0128341
+    ]
+  },
+  {
+    "name": "Pointe de Verdonne",
+    "ele": 3328,
+    "coordinates": [
+      6.3384404,
+      44.7987371
+    ]
+  },
+  {
+    "name": "Tour carrée de l'Agulier",
+    "ele": 3221,
+    "coordinates": [
+      6.4049855,
+      44.862188
+    ]
+  },
+  {
+    "name": "Tour pointue de l'Agulier",
+    "ele": 3242,
+    "coordinates": [
+      6.4016945,
+      44.862721
+    ]
+  },
+  {
+    "name": "Pointe de Chabournéou",
+    "ele": 3250,
+    "coordinates": [
+      6.3318463,
+      44.7966306
+    ]
+  },
+  {
+    "name": "Pointe de Chanteloube",
+    "ele": 3156,
+    "coordinates": [
+      6.3442194,
+      44.79413
+    ]
+  },
+  {
+    "name": "Pointe des Moutières",
+    "ele": 3052,
+    "coordinates": [
+      6.2066943,
+      44.7437629
+    ]
+  },
+  {
+    "name": "Têtes de Mal Cros",
+    "ele": 3086,
+    "coordinates": [
+      6.2006005,
+      44.7393756
+    ]
+  },
+  {
+    "name": "Pointe de la Lombarde",
+    "ele": 3164,
+    "coordinates": [
+      7.1011966,
+      45.2622502
+    ]
+  },
+  {
+    "name": "Ouille du Favre",
+    "ele": 3415,
+    "coordinates": [
+      7.1019684,
+      45.256496
+    ]
+  },
+  {
+    "name": "Pointe du Queyre",
+    "ele": 3259,
+    "coordinates": [
+      6.340785,
+      44.804143
+    ]
+  },
+  {
+    "name": "Pointe de Jarroux",
+    "ele": 3229,
+    "coordinates": [
+      6.339326,
+      44.808037
+    ]
+  },
+  {
+    "name": "Pointe des Bouchiers",
+    "ele": 3101,
+    "coordinates": [
+      6.344626,
+      44.790234
+    ]
+  },
+  {
+    "name": "Pointe de Clausis",
+    "ele": 3159,
+    "coordinates": [
+      6.397197,
+      44.797726
+    ]
+  },
+  {
+    "name": "Montagne du Chapan",
+    "ele": 3033,
+    "coordinates": [
+      6.38071,
+      44.732897
+    ]
+  },
+  {
+    "name": "Tête de la Basse",
+    "ele": 3106,
+    "coordinates": [
+      6.391779,
+      44.757693
+    ]
+  },
+  {
+    "name": "Tête du Plumel",
+    "ele": 3065,
+    "coordinates": [
+      6.386157,
+      44.757244
+    ]
+  },
+  {
+    "name": "Pointe des Serres",
+    "ele": 3005,
+    "coordinates": [
+      6.377885,
+      44.758158
+    ]
+  },
+  {
+    "name": "Pointe du Grand Vallon",
+    "ele": 3136,
+    "coordinates": [
+      6.8708578,
+      45.3211029
+    ]
+  },
+  {
+    "name": "Pointe Croux",
+    "ele": 4023,
+    "coordinates": [
+      6.9653857,
+      45.9344081
+    ]
+  },
+  {
+    "name": "Aiguille du Dome",
+    "ele": 3028,
+    "coordinates": [
+      6.9961479,
+      45.4673319
+    ]
+  },
+  {
+    "name": "Pointe de la Bailletaz",
+    "ele": 3071,
+    "coordinates": [
+      7.0151138,
+      45.4690098
+    ]
+  },
+  {
+    "name": "Les Berches",
+    "ele": 3050,
+    "coordinates": [
+      6.1304354,
+      44.9084292
+    ]
+  },
+  {
+    "name": "Perdiguère / Perdiguero",
+    "ele": 3222,
+    "coordinates": [
+      0.5188647,
+      42.6920006
+    ]
+  },
+  {
+    "name": "Aiguille du Goléon",
+    "ele": 3427,
+    "coordinates": [
+      6.326174,
+      45.1033617
+    ]
+  },
+  {
+    "name": "l’Ouillette",
+    "ele": 3082,
+    "coordinates": [
+      7.015626,
+      45.4098726
+    ]
+  },
+  {
+    "name": "Pointe de l’Arselle",
+    "ele": 3110,
+    "coordinates": [
+      7.0118895,
+      45.4030618
+    ]
+  },
+  {
+    "name": "Aiguille du Midi des Grands",
+    "ele": 3302,
+    "coordinates": [
+      7.0069276,
+      45.9992365
+    ]
+  },
+  {
+    "name": "Aiguille du Génépi",
+    "ele": 3265,
+    "coordinates": [
+      7.0024836,
+      45.9995559
+    ]
+  },
+  {
+    "name": "Pointe Supérieure des Améthystes",
+    "ele": 3586,
+    "coordinates": [
+      7.030649,
+      45.9489461
+    ]
+  },
+  {
+    "name": "Pointe Inférieure des Améthystes",
+    "ele": 3273,
+    "coordinates": [
+      7.0209785,
+      45.9470746
+    ]
+  },
+  {
+    "name": "Aiguille de l'Épéna",
+    "ele": 3421,
+    "coordinates": [
+      6.8169297,
+      45.4145218
+    ]
+  },
+  {
+    "name": "Pointe Centrale de l'Épéna",
+    "ele": 3307,
+    "coordinates": [
+      6.8060661,
+      45.4149741
+    ]
+  },
+  {
+    "name": "Pointe Occidentale de l'Épéna",
+    "ele": 3293,
+    "coordinates": [
+      6.8029807,
+      45.4147581
+    ]
+  },
+  {
+    "name": "La Vierge",
+    "ele": 3244,
+    "coordinates": [
+      6.9264507,
+      45.856049
+    ]
+  },
+  {
+    "name": "Aiguille des Lanchettes",
+    "ele": 3073,
+    "coordinates": [
+      6.7696731,
+      45.7702897
+    ]
+  },
+  {
+    "name": "Tête du Vallon",
+    "ele": 3059,
+    "coordinates": [
+      6.4135692,
+      45.007616
+    ]
+  },
+  {
+    "name": "Ouille de la Vallettaz",
+    "ele": 3145,
+    "coordinates": [
+      7.1062479,
+      45.2756437
+    ]
+  },
+  {
+    "name": "Pointe des Balmes",
+    "ele": 3301,
+    "coordinates": [
+      7.1188887,
+      45.2888629
+    ]
+  },
+  {
+    "name": "Pointe des Pareis (Pointe des Balmes)",
+    "ele": 3301,
+    "coordinates": [
+      7.1284342,
+      45.2894256
+    ]
+  },
+  {
+    "name": "Pointe de Pas Rosset",
+    "ele": 3295,
+    "coordinates": [
+      6.7536849,
+      45.2805893
+    ]
+  },
+  {
+    "name": "Pointe Ouest du Mont Pelve",
+    "ele": 3261,
+    "coordinates": [
+      6.7634339,
+      45.35823
+    ]
+  },
+  {
+    "name": "Pointe des Pleignets",
+    "ele": 3105,
+    "coordinates": [
+      6.8927584,
+      45.3165555
+    ]
+  },
+  {
+    "name": "Pointe Chevrière",
+    "ele": 3276,
+    "coordinates": [
+      6.7219924,
+      45.2935725
+    ]
+  },
+  {
+    "wikipediaUri": "en:Mont Pelve",
+    "name": "Mont Pelve",
+    "ele": 3260,
+    "coordinates": [
+      6.7819656,
+      45.3574377
+    ]
+  },
+  {
+    "name": "Dôme Sud",
+    "ele": 3567,
+    "coordinates": [
+      6.7381845,
+      45.3105492
+    ]
+  },
+  {
+    "name": "Pointe des Broès",
+    "ele": 3405,
+    "coordinates": [
+      6.9110944,
+      45.3420084
+    ]
+  },
+  {
+    "name": "Pointe de Bellecôte",
+    "ele": 3140,
+    "coordinates": [
+      6.7513607,
+      45.2738343
+    ]
+  },
+  {
+    "name": "Pointe du Vallonnet",
+    "ele": 3539,
+    "coordinates": [
+      6.8946907,
+      45.3355351
+    ]
+  },
+  {
+    "name": "Pointe de la Gorma",
+    "ele": 3396,
+    "coordinates": [
+      6.739169,
+      45.2884001
+    ]
+  },
+  {
+    "name": "Pointes de l'Ouillarse",
+    "ele": 3435,
+    "coordinates": [
+      7.0855753,
+      45.3272678
+    ]
+  },
+  {
+    "name": "Pic Regaud",
+    "ele": 3232,
+    "coordinates": [
+      7.1029614,
+      45.3481549
+    ]
+  },
+  {
+    "name": "Dôme du Grand Fond",
+    "ele": 3460,
+    "coordinates": [
+      7.0844345,
+      45.3392933
+    ]
+  },
+  {
+    "name": "Pointe Ouest",
+    "ele": 3384,
+    "coordinates": [
+      7.0688355,
+      45.3412827
+    ]
+  },
+  {
+    "name": "Pointe d'Andagne",
+    "ele": 3217,
+    "coordinates": [
+      7.0602801,
+      45.3479456
+    ]
+  },
+  {
+    "name": "Pointe Mezzenile",
+    "ele": 3436,
+    "coordinates": [
+      7.1586793,
+      45.3712441
+    ]
+  },
+  {
+    "name": "Pointe Clavarini",
+    "ele": 3261,
+    "coordinates": [
+      7.1704837,
+      45.3859013
+    ]
+  },
+  {
+    "name": "Sommet Ouest",
+    "ele": 3013,
+    "coordinates": [
+      7.1245568,
+      45.3897767
+    ]
+  },
+  {
+    "name": "Aiguille Percée",
+    "ele": 3437,
+    "coordinates": [
+      7.1547231,
+      45.4183192
+    ]
+  },
+  {
+    "name": "Ouille des Pariotes",
+    "ele": 3123,
+    "coordinates": [
+      7.1386363,
+      45.4115415
+    ]
+  },
+  {
+    "name": "Ouille de Gontière",
+    "ele": 3181,
+    "coordinates": [
+      7.1138998,
+      45.4242576
+    ]
+  },
+  {
+    "name": "Pointe du Charbonnier",
+    "ele": 3311,
+    "coordinates": [
+      6.9010808,
+      45.3805007
+    ]
+  },
+  {
+    "name": "Aiguille des Corneillets",
+    "ele": 3055,
+    "coordinates": [
+      6.6611388,
+      45.3223024
+    ]
+  },
+  {
+    "name": "Aiguille de Chanrossa",
+    "ele": 3045,
+    "coordinates": [
+      6.6661302,
+      45.3291975
+    ]
+  },
+  {
+    "wikipediaUri": "en:Dôme des Pichères",
+    "name": "Dôme des Pichères",
+    "ele": 3319,
+    "coordinates": [
+      6.7982857,
+      45.4920351
+    ]
+  },
+  {
+    "name": "Sommet Nord PN",
+    "ele": 3052,
+    "coordinates": [
+      55.4803167,
+      -21.0955592
+    ]
+  },
+  {
+    "name": "Aiguille Grande",
+    "ele": 3064,
+    "coordinates": [
+      6.8373819,
+      44.5549485
+    ]
+  },
+  {
+    "name": "Pointe de Cornascle",
+    "ele": 3141,
+    "coordinates": [
+      6.9359404,
+      44.6242354
+    ]
+  },
+  {
+    "name": "Signal du Lac",
+    "ele": 3431,
+    "coordinates": [
+      6.990845,
+      45.238121
+    ]
+  },
+  {
+    "name": "La dent",
+    "ele": 3002,
+    "coordinates": [
+      55.478053,
+      -21.093631
+    ]
+  },
+  {
+    "name": "Tour du grand saisissement",
+    "ele": 3013,
+    "coordinates": [
+      55.474065,
+      -21.09101
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Dents d'Ambin",
+    "name": "Dents d'Ambin",
+    "ele": 3372,
+    "coordinates": [
+      6.8932918,
+      45.1692845
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Dents d'Ambin",
+    "name": "Dents d'Ambin",
+    "ele": 3372,
+    "coordinates": [
+      6.8932918,
+      45.1692845
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Dents d'Ambin",
+    "name": "Dents d'Ambin",
+    "ele": 3372,
+    "coordinates": [
+      6.8932918,
+      45.1692845
+    ]
+  },
+  {
+    "name": "Cime Asquasciati",
+    "ele": 3010,
+    "coordinates": [
+      7.4214301,
+      44.1133938
+    ]
+  },
+  {
+    "name": "Pointe Nord de Bézin",
+    "ele": 3026,
+    "coordinates": [
+      7.0088206,
+      45.3870172
+    ]
+  },
+  {
+    "name": "Pointe du Santel",
+    "ele": 3464,
+    "coordinates": [
+      7.040256,
+      45.4768734
+    ]
+  },
+  {
+    "name": "Punta Mamy",
+    "ele": 3048,
+    "coordinates": [
+      0.5252877,
+      42.7030128
+    ]
+  },
+  {
+    "name": "Pointe Louise",
+    "ele": 3668,
+    "coordinates": [
+      6.3665678,
+      44.9444189
+    ]
+  },
+  {
+    "name": "Dent nord-ouest de Maniglia",
+    "ele": 3197,
+    "coordinates": [
+      6.9052505,
+      44.5707429
+    ]
+  },
+  {
+    "name": "Pelvat de Chabrière sommet ouest",
+    "ele": 3166,
+    "coordinates": [
+      6.9244519,
+      44.5817261
+    ]
+  },
+  {
+    "name": "La Pyramide",
+    "ele": 3348,
+    "coordinates": [
+      6.4180895,
+      44.9508882
+    ]
+  },
+  {
+    "name": "Aiguille du Passon",
+    "ele": 3370,
+    "coordinates": [
+      6.9924034,
+      45.9740465
+    ]
+  },
+  {
+    "name": "Bec Rouge Supérieur",
+    "ele": 3047,
+    "coordinates": [
+      6.9812048,
+      45.9766097
+    ]
+  },
+  {
+    "name": "Le Petit Plateau",
+    "ele": 3500,
+    "coordinates": [
+      6.8603584,
+      45.8557826
+    ]
+  },
+  {
+    "name": "Aiguille de Chillol",
+    "ele": 3316,
+    "coordinates": [
+      6.8548536,
+      44.5494468
+    ]
+  },
+  {
+    "name": "Bosse Coolidge",
+    "ele": 3343,
+    "coordinates": [
+      6.3685538,
+      44.9093327
+    ]
+  },
+  {
+    "name": "Pointe de l'Aval - Cime Est",
+    "ele": 3325,
+    "coordinates": [
+      6.8464477,
+      44.5447968
+    ]
+  },
+  {
+    "name": "Cime de Chabrières",
+    "ele": 3246,
+    "coordinates": [
+      6.8704068,
+      44.849718
+    ]
+  },
+  {
+    "name": "Cime de Coraïa",
+    "ele": 3257,
+    "coordinates": [
+      6.5997122,
+      45.2441022
+    ]
+  },
+  {
+    "name": "Mont Cula",
+    "ele": 3014,
+    "coordinates": [
+      6.5929819,
+      45.1476446
+    ]
+  },
+  {
+    "name": "Mont Château-Bourreau",
+    "ele": 3077,
+    "coordinates": [
+      6.5341231,
+      45.2487753
+    ]
+  },
+  {
+    "name": "Pointe de Rosaël",
+    "ele": 3069,
+    "coordinates": [
+      6.5777598,
+      45.2651298
+    ]
+  },
+  {
+    "name": "Pointe de Thorens",
+    "ele": 3262,
+    "coordinates": [
+      6.6095527,
+      45.2649809
+    ]
+  },
+  {
+    "name": "Aiguille Forbes",
+    "ele": 3488,
+    "coordinates": [
+      7.0101789,
+      45.9732267
+    ]
+  },
+  {
+    "name": "Aiguille d'Argentière",
+    "ele": 3237,
+    "coordinates": [
+      6.360204,
+      45.1063979
+    ]
+  },
+  {
+    "name": "Aiguille de l'Épaisseur",
+    "ele": 3230,
+    "coordinates": [
+      6.3556524,
+      45.1325996
+    ]
+  },
+  {
+    "name": "Dent Parrachée",
+    "ele": 3697,
+    "coordinates": [
+      6.7560818,
+      45.2890891
+    ]
+  },
+  {
+    "name": "Dôme des Platières",
+    "ele": 3474,
+    "coordinates": [
+      6.8637947,
+      45.5072964
+    ]
+  },
+  {
+    "name": "Pointe de Bonneval",
+    "ele": 3321,
+    "coordinates": [
+      7.1375428,
+      45.3498882
+    ]
+  },
+  {
+    "name": "Ouille de Trièves Est",
+    "ele": 3062,
+    "coordinates": [
+      7.1356063,
+      45.387744
+    ]
+  },
+  {
+    "name": "Grande Aiguille Rousse",
+    "ele": 3482,
+    "coordinates": [
+      7.1093862,
+      45.432879
+    ]
+  },
+  {
+    "name": "Ouille des Reys",
+    "ele": 3081,
+    "coordinates": [
+      7.0899574,
+      45.402254
+    ]
+  },
+  {
+    "name": "Ouille Allégra",
+    "ele": 3131,
+    "coordinates": [
+      7.055759,
+      45.3356661
+    ]
+  },
+  {
+    "wikipediaUri": "it:Punta d'Arnas",
+    "name": "Ouille d'Arbéron / Punta d'Arnas",
+    "ele": 3554,
+    "coordinates": [
+      7.1292783,
+      45.2712724
+    ]
+  },
+  {
+    "name": "L'Albaron",
+    "ele": 3638,
+    "coordinates": [
+      7.1019321,
+      45.3334949
+    ]
+  },
+  {
+    "name": "Pointe du Baounet",
+    "ele": 3130,
+    "coordinates": [
+      7.0958722,
+      45.2667607
+    ]
+  },
+  {
+    "name": "Pointe Sud de la Grande Felouse",
+    "ele": 3473,
+    "coordinates": [
+      7.0694286,
+      45.2467546
+    ]
+  },
+  {
+    "name": "Pointe de Charbonnel",
+    "ele": 3752,
+    "coordinates": [
+      7.0556764,
+      45.2804745
+    ]
+  },
+  {
+    "name": "Pointe Est du Grand Fond",
+    "ele": 3420,
+    "coordinates": [
+      7.0757303,
+      45.3397648
+    ]
+  },
+  {
+    "name": "Tête d'Aussois",
+    "ele": 3126,
+    "coordinates": [
+      6.7010529,
+      45.2914439
+    ]
+  },
+  {
+    "name": "Roche Faurio",
+    "ele": 3730,
+    "coordinates": [
+      6.3574411,
+      44.9418237
+    ]
+  },
+  {
+    "name": "Tête du Rouget",
+    "ele": 3418,
+    "coordinates": [
+      6.2634002,
+      44.9551042
+    ]
+  },
+  {
+    "name": "Les Rouies",
+    "ele": 3589,
+    "coordinates": [
+      6.258186,
+      44.8638537
+    ]
+  },
+  {
+    "name": "Aiguille du Plat de la Selle",
+    "ele": 3595,
+    "coordinates": [
+      6.2229748,
+      44.9644543
+    ]
+  },
+  {
+    "name": "Sommet Sud de Sarenne",
+    "ele": 3063,
+    "coordinates": [
+      6.1334222,
+      45.111501
+    ]
+  },
+  {
+    "wikipediaUri": "it:Pic du Mas de la Grave",
+    "name": "Pic du Mas de la Grave",
+    "ele": 3020,
+    "coordinates": [
+      6.246269,
+      45.1205063
+    ]
+  },
+  {
+    "name": "Pics de Chamoissière",
+    "ele": 3208,
+    "coordinates": [
+      6.3853742,
+      44.9735926
+    ]
+  },
+  {
+    "name": "Montagne des Agneaux",
+    "ele": 3664,
+    "coordinates": [
+      6.4299817,
+      44.950418
+    ]
+  },
+  {
+    "name": "Le Sirac",
+    "ele": 3441,
+    "coordinates": [
+      6.3068504,
+      44.7893105
+    ]
+  },
+  {
+    "name": "Pic de l'Étendard",
+    "ele": 3464,
+    "coordinates": [
+      6.1439274,
+      45.1544421
+    ]
+  },
+  {
+    "name": "Tête de Siguret",
+    "ele": 3032,
+    "coordinates": [
+      6.7880941,
+      44.4414812
+    ]
+  },
+  {
+    "wikipediaUri": "fr:Pic Bayle",
+    "name": "Pic Bayle",
+    "ele": 3465,
+    "coordinates": [
+      6.1355876,
+      45.1377652
+    ]
+  },
+  {
+    "name": "Pointe des Lanchettes",
+    "ele": 3085,
+    "coordinates": [
+      6.7801559,
+      45.7695374
+    ]
+  },
+  {
+    "name": "Sommet du Rocher de l'Eissassa",
+    "ele": 3048,
+    "coordinates": [
+      6.8532148,
+      44.6202196
+    ]
+  },
+  {
+    "name": "Punta Maria",
+    "ele": 3302,
+    "coordinates": [
+      7.1353836,
+      45.2774573
+    ]
+  },
+  {
+    "name": "Punta Teja",
+    "ele": 3248,
+    "coordinates": [
+      7.1307079,
+      45.2868766
+    ]
+  },
+  {
+    "name": "Pointe de la Fouly",
+    "ele": 3608,
+    "coordinates": [
+      7.0385015,
+      45.9333714
+    ]
+  },
+  {
+    "name": "Mont de Péclet",
+    "ele": 3012,
+    "coordinates": [
+      6.5947681,
+      45.3116749
+    ]
+  },
+  {
+    "name": "Pointe du Borgne",
+    "ele": 3078,
+    "coordinates": [
+      6.6055936,
+      45.3012328
+    ]
+  },
+  {
+    "name": "Aiguille du Borgne",
+    "ele": 3138,
+    "coordinates": [
+      6.6136241,
+      45.3119516
+    ]
+  },
+  {
+    "name": "puy de Soult",
+    "ele": 4584,
+    "coordinates": [
+      1.8971653,
+      45.1577742
+    ]
+  },
+  {
+    "name": "Soum de Tramassel",
+    "ele": 14653,
+    "coordinates": [
+      -0.001152,
+      42.9758088
+    ]
+  },
+  {
+    "name": "Rochers de Guiraude",
+    "ele": 12518,
+    "coordinates": [
+      0.8625187,
+      42.9262264
+    ]
+  },
+  {
+    "name": "Puy de la Bessade",
+    "ele": 5853,
+    "coordinates": [
+      2.0687987,
+      45.4163395
+    ]
+  }
+]

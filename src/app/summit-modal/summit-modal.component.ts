@@ -28,8 +28,7 @@ export class SummitModalComponent implements OnInit {
    */
   ngOnInit() {
     let wikipediaQuery : string = ""
-    this.summit.wikipediaUri != null ? wikipediaQuery = this.summit.wikipediaUri : wikipediaQuery = this.summit.name
-    this.summitService.getExtractFromWikipedia(wikipediaQuery)
+    this.summitService.getExtractFromWikipedia(this.summit)
         .subscribe(() => {
           this.summit.photoUrl = this.summitService.summitImageUrl$.getValue();
           this.summit.wikiDescription =
