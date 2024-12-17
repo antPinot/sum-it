@@ -4,11 +4,14 @@ import * as L from 'leaflet';
 import { LatLng, latLng } from 'leaflet';
 import {
   BehaviorSubject,
+  catchError,
+  EMPTY,
   filter,
   from,
   map,
   mergeMap,
   Observable,
+  of,
   tap,
 } from 'rxjs';
 import { Summit } from 'src/app/models/ISummit';
@@ -153,8 +156,6 @@ export class SummitService {
           this.summitImageUrl$.next(res.originalimage.source);
           this.summitWikiDescription$.next(res.extract);
           this.summitWikiPage$.next(res.content_urls.mobile.page);
-        } else {
-          this.getInformationsFromOtherSources(summit);
         }
       })
     );
@@ -209,9 +210,10 @@ export class SummitService {
     return this.thumbnails;
   }
 
-  getInformationsFromOtherSources(summit : Summit) {
-    if (summit.photoUrl){
-      this.summitImageUrl$.next(summit.photoUrl);
-    }
-  }
+  // getInformationsFromOtherSources(summit : Summit) {
+  //   if (summit.photoUrl){
+  //     this.summitImageUrl$.next(summit.photoUrl);
+  //     console.log(this.summitImageUrl$.value)
+  //   }
+  // }
 }

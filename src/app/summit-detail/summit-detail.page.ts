@@ -41,13 +41,13 @@ export class SummitDetailPage implements OnInit {
    */
   ngOnInit() {
     this.summit = this.summitService.getSummitById(this.activatedRoute.snapshot.paramMap.get('id') as string)
-    let wikipediaQuery : string = ""
-
-    this.summitService.getExtractFromWikipedia(this.summit).subscribe(() => {
-      this.summit.photoUrl = this.summitService.summitImageUrl$.getValue()
-      this.summit.wikiDescription = this.summitService.summitWikiDescription$.getValue()
-      this.summitWikiPage = this.summitService.summitWikiPage$.getValue()
-    })
+    if (this.summit.photoUrl == null || this.summit.photoUrl == ""){
+      this.summitService.getExtractFromWikipedia(this.summit).subscribe((res) => {
+        this.summit.photoUrl = this.summitService.summitImageUrl$.getValue()
+        this.summit.wikiDescription = this.summitService.summitWikiDescription$.getValue()
+        this.summitWikiPage = this.summitService.summitWikiPage$.getValue()
+      })
+    }
     this.thumbnailsSrc = this.summitService.getThumbnailsSrc()
     //Méthode swiper.js (Requis pour le fonctionnement d'un swiper-container)
     register();
