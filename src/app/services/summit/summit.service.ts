@@ -15,6 +15,7 @@ import {
   tap,
 } from 'rxjs';
 import { Summit } from 'src/app/models/ISummit';
+import { environment } from 'src/environments/environment';
 
 /**
  * Service fournissant des méthodes de manipulation des données
@@ -32,7 +33,7 @@ export class SummitService {
     '../../assets/icon/camp2camp.png',
   ];
 
-  private baseUrl = `http://localhost:8080/rest/peak/`;
+  private baseUrl = `${environment.restWebServiceUrl}rest/peak/`;
   /** Liste des sommets */
   // private summitList: Summit[] = [
   //   { id: "1", name: 'Mont Blanc', altitude: 4806, massif: 'Alpes' },
@@ -150,6 +151,7 @@ export class SummitService {
       query = query.substring(
         query.indexOf(':') + 1
       );
+    console.log(query)
     return this.http.get(`${this.baseWikipediaUrl}${query}`).pipe(
       tap((res: any) => {
         if (res.title != 'Not found.') {
