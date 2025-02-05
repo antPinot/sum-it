@@ -13,6 +13,7 @@ export interface Summit{
     photoUrl?: string,
     wikipediaUri?:string,
     wikiDescription?: string,
+    wikipediaPage?: string,
     linksUrl?: string[]
     photoGallery?: string[],
     isFavorite?: boolean

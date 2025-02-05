@@ -31,8 +31,6 @@ export class SummitDetailPage implements OnInit {
   /**Liste des icônes de sites de randonnée */
   protected thumbnailsSrc!: string[]
 
-  /**Lien wikipédia de l'article du sommet */
-  protected summitWikiPage!: string
 
   constructor(private activatedRoute: ActivatedRoute, private summitService: SummitService, private toastCtrl: ToastController, private alertCtrl: AlertController, private location:Location, private popoverCtrl:PopoverController) { }
 
@@ -41,11 +39,12 @@ export class SummitDetailPage implements OnInit {
    */
   ngOnInit() {
     this.summit = this.summitService.getSummitById(this.activatedRoute.snapshot.paramMap.get('id') as string)
-    if (this.summit.photoUrl == null || this.summit.photoUrl == ""){
+    if (this.summit.photoUrl == null || this.summit.photoUrl == "" || this.summit.wikipediaUri != null){
       this.summitService.getExtractFromWikipedia(this.summit).subscribe(() => {
         this.summit.photoUrl = this.summitService.summitImageUrl$.getValue()
         this.summit.wikiDescription = this.summitService.summitWikiDescription$.getValue()
-        this.summitWikiPage = this.summitService.summitWikiPage$.getValue()
+        this.summit.wikipediaPage = this.summitService.summitWikiPage$.getValue()
+        console.log(this.summit.wikipediaPage)
       })
     }
     this.thumbnailsSrc = this.summitService.getThumbnailsSrc()

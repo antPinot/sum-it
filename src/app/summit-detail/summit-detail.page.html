@@ -31,17 +31,26 @@
     <ion-img [src]="summit.photoUrl">
     </ion-img>
   </ion-card>
-  <ion-card>
+  <ion-card *ngIf="summit.wikiDescription; else noDescriptionTemplate">
     <ion-card-content>
       <ion-item lines="none">{{summit.wikiDescription}}</ion-item>
-      <ion-item lines="none">
+      <!-- <ion-item lines="none"> -->
         <ion-buttons slot="end">
-          <ion-button (click)="openInAppBrowser(summitWikiPage)" color="primary">Voir les informations
+          <ion-button *ngIf="summit.wikipediaPage" (click)="openInAppBrowser(summit.wikipediaPage)" color="primary">Voir les informations
             détaillées<ion-icon name="arrow-forward-circle-outline"></ion-icon></ion-button>
         </ion-buttons>
-      </ion-item>
+      <!-- </ion-item> -->
     </ion-card-content>
   </ion-card>
+
+  <!-- Template Alternatif si pas de description Wikipédia-->
+  <ng-template #noDescriptionTemplate>
+    <ion-card>
+      <ion-card-content>
+      <ion-item lines="none">Pas de description disponible pour ce sommet</ion-item>
+      </ion-card-content>
+    </ion-card>
+  </ng-template>
 
   <ion-card *ngIf="summit.linksUrl" class="thumbnails">
     <ion-card-content>

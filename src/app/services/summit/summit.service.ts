@@ -151,7 +151,6 @@ export class SummitService {
       query = query.substring(
         query.indexOf(':') + 1
       );
-    console.log(query)
     return this.http.get(`${this.baseWikipediaUrl}${query}`).pipe(
       tap((res: any) => {
         if (res.title != 'Not found.') {
