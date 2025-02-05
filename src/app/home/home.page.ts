@@ -155,7 +155,8 @@ export class HomePage implements OnInit {
       componentProps: {
         summit: summitParam,
       },
-      breakpoints: [0, 0.62],
+      // animated: true,
+      breakpoints: [0, 0.62, 0.80],
       initialBreakpoint: 0.62,
       cssClass: 'summitModal',
     });
