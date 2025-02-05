@@ -135,4 +135,13 @@ export class SummitDetailPage implements OnInit {
     popover.present();
   }
 
+  /**
+   * Renvoie l'index de l'icône correspondant au lien
+   * @param url
+   * @returns
+   */
+  displayProperThumbnail(url:string) : number {
+    return this.thumbnailsSrc.findIndex((thumb) =>url.toLowerCase().includes(thumb.substring(thumb.lastIndexOf('/') + 1 , thumb.lastIndexOf('.')).toLowerCase()))
+  }
+
 }

@@ -30,7 +30,7 @@ export class SummitService {
   private thumbnails: string[] = [
     '../../assets/icon/Visorando.jpg',
     '../../assets/icon/altituderando.jpg',
-    '../../assets/icon/camp2camp.png',
+    '../../assets/icon/camptocamp.png',
   ];
 
   private baseUrl = `${environment.restWebServiceUrl}rest/peak/`;
