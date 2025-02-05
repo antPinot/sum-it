@@ -35,13 +35,19 @@
     <ion-card-content>
       <ion-item lines="none">{{summit.wikiDescription}}</ion-item>
       <!-- <ion-item lines="none"> -->
-        <ion-buttons slot="end">
-          <ion-button *ngIf="summit.wikipediaPage" (click)="openInAppBrowser(summit.wikipediaPage)" color="primary">Voir les informations
-            détaillées<ion-icon name="arrow-forward-circle-outline"></ion-icon></ion-button>
-        </ion-buttons>
+        <ng-container *ngIf="summitService.summitWikiPage$ | async as wikipediaPage">
+          <ion-buttons slot="end">
+            <ion-button *ngIf="wikipediaPage;" (click)="openInAppBrowser(wikipediaPage)" color="primary">Voir les informations
+              détaillées<ion-icon name="arrow-forward-circle-outline"></ion-icon></ion-button>
+          </ion-buttons>
+        </ng-container>
       <!-- </ion-item> -->
     </ion-card-content>
   </ion-card>
+
+  <ng-template #test>
+    <ion-card>test</ion-card>
+  </ng-template>
 
   <!-- Template Alternatif si pas de description Wikipédia-->
   <ng-template #noDescriptionTemplate>

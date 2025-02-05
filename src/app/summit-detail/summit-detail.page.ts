@@ -32,7 +32,7 @@ export class SummitDetailPage implements OnInit {
   protected thumbnailsSrc!: string[]
 
 
-  constructor(private activatedRoute: ActivatedRoute, private summitService: SummitService, private toastCtrl: ToastController, private alertCtrl: AlertController, private location:Location, private popoverCtrl:PopoverController) { }
+  constructor(private activatedRoute: ActivatedRoute, protected summitService: SummitService, private toastCtrl: ToastController, private alertCtrl: AlertController, private location:Location, private popoverCtrl:PopoverController) { }
 
   /**
    * Initialise la photo générale, la déscription wikipédia (extrait), le lien vers l'article wikipédia du sommet et la liste des url des icônes de sites de randonnée
@@ -44,7 +44,6 @@ export class SummitDetailPage implements OnInit {
         this.summit.photoUrl = this.summitService.summitImageUrl$.getValue()
         this.summit.wikiDescription = this.summitService.summitWikiDescription$.getValue()
         this.summit.wikipediaPage = this.summitService.summitWikiPage$.getValue()
-        console.log(this.summit.wikipediaPage)
       })
     }
     this.thumbnailsSrc = this.summitService.getThumbnailsSrc()
@@ -118,7 +117,9 @@ export class SummitDetailPage implements OnInit {
    * @param urlToOpen url vers laquelle naviguer
    */
   async openInAppBrowser(urlToOpen: string) {
-    await Browser.open({ url: urlToOpen });
+    if (urlToOpen != null){
+      await Browser.open({ url: urlToOpen });
+    }
   }
 
   async enlargePictures(photoGalleryParam: string[]) {
