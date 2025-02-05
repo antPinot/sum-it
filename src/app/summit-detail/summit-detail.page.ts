@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Component, inject, Input, OnInit } from '@angular/core';
+import { ActivatedRoute, ActivatedRouteSnapshot, ResolveFn, Router, RouterStateSnapshot } from '@angular/router';
 import { Summit } from '../models/ISummit';
 import { SummitService } from '../services/summit/summit.service';
 import { register } from 'swiper/element/bundle';
@@ -9,6 +9,26 @@ import { Browser } from '@capacitor/browser';
 import { AlertController, ModalController, PopoverController, ToastController } from '@ionic/angular';
 import { GalleryModalComponent } from '../gallery-modal/gallery-modal.component';
 import { Location } from '@angular/common';
+import { of } from 'rxjs';
+
+export const summitDetailResolver : ResolveFn<Summit> = (
+  route: ActivatedRouteSnapshot,
+  state: RouterStateSnapshot
+) => {
+
+  const summitService = inject(SummitService);
+
+  const summit = summitService.getSummitById(route.paramMap.get('id') as string)
+    if (summit.photoUrl == null || summit.photoUrl == "" || summit.wikipediaUri != null){
+      summitService.getExtractFromWikipedia(summit).subscribe(() => {
+        summit.photoUrl = summitService.summitImageUrl$.getValue()
+        summit.wikiDescription = summitService.summitWikiDescription$.getValue()
+        summit.wikipediaPage = summitService.summitWikiPage$.getValue()
+      })
+    }
+
+    return of(summit)
+}
 
 /**
  * Component matérialisant un sommet et ses informations détaillées
@@ -19,6 +39,7 @@ import { Location } from '@angular/common';
   styleUrls: ['./summit-detail.page.scss'],
 })
 export class SummitDetailPage implements OnInit {
+
 
 
   /** Sommet dont les informations détaillées sont à afficher*/
@@ -38,14 +59,19 @@ export class SummitDetailPage implements OnInit {
    * Initialise la photo générale, la déscription wikipédia (extrait), le lien vers l'article wikipédia du sommet et la liste des url des icônes de sites de randonnée
    */
   ngOnInit() {
-    this.summit = this.summitService.getSummitById(this.activatedRoute.snapshot.paramMap.get('id') as string)
-    if (this.summit.photoUrl == null || this.summit.photoUrl == "" || this.summit.wikipediaUri != null){
-      this.summitService.getExtractFromWikipedia(this.summit).subscribe(() => {
-        this.summit.photoUrl = this.summitService.summitImageUrl$.getValue()
-        this.summit.wikiDescription = this.summitService.summitWikiDescription$.getValue()
-        this.summit.wikipediaPage = this.summitService.summitWikiPage$.getValue()
-      })
-    }
+    // this.summit = this.summitService.getSummitById(this.activatedRoute.snapshot.paramMap.get('id') as string)
+    // if (this.summit.photoUrl == null || this.summit.photoUrl == "" || this.summit.wikipediaUri != null){
+    //   this.summitService.getExtractFromWikipedia(this.summit).subscribe(() => {
+    //     this.summit.photoUrl = this.summitService.summitImageUrl$.getValue()
+    //     this.summit.wikiDescription = this.summitService.summitWikiDescription$.getValue()
+    //     this.summit.wikipediaPage = this.summitService.summitWikiPage$.getValue()
+    //   })
+    // }
+
+    this.activatedRoute.data.subscribe(({summit}) => {
+      this.summit = summit;
+    })
+
     this.thumbnailsSrc = this.summitService.getThumbnailsSrc()
     //Méthode swiper.js (Requis pour le fonctionnement d'un swiper-container)
     register();
