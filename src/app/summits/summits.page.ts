@@ -49,7 +49,7 @@ export class SummitsPage implements OnInit {
    * @param summit
    */
   async addToFavorites(summit: Summit, event: Event) {
-    this.summitService.addToFavorites(summit)
+    // this.summitService.addToFavorites(summit)
     event.stopPropagation();
     const toast = await this.toastCtrl.create({
       message: summit.isFavorite ? 'Ce sommet a été ajouté à vos favoris' : 'Ce sommet a été retiré de vos favoris',

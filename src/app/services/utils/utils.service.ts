@@ -19,15 +19,28 @@ import { Summit } from 'src/app/models/ISummit';
   providedIn: 'root',
 })
 export class UtilsService {
+
   /** Routes de navigation de l'application */
   private allRoutes = [
-    { title: 'Accueil', url: '/home', icon: 'home-outline' },
+    {
+      title: 'Accueil',
+      url: '/home',
+      icon: 'home-outline' },
     {
       title: 'Liste des sommets',
       url: '/summitlist',
       icon: 'triangle-outline',
     },
-    { title: 'Favoris', url: '/favorites', icon: 'heart-outline' },
+    {
+      title: 'Favoris',
+      url: '/favorites',
+      icon: 'heart-outline'
+    },
+    {
+      title: 'Mon Compte',
+      url: '/profile',
+      icon: 'heart-outline'
+    },
   ];
 
   /** URL de base de requêtage de l'API Photon pour l'autocomplétion (NON IMPLEMENTE) */
