@@ -1,5 +1,5 @@
 export interface UserInfo {
-    username? : String,
+    username? : string,
     creationDate?: Date;
-    favorites? : String []
+    favorites? : string []
 }

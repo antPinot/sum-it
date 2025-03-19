@@ -2,6 +2,6 @@
  *
  */
 export interface FavoriteToAdd  {
-    username : string,
-    favoriteSummitId : string
+    username? : string,
+    favoriteSummitId? : string
 }

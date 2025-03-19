@@ -15,6 +15,11 @@
       </ion-select>
     </ion-item>
   </ion-list>
+
+  <ion-card *ngIf="isEmpty" class="no-favorites">
+    <ion-card-content>Vous n'avez pas encore ajouté de favoris !</ion-card-content>
+  </ion-card>
+
   <ion-card
     (click)="showDetail(summit)"
     *ngFor="let summit of summitList$ | async"
@@ -38,8 +43,8 @@
           <ion-col> {{summit.elevation}}m </ion-col>
           <ion-col> {{summit.massif}} </ion-col>
           <ion-col>
-            <ion-buttons>
-              <ion-button (click)="addToFavorites(summit, $event)">
+            <ion-buttons *ngIf="isAuthenticated$ | async">
+              <ion-button (click)="manageFavorites(summit, $event)">
                 <ion-icon [name]="favoriteIcon(summit)" size="large"></ion-icon>
               </ion-button>
             </ion-buttons>
@@ -48,7 +53,7 @@
       </ion-grid>
     </ion-card-content>
   </ion-card>
-  <ion-infinite-scroll (ionInfinite)="loadMoreSummits($event)"
+  <ion-infinite-scroll *ngIf="!this.router.url.includes('favorites')" (ionInfinite)="loadMoreSummits($event)"
     ><ion-infinite-scroll-content loadingText="Chargement en cours..." loadingSpinner="bubbles"></ion-infinite-scroll-content
   ></ion-infinite-scroll>
 </ion-content>

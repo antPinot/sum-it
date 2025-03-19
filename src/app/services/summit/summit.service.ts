@@ -17,6 +17,9 @@ import {
 import { FavoriteToAdd } from 'src/app/models/IFavoriteToAdd';
 import { Summit } from 'src/app/models/ISummit';
 import { environment } from 'src/environments/environment';
+import { AuthenticationService } from '../auth/authentication.service';
+import { UtilsService } from '../utils/utils.service';
+import { InfiniteScrollCustomEvent, IonSelectCustomEvent, SelectChangeEventDetail } from '@ionic/core';
 
 /**
  * Service fournissant des méthodes de manipulation des données
@@ -38,7 +41,7 @@ export class SummitService {
 
   public summitList$ = new BehaviorSubject<Summit[]>([]);
 
-  constructor(private http: HttpClient) {}
+  public favorites$ = new BehaviorSubject<Summit[]>([]);
 
   /**Observable de l'image principale d'un sommet */
   public summitImageUrl$ = new BehaviorSubject<string>('');
@@ -51,13 +54,15 @@ export class SummitService {
 
   public result!: string;
 
+  protected lastSortCriteria?: string
+
   /**URL de base pour requêtes API Wikipédia */
   private baseWikipediaUrl =
     'https://fr.wikipedia.org/api/rest_v1/page/summary/';
 
-  private getFavoritesUrl : string = `${environment.restWebServiceUrl}rest/peak/favorites`;
+  private addFavoritesUrl : string = `${environment.restWebServiceUrl}rest/user/favorites`;
 
-  private postFavoritesUrl : string = `${environment.restWebServiceUrl}rest/user/favorites`;
+  constructor(private http: HttpClient, private authService : AuthenticationService, private utilsService : UtilsService) {}
 
   /**
    * Renvoie la liste de tous les sommets
@@ -144,30 +149,55 @@ export class SummitService {
    * Récupère la liste de tous les favoris
    * @returns Tableau de sommets
    */
-  getAllFavorites(): Observable<Summit[]> {
-    return this.http
-      .get<Summit[]>(`${this.getFavoritesUrl}`)
-      .pipe(tap((favorites) => this.summitList$.next(favorites)));
+  getAllFavorites(): BehaviorSubject<Summit[]> {
+    let favorites : Summit[] = this.summitList$.getValue().filter((sum) => this.authService.userInfo$.getValue().favorites?.includes(sum.id)).map((sum) => sum)
+    this.favorites$.next(favorites)
+    return this.favorites$;
   }
 
   /**
-   * Ajoute un sommet à la liste des favoris(modifie le booléen isFavorite)
+   * Ajoute ou supprime un sommet de la liste des favoris d'un utilisateur
    * @param summit
    */
-  // addToFavorites(summit: Summit) {
-  //   let updatedList = this.summitList$.value.map((s) => {
-  //     if (s.id === summit.id)
-  //       s.isFavorite ? (s.isFavorite = !s.isFavorite) : (s.isFavorite = true);
-  //     return s;
-  //   });
-  //   this.summitList$.next(updatedList);
-  // }
 
-  // addToFavorites(summit:Summit) : Observable<Summit>{
-  //   return this.http
-  //     .post<Summit>(`${this.postFavoritesUrl}`, )
-  //     .pipe(tap((favorite) => this.summitList$.getValue().push(favorite)));
-  // }
+  manageFavorites(favoriteToManage : FavoriteToAdd){
+    if (favoriteToManage.favoriteSummitId){
+      if (!this.checkIfFavorite(favoriteToManage.favoriteSummitId)){
+        console.log("posting")
+        return this.http.post(`${this.addFavoritesUrl}/add`, favoriteToManage).pipe(
+          tap(() => {
+            if (favoriteToManage.favoriteSummitId){
+              if (this.authService.userInfo$.getValue().favorites ){
+                this.authService.userInfo$.getValue().favorites?.push(favoriteToManage.favoriteSummitId)
+              } else {
+                this.authService.userInfo$.getValue().favorites = [favoriteToManage.favoriteSummitId]
+              }
+            }
+          })
+        )
+      } else {
+        console.log("deleting")
+        const username = this.authService.userInfo$.getValue().username
+        return this.http.delete(`${environment.restWebServiceUrl}rest/user/${username}/favorites/delete/${favoriteToManage.favoriteSummitId}`).pipe(
+          tap(() => {
+            if (favoriteToManage.favoriteSummitId){
+              const userInfo  = this.authService.userInfo$.getValue()
+              if (userInfo.favorites){
+                const favorites = userInfo.favorites;
+                favorites.splice(favorites.indexOf(favoriteToManage.favoriteSummitId), 1)
+                this.getAllFavorites().subscribe()
+              }
+            }
+          })
+        )
+      }
+    }
+    return new Observable();
+  }
+
+  checkIfFavorite(favoriteId:string):boolean{
+    return this.authService.userInfo$.getValue().favorites?.includes(favoriteId) ?? false;
+  }
 
 
 
@@ -179,10 +209,28 @@ export class SummitService {
     return this.thumbnails;
   }
 
-  // getInformationsFromOtherSources(summit : Summit) {
-  //   if (summit.photoUrl){
-  //     this.summitImageUrl$.next(summit.photoUrl);
-  //     console.log(this.summitImageUrl$.value)
-  //   }
-  // }
+  handleChangeOnSort($event?: IonSelectCustomEvent<SelectChangeEventDetail<any>>) {
+      $event ? this.lastSortCriteria = $event.detail.value : this.lastSortCriteria
+      this.summitList$.pipe(map((sum) => {
+        let sortedList = [...sum];
+        switch (this.lastSortCriteria) {
+          case "altitude":
+            return sortedList.sort((a,b) => this.utilsService.elevationSummitSorter(a,b))
+          case "massif":
+            return sortedList.sort((a,b) => this.utilsService.massifSummitSorter(a,b))
+          default:
+            return sortedList.sort((a,b) => this.utilsService.ascendingSummitSorter(a,b))
+        }
+      }))
+    }
+
+    loadMoreSummits(ev : InfiniteScrollCustomEvent) {
+        this.loadMoreOfSummitList(this.summitList$).pipe(
+          tap((sum) =>{
+            this.handleChangeOnSort();
+            this.summitList$.next(sum)
+          })
+        )
+        setTimeout(() => ev.target.complete(), 500)
+      }
 }
