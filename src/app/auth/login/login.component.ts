@@ -41,4 +41,6 @@ export class LoginComponent  implements OnInit {
   onCheckAuth(){
     this.authService.checkAuthentication().subscribe((username) => console.log(username));
   }
+
+
 }

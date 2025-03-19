@@ -39,7 +39,7 @@ export class UtilsService {
     {
       title: 'Mon Compte',
       url: '/profile',
-      icon: 'heart-outline'
+      icon: 'person-outline'
     },
   ];
 
