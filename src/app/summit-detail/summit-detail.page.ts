@@ -1,34 +1,46 @@
 import { Component, inject, Input, OnInit } from '@angular/core';
-import { ActivatedRoute, ActivatedRouteSnapshot, ResolveFn, Router, RouterStateSnapshot } from '@angular/router';
+import {
+  ActivatedRoute,
+  ActivatedRouteSnapshot,
+  ResolveFn,
+  RouterStateSnapshot,
+} from '@angular/router';
 import { Summit } from '../models/ISummit';
 import { SummitService } from '../services/summit/summit.service';
 import { register } from 'swiper/element/bundle';
 import { Camera, CameraResultType, Photo } from '@capacitor/camera';
-import { Haptics, ImpactStyle } from '@capacitor/haptics';
 import { Browser } from '@capacitor/browser';
-import { AlertController, ModalController, PopoverController, ToastController } from '@ionic/angular';
+import {
+  AlertController,
+  PopoverController,
+} from '@ionic/angular';
 import { GalleryModalComponent } from '../gallery-modal/gallery-modal.component';
 import { Location } from '@angular/common';
 import { of } from 'rxjs';
 
-export const summitDetailResolver : ResolveFn<Summit> = (
+export const summitDetailResolver: ResolveFn<Summit> = (
   route: ActivatedRouteSnapshot,
   state: RouterStateSnapshot
 ) => {
-
   const summitService = inject(SummitService);
 
-  const summit = summitService.getSummitById(route.paramMap.get('id') as string)
-    if (summit.photoUrl == null || summit.photoUrl == "" || summit.wikipediaUri != null){
-      summitService.getExtractFromWikipedia(summit).subscribe(() => {
-        summit.photoUrl = summitService.summitImageUrl$.getValue()
-        summit.wikiDescription = summitService.summitWikiDescription$.getValue()
-        summit.wikipediaPage = summitService.summitWikiPage$.getValue()
-      })
-    }
+  const summit = summitService.getSummitById(
+    route.paramMap.get('id') as string
+  );
+  if (
+    summit.photoUrl == null ||
+    summit.photoUrl == '' ||
+    summit.wikipediaUri != null
+  ) {
+    summitService.getExtractFromWikipedia(summit).subscribe(() => {
+      summit.photoUrl = summitService.summitImageUrl$.getValue();
+      summit.wikiDescription = summitService.summitWikiDescription$.getValue();
+      summit.wikipediaPage = summitService.summitWikiPage$.getValue();
+    });
+  }
 
-    return of(summit)
-}
+  return of(summit);
+};
 
 /**
  * Component matérialisant un sommet et ses informations détaillées
@@ -39,57 +51,41 @@ export const summitDetailResolver : ResolveFn<Summit> = (
   styleUrls: ['./summit-detail.page.scss'],
 })
 export class SummitDetailPage implements OnInit {
-
-
-
   /** Sommet dont les informations détaillées sont à afficher*/
   @Input()
-  protected summit!: Summit
+  protected summit!: Summit;
 
   /**Photo capturée ou récupérée depuis le répertoire du téléphone (à ajouter à la gallerie) */
-  protected takenPicture!: Photo
+  protected takenPicture!: Photo;
 
   /**Liste des icônes de sites de randonnée */
-  protected thumbnailsSrc!: string[]
+  protected thumbnailsSrc!: string[];
 
-
-  constructor(private activatedRoute: ActivatedRoute, protected summitService: SummitService, private toastCtrl: ToastController, private alertCtrl: AlertController, private location:Location, private popoverCtrl:PopoverController) { }
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    protected summitService: SummitService,
+    private alertCtrl: AlertController,
+    private location: Location,
+    private popoverCtrl: PopoverController
+  ) {}
 
   /**
    * Initialise la photo générale, la déscription wikipédia (extrait), le lien vers l'article wikipédia du sommet et la liste des url des icônes de sites de randonnée
    */
   ngOnInit() {
-    // this.summit = this.summitService.getSummitById(this.activatedRoute.snapshot.paramMap.get('id') as string)
-    // if (this.summit.photoUrl == null || this.summit.photoUrl == "" || this.summit.wikipediaUri != null){
-    //   this.summitService.getExtractFromWikipedia(this.summit).subscribe(() => {
-    //     this.summit.photoUrl = this.summitService.summitImageUrl$.getValue()
-    //     this.summit.wikiDescription = this.summitService.summitWikiDescription$.getValue()
-    //     this.summit.wikipediaPage = this.summitService.summitWikiPage$.getValue()
-    //   })
-    // }
-
-    this.activatedRoute.data.subscribe(({summit}) => {
+    this.activatedRoute.data.subscribe(({ summit }) => {
       this.summit = summit;
-    })
+    });
 
-    this.thumbnailsSrc = this.summitService.getThumbnailsSrc()
+    this.thumbnailsSrc = this.summitService.getThumbnailsSrc();
     //Méthode swiper.js (Requis pour le fonctionnement d'un swiper-container)
     register();
   }
 
-  /**
-   * Méthode permettant de modifier l'icône en fonction du statut (favori ou non) du sommet
-   * @returns attribut de l'icône
-   */
-  favoriteIcon(): string {
-    let name = ''
-    this.summit.isFavorite ? name = 'heart' : name = 'heart-outline'
-    return name
-  }
 
 
-  goBack(){
-    this.location.back()
+  goBack() {
+    this.location.back();
   }
 
   /**
@@ -101,16 +97,17 @@ export class SummitDetailPage implements OnInit {
       quality: 95,
       allowEditing: false,
       resultType: CameraResultType.Uri,
-      saveToGallery: true
+      saveToGallery: true,
     }).then((photo) => {
-      this.confirmAlert()
-      return photo
-    })
+      this.confirmAlert();
+      return photo;
+    });
 
     if (this.takenPicture.webPath != null) {
-      this.summitService.getSummitById(this.summit.id).photoGallery?.push(this.takenPicture.webPath)
+      this.summitService
+        .getSummitById(this.summit.id)
+        .photoGallery?.push(this.takenPicture.webPath);
     }
-
   }
 
   /**
@@ -120,22 +117,8 @@ export class SummitDetailPage implements OnInit {
     const alert = await this.alertCtrl.create({
       header: 'Votre photo a été ajoutée à la galerie',
       buttons: ['OK'],
-    })
-    await alert.present()
-  }
-
-  /**
-   * Emet une vibration (plugin Capacitor Haptics) et affiche un toast en fond de page si un sommet est ajouté/retiré des favoris
-   */
-  async addFavorite() {
-    this.summit.isFavorite ? this.summit.isFavorite = !this.summit.isFavorite : this.summit.isFavorite = true
-    await Haptics.impact({ style: ImpactStyle.Medium });
-    const toast = await this.toastCtrl.create({
-      message: this.summit.isFavorite ? 'Ce sommet a été ajouté à vos favoris' : 'Ce sommet a été retiré de vos favoris',
-      duration: 2000,
-      position: 'bottom'
-    })
-    await toast.present();
+    });
+    await alert.present();
   }
 
   /**
@@ -143,7 +126,7 @@ export class SummitDetailPage implements OnInit {
    * @param urlToOpen url vers laquelle naviguer
    */
   async openInAppBrowser(urlToOpen: string) {
-    if (urlToOpen != null){
+    if (urlToOpen != null) {
       await Browser.open({ url: urlToOpen });
     }
   }
@@ -151,12 +134,12 @@ export class SummitDetailPage implements OnInit {
   async enlargePictures(photoGalleryParam: string[]) {
     const popover = await this.popoverCtrl.create({
       component: GalleryModalComponent,
-      componentProps:{
-        photoGallery : photoGalleryParam
+      componentProps: {
+        photoGallery: photoGalleryParam,
       },
     });
 
-    popover.style.cssText = "size=cover"
+    popover.style.cssText = 'size=cover';
 
     popover.present();
   }
@@ -166,8 +149,15 @@ export class SummitDetailPage implements OnInit {
    * @param url
    * @returns
    */
-  displayProperThumbnail(url:string) : number {
-    return this.thumbnailsSrc.findIndex((thumb) =>url.toLowerCase().includes(thumb.substring(thumb.lastIndexOf('/') + 1 , thumb.lastIndexOf('.')).toLowerCase()))
+  displayProperThumbnail(url: string): number {
+    return this.thumbnailsSrc.findIndex((thumb) =>
+      url
+        .toLowerCase()
+        .includes(
+          thumb
+            .substring(thumb.lastIndexOf('/') + 1, thumb.lastIndexOf('.'))
+            .toLowerCase()
+        )
+    );
   }
-
 }

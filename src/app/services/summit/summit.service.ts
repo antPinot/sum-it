@@ -156,6 +156,17 @@ export class SummitService {
   }
 
   /**
+   * Récupère les icônes favoris des sommets et modifie l'icône en fonction
+   * @param summit
+   * @returns
+   */
+  favoriteIcon(summit: Summit): string {
+    let name = ''
+    this.checkIfFavorite(summit.id) ? name = 'heart' : name = 'heart-outline'
+    return name
+  }
+
+  /**
    * Ajoute ou supprime un sommet de la liste des favoris d'un utilisateur
    * @param summit
    */

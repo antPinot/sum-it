@@ -1,0 +1,5 @@
+<ion-buttons *ngIf="isAuthenticated$ | async">
+  <ion-button (click)="manageFavorites(summit, $event)">
+    <ion-icon [name]="favoriteIcon(summit)" size="large"></ion-icon>
+  </ion-button>
+</ion-buttons>

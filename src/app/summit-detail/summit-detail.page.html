@@ -10,11 +10,7 @@
       <ion-title>
         {{summit.name}}
       </ion-title>
-      <ion-buttons slot="end">
-        <ion-button (click)="addFavorite()">
-          <ion-icon [name]="favoriteIcon()" size="large"></ion-icon>
-        </ion-button>
-      </ion-buttons>
+      <app-favorite-icon [summit]="summit" slot="end"></app-favorite-icon>
     </ion-item>
   </ion-toolbar>
 </ion-header>

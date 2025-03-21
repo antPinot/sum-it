@@ -4,9 +4,8 @@ import { Router } from '@angular/router';
 import { SummitService } from '../services/summit/summit.service';
 import { Summit } from '../models/ISummit';
 import { InfiniteScrollCustomEvent, SelectChangeEventDetail, ToastController } from '@ionic/angular';
-import { BehaviorSubject, map, Observable, take, takeUntil, tap } from 'rxjs';
+import { map, Observable, tap } from 'rxjs';
 import { IonSelectCustomEvent } from '@ionic/core';
-import { FavoriteToAdd } from '../models/IFavoriteToAdd';
 import { AuthenticationService } from '../services/auth/authentication.service';
 
 /**
@@ -29,7 +28,7 @@ export class SummitsPage implements OnInit {
 
   protected isEmpty!: boolean
 
-  protected isAuthenticated$ = new Observable<boolean>();
+  // protected isAuthenticated$ = new Observable<boolean>();
 
   constructor(private utilsService: UtilsService, protected router: Router, private summitService: SummitService, private toastCtrl: ToastController, private authService: AuthenticationService) { }
 
@@ -39,10 +38,6 @@ export class SummitsPage implements OnInit {
   ngOnInit() {
     this.title = this.utilsService.getTitleFromUrl(this.router.url)
     this.router.url.includes('favorites') ? this.summitList$ = this.summitService.getAllFavorites().pipe(tap((summits) => this.isEmpty = summits.length == 0)) : this.summitList$ = this.summitService.getSummitList(50);
-    this.isAuthenticated$ = this.authService.userInfo$.pipe(
-      map((userInfo) => !!userInfo.username)
-    )
-
   }
 
   /**
@@ -51,35 +46,6 @@ export class SummitsPage implements OnInit {
    */
   showDetail(summit: Summit) {
     this.router.navigateByUrl(`summitlist/summit-detail/${summit.id}`)
-  }
-
-  /**
-   * Ajoute un sommet aux favoris et notifie avec un toast en fond de page
-   * @param summit
-   */
-  async manageFavorites(summit: Summit, event: Event) {
-    //Stopper la propagation pour éviter que le clic envoie sur le détail du sommet
-    event.stopPropagation();
-    const toast = await this.toastCtrl.create({
-      message: this.summitService.checkIfFavorite(summit.id) ? 'Ce sommet a été retiré de vos favoris' : 'Ce sommet a été ajouté à vos favoris',
-      duration: 2000,
-      position: 'bottom'
-    })
-    await toast.present();
-
-    const favoriteToAdd : FavoriteToAdd = {username: this.authService.userInfo$.getValue().username, favoriteSummitId : summit.id}
-    this.summitService.manageFavorites(favoriteToAdd)?.subscribe()
-  }
-
-  /**
-   * Récupère les icônes favoris des sommets et modifie l'icône en fonction
-   * @param summit
-   * @returns
-   */
-  favoriteIcon(summit: Summit): string {
-    let name = ''
-    this.summitService.checkIfFavorite(summit.id) ? name = 'heart' : name = 'heart-outline'
-    return name
   }
 
   loadMoreSummits(ev : InfiniteScrollCustomEvent) {
@@ -106,6 +72,5 @@ export class SummitsPage implements OnInit {
       }
     }))
   }
-  // this.summitService.handleChangeOnSort($event);
   }
 

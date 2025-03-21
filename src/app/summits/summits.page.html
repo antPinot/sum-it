@@ -43,11 +43,7 @@
           <ion-col> {{summit.elevation}}m </ion-col>
           <ion-col> {{summit.massif}} </ion-col>
           <ion-col>
-            <ion-buttons *ngIf="isAuthenticated$ | async">
-              <ion-button (click)="manageFavorites(summit, $event)">
-                <ion-icon [name]="favoriteIcon(summit)" size="large"></ion-icon>
-              </ion-button>
-            </ion-buttons>
+            <app-favorite-icon [summit]="summit"></app-favorite-icon>
           </ion-col>
         </ion-row>
       </ion-grid>
