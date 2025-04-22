@@ -6,11 +6,13 @@
   <ion-searchbar
     debounce="500"
     (ionInput)="getItems($event)"
+    (ionBlur)="hideList()"
     style="z-index: 900"
     placeholder="Entrez un lieu"
+    show-clear-button="focus"
   ></ion-searchbar>
     <ion-list *ngIf="isItemAvailable">
-      <ion-item *ngFor="let option of autocompleteList | async" button (click)="selectedQuery(option)">
+      <ion-item *ngFor="let option of autocompleteList | async" button (mousedown)="selectedQuery(option)">
         {{ option | adresse }}
       </ion-item>
     </ion-list>

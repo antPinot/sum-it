@@ -32,7 +32,7 @@ export class HomePage implements OnInit {
   /**Marqueurs de sommets */
   protected summitMarkers: Marker[] = [];
 
-  /** Pour l'autocomplémtion */
+  /** Pour l'autocomplétion */
   protected isItemAvailable = false;
 
   /**Liste des adresses proposées pour l'autocomplétion */
@@ -204,7 +204,12 @@ export class HomePage implements OnInit {
   }
 
   selectedQuery(option : Adresse) {
-    if (option.point)
+    if (option.point){
       this.map.panTo(latLng(option.point?.coordinates[1], option.point.coordinates[0]))
+    }
+  }
+
+  hideList(){
+    this.isItemAvailable = false
   }
 }
