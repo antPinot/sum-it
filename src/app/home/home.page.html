@@ -11,7 +11,7 @@
   ></ion-searchbar>
     <ion-list *ngIf="isItemAvailable">
       <ion-item *ngFor="let option of autocompleteList | async" button (click)="selectedQuery(option)">
-        {{ this.utilsService.displayAdresse(option) }}
+        {{ option | adresse }}
       </ion-item>
     </ion-list>
 

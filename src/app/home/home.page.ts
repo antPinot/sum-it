@@ -32,10 +32,10 @@ export class HomePage implements OnInit {
   /**Marqueurs de sommets */
   protected summitMarkers: Marker[] = [];
 
-  /** Pour l'autocomplémtion (Non implémenté)*/
+  /** Pour l'autocomplémtion */
   protected isItemAvailable = false;
 
-  /**Liste des adresses proposées pour l'autocomplétion (Non implémenté) */
+  /**Liste des adresses proposées pour l'autocomplétion */
   protected autocompleteList = this.utilsService.listAdressesForAutocomplete$;
 
   protected coordinates = this.utilsService.coordinates$;
@@ -196,7 +196,7 @@ export class HomePage implements OnInit {
   }
 
   /**
-   * Méthode pour l'autocomplétion (non implémenté)
+   * Méthode pour l'autocomplétion
    * @param userQuery
    */
   autocomplete(userQuery: string) {

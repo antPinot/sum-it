@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { WikipediaInterceptor } from './interceptors/wikipedia.interceptor';
 import { IonicStorageModule } from '@ionic/storage-angular';
+import { AdressePipe } from './pipes/adresse.pipe';
 
 @NgModule({
   declarations: [AppComponent],

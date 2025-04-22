@@ -43,13 +43,13 @@ export class UtilsService {
     },
   ];
 
-  /** URL de base de requêtage de l'API Photon pour l'autocomplétion (NON IMPLEMENTE) */
+  /** URL de base de requêtage de l'API Photon pour l'autocomplétion*/
   private photonBaseUrl = 'https://photon.komoot.io/api/';
 
-  /** Observable de la liste des adresses pour l'autocomplétion (NON IMPLEMENTE) */
+  /** Observable de la liste des adresses pour l'autocomplétion*/
   public listAdressesForAutocomplete$ = new BehaviorSubject<Adresse[]>([]);
 
-  /** Coordonées de l'adresse saisie par l'utilisateur (NON IMPLEMENTE) */
+  /** Coordonées de l'adresse saisie par l'utilisateur*/
   public coordinates$ = new BehaviorSubject<Point>({
     type: 'Point',
     coordinates: [],
@@ -113,21 +113,6 @@ export class UtilsService {
           this.listAdressesForAutocomplete$.next(adressesResults);
         })
       );
-  }
-
-  /**
-   * Méthode pour l'autocomplétion
-   *
-   * @param adresse
-   * @returns
-   */
-  displayAdresse(adresse: Adresse): string {
-    if (adresse !== null) {
-      return Object.values(adresse)
-        .filter((v) => v)
-        .join(' ');
-    }
-    return '';
   }
 
   ascendingSummitSorter(a: Summit, b: Summit) {

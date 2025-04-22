@@ -7,6 +7,8 @@ import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { SummitModalComponent } from '../summit-modal/summit-modal.component';
+import { AdressePipe } from '../pipes/adresse.pipe';
+import { PipesModule } from '../pipes/pipes.module';
 
 
 @NgModule({
@@ -16,6 +18,7 @@ import { SummitModalComponent } from '../summit-modal/summit-modal.component';
     IonicModule,
     HomePageRoutingModule,
     LeafletModule,
+    PipesModule
   ],
   declarations: [HomePage, SummitModalComponent]
 })

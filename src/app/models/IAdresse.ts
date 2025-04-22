@@ -1,8 +1,7 @@
-import { Position } from "geojson"
 import { Point } from "geojson"
 
 /**
- * Modèle représentant une adresse (NON IMPLEMENTE)
+ * Modèle représentant une adresse
  *
  */
 export interface Adresse {
