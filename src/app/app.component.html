@@ -7,10 +7,12 @@
     </ion-header>
     <ion-content>
       <ion-list>
-        <ion-item *ngFor="let route of allRoutes" routerDirection="root" [routerLink]="route.url">
-          <ion-icon [name]="route.icon"></ion-icon>
-          <ion-label>{{route.title}}</ion-label>
-        </ion-item>
+        <ion-menu-toggle>
+          <ion-item *ngFor="let route of allRoutes" routerDirection="root" [routerLink]="route.url">
+            <ion-icon [name]="route.icon"></ion-icon>
+            <ion-label>{{route.title}}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
       </ion-list>
     </ion-content>
   </ion-menu>
