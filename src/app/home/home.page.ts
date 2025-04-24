@@ -3,6 +3,7 @@ import { UtilsService } from '../services/utils/utils.service';
 import { Router } from '@angular/router';
 import { Icon, Map, Marker, icon, latLng, marker, tileLayer } from 'leaflet';
 import * as L from 'leaflet';
+import 'leaflet.markercluster';
 import { Geolocation } from '@capacitor/geolocation';
 import { SummitService } from '../services/summit/summit.service';
 import { ModalController } from '@ionic/angular';
@@ -29,8 +30,8 @@ export class HomePage implements OnInit {
   /**Carte leaflet */
   protected map!: Map;
 
-  /**Marqueurs de sommets */
-  protected summitMarkers: Marker[] = [];
+  /**Cluster de marqueurs de sommets */
+  protected markers : L.MarkerClusterGroup = L.markerClusterGroup({chunkedLoading: true});
 
   /** Pour l'autocomplétion */
   protected isItemAvailable = false;
@@ -98,6 +99,7 @@ export class HomePage implements OnInit {
    * @param map carte leafltet
    */
   onMapReady(map: Map) {
+
     this.map = map;
     //Permet le chargement correct de la carte (attend le chargement des composants Ionic)
     setTimeout(() => this.map.invalidateSize(true), 500);
@@ -166,9 +168,9 @@ export class HomePage implements OnInit {
   //Ajoute un marqueur pour tous les sommets de l'application et
   //ajoute un listener sur chaque marqueur pour ouvrir un ion-modal
     addMarkers(){
+      let summitMarkers : Marker[] = [];
       this.summitService.summitList$.value.forEach((s) => {
-        let summitMarker: Marker;
-        summitMarker = marker([s.geometry.coordinates[1], s.geometry.coordinates[0]], {
+        let summitMarker: Marker = marker([s.geometry.coordinates[1], s.geometry.coordinates[0]], {
           icon: icon({
             ...Icon.Default.prototype.options,
             iconUrl: '../../assets/icon/marker-icon.png',
@@ -176,14 +178,17 @@ export class HomePage implements OnInit {
             shadowUrl: '../../assets/icon/marker-shadow.png',
           }),
         });
-        summitMarker.addTo(this.map);
+        summitMarkers.push(summitMarker)
+        //Ajoute le comportement d'ouverture d'une modal (summit-modal) en réaction à l'évènement click
         summitMarker.addEventListener('click', (ev) => {
           this.summitService
             .summitModalToDisplay(ev.latlng)
             .then((s) => this.openSummitModal(s));
         });
-        this.summitMarkers.push(summitMarker);
       });
+      //Ajoute les markers au cluster puis le cluster à la carte
+      this.markers.addLayers(summitMarkers);
+      this.map.addLayer(this.markers)
     }
 
 
