@@ -28,3 +28,30 @@
 /** Leaflet and Geocoder styles*/
 @import "../node_modules/leaflet/dist/leaflet.css";
 @import "../node_modules/leaflet-control-geocoder/dist/Control.Geocoder.css";
+
+/** Theme */
+@import "./theme/variables";
+
+/** Fonts */
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto-VariableFont_wdth\,wght.ttf');
+  }
+
+  ion-header{
+    --background: var(--ion-color-secondary);
+    --backgroud-activated: var(--ion-color-secondary-shade);
+    --background-hover: var(--ion-color-secondary-tint);
+    --color: var(--ion-color-secondary-contrast);
+  }
+
+  ion-toolbar{
+    --background: var(--ion-color-secondary);
+    --backgroud-activated: var(--ion-color-secondary-shade);
+    --background-hover: var(--ion-color-secondary-tint);
+    --color: var(--ion-color-secondary-contrast);
+  }
+
+  ion-content{
+    --background: var(--ion-color-light);
+  }
