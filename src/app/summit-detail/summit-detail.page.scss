@@ -14,3 +14,8 @@ ion-card{
         margin-right: 2%;
     }
 }
+
+ion-title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
