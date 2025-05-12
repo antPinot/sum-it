@@ -17,11 +17,11 @@
 
 <ion-content [fullscreen]="true">
 
-  <ion-header collapse="condense">
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">summit-detail</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
 
   <ion-card>
     <ion-img [src]="summit.photoUrl">
@@ -33,7 +33,7 @@
       <!-- <ion-item lines="none"> -->
         <ng-container *ngIf="summitService.summitWikiPage$ | async as wikipediaPage">
           <ion-buttons slot="end">
-            <ion-button *ngIf="wikipediaPage;" (click)="openInAppBrowser(wikipediaPage)" color="primary">Voir les informations
+            <ion-button *ngIf="wikipediaPage;" (click)="openInAppBrowser(wikipediaPage)" color="mountain" class="wikipediaButton">Voir les informations
               détaillées<ion-icon name="arrow-forward-circle-outline"></ion-icon></ion-button>
           </ion-buttons>
         </ng-container>
