@@ -38,14 +38,7 @@
     src: url('./assets/fonts/Roboto-VariableFont_wdth\,wght.ttf');
   }
 
-  ion-header{
-    --background: var(--ion-color-secondary);
-    --backgroud-activated: var(--ion-color-secondary-shade);
-    --background-hover: var(--ion-color-secondary-tint);
-    --color: var(--ion-color-secondary-contrast);
-  }
-
-  ion-toolbar{
+  ion-header *{
     --background: var(--ion-color-secondary);
     --backgroud-activated: var(--ion-color-secondary-shade);
     --background-hover: var(--ion-color-secondary-tint);
