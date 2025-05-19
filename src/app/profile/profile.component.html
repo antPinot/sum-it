@@ -10,12 +10,13 @@
 
     <ion-card-header>
       <ion-avatar>
-        <img src="https://ionicframework.com/docs/img/demos/avatar.svg" alt="avatar-icon">
+        <img [src]="userInfo.avatar" alt="avatar-icon">
       </ion-avatar>
       <ion-card-title>Bienvenue sur votre espace <div class="username">{{userInfo.username}}</div></ion-card-title>
       <ion-card-content>
         Vous êtes membre depuis le {{userInfo.creationDate}}
       </ion-card-content>
+      <ion-button (click)="changeAvatar()">Changer votre avatar</ion-button>
     </ion-card-header>
   </ion-card>
   <div class="button-container">
