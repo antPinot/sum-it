@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-menu-button slot="start"></ion-menu-button>
+      <ion-title>{{title}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <ion-card [ngStyle]="{margin : margin}">
+        <ion-card-content>
+            <form *ngIf="authForm" [formGroup]="authForm">
+                <ion-list>
+                        <ion-input type="text" formControlName="username" fill="outline" label="email ou nom d'utilisateur" label-placement="floating"></ion-input>
+                        <ion-input *ngIf="!isLogin" type="text" formControlName="mail" fill="outline" label="Mail" label-placement="floating"></ion-input>
+                        <ion-input type="password" formControlName="password" fill="outline" label="mot de passe" label-placement="floating">
+                            <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+                        </ion-input>
+                        <div class="button-container">
+                            <ion-button shape="round" (click)="onSubmitForm()" color="warning">{{title}}</ion-button>
+                        </div>
+                        <div class="button-container" *ngIf="isLogin">
+                            <ion-button shape="round" routerLink="/auth/register" color="warning-shade">Inscription</ion-button>
+                        </div>
+                </ion-list>
+            </form>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

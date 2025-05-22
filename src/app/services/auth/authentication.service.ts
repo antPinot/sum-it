@@ -13,9 +13,12 @@ import { environment } from 'src/environments/environment';
 })
 export class AuthenticationService {
 
+
   private loginUrl : string = `${environment.restWebServiceUrl}session`
 
   private logoutUrl : string = `${environment.restWebServiceUrl}logout`
+
+  private registerUrl : string = `${environment.restWebServiceUrl}rest/user`
 
   private authCheckUrl : string = `${environment.restWebServiceUrl}session/validate`
 
@@ -27,8 +30,10 @@ export class AuthenticationService {
 
   constructor(private http : HttpClient, private toastCtrl : ToastController) { }
 
-  login(credentials: Credentials) {
-    return this.http.post(this.loginUrl, credentials, {withCredentials:true})
+  loginOrRegister(credentials: Credentials, login:boolean) {
+    let url = ""
+    login ? url = this.loginUrl : url = this.registerUrl
+    return this.http.post(url, credentials, {withCredentials:true})
   }
 
   logout(){

@@ -33,11 +33,14 @@ export class ProfileComponent implements OnInit {
 
   async changeAvatar() {
     const image = await Camera.getPhoto({
-      quality: 95,
+      quality: 70,
+      height: 320,
+      width: 320,
       allowEditing: true,
+      saveToGallery: false,
       resultType: CameraResultType.DataUrl,
-      saveToGallery: true,
     }).then((img) => {
+      console.log(img)
       const userAvatar : IUserAvatar = {username : this.userInfo$.getValue().username, avatar: img.dataUrl}
       this.authService.updateAvatar(userAvatar).subscribe(async () => {
         const alert = await this.alertCtrl.create({
